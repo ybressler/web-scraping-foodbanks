@@ -1,0 +1,24 @@
+# Virtual env
+venv
+.env
+
+# Ignore the usual stuff:
+.DS_Store
+*.DS_Store
+
+# Ignore cpython
+*.pyc
+
+
+# I don't want any of the data:
+Data # Changed my mind. I do want the data now
+Screenshots
+
+# Ignore Chromedriver!
+Chromedriver
+
+
+# Ignore previous template files
+parse_avvo.py
+scrape_avvo.py
+scrape_individual_websites.py
