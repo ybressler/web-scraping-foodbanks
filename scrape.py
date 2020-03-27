@@ -84,17 +84,40 @@ with open(soup_path,"r") as f:
 # ==============================================================================
 # Begin parsing
 
+records = []
+
 # find all items on the page
 all_items = soup.find_all("div",{"class":"results-box"})
 for item in all_items:
-    print(item)
+    org_id = item.get("data-orgid")
 
+    # extract through the link
+    a = item.find("a",{"aria-label":True})
+    if not a:
+        continue
+    org_link = a.get("href")
 
-# # Structured data
-# all_items = soup.find_all("script",type="application/ld+json")
-# for item in all_items:
-#     print(item)
-#
-#
-# # Get all links
-# all_items = soup.find_all("a")
+    name = item.find("p",{"class":"name"})
+    org_name = name.text if name else name #weird but works!
+    org_url = item.find("p",{"class":"url"}).find("a").get("href")
+
+    # still need to get:
+    # – address
+    # – phone number
+    # – multiple locations (if)
+
+    rec = {
+        "org_id" : org_id,
+        "org_link" : org_link,
+        "org_name" : org_name,
+        "org_url" : org_url,
+    }
+    records.append(rec)
+
+# When all that is done, load to a df
+df = pd.DataFrame.from_records(records)
+
+# save to a csv
+df.to_csv(Path("Data/testing/scraped/first.csv"), index=False)
+
+print("complete!")
