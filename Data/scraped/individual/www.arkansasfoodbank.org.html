@@ -1,0 +1,640 @@
+<html class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths wf-museosans-n3-active wf-museosans-n5-active wf-museosans-n7-active wf-museoslab-n5-active wf-museoslab-n7-active wf-active" lang="en-US"><head>
+  	<script src="https://connect.facebook.net/signals/config/211840623077139?v=2.9.15&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://connect.facebook.net/en_GB/sdk.js?hash=bd1c9c62ecf6f5f1cce9b2c3498af07b&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;appId=755660707858538&amp;version=v2.0"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KWZZZKD"></script><script src="//use.typekit.net/tlp1mjj.js"></script>
+	 <style type="text/css">.tk-museo-sans{font-family:"museo-sans",sans-serif;}.tk-museo-slab{font-family:"museo-slab",serif;}</style><style type="text/css">@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/620bf8/00000000000000000000e7fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/a28b50/00000000000000000000e803/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-sans;src:url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/e3ca36/00000000000000000000e805/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;}@font-face{font-family:museo-slab;src:url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/c225e2/000000000000000000011aff/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}</style><script>try{Typekit.load();}catch(e){}</script>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="Arkansas Foodbank Feed" href="https://arkansasfoodbank.org/feed/">
+    <title>Arkansas Foodbank largest hunger relief organization in the state</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The Arkansas Foodbank is the largest hunger relief organization in the state serving 33 counties in central &amp; southern Arkansas feeding over 280,000 people each year. We serve over 450 partner agencies through our Food For Families, Food For Kids &amp; Food For Seniors programs.">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://arkansasfoodbank.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Arkansas Foodbank largest hunger relief organization in the state">
+<meta property="og:description" content="The Arkansas Foodbank is the largest hunger relief organization in the state serving 33 counties in central &amp; southern Arkansas feeding over 280,000 people each year. We serve over 450 partner agencies through our Food For Families, Food For Kids &amp; Food For Seniors programs.">
+<meta property="og:url" content="https://arkansasfoodbank.org/">
+<meta property="og:site_name" content="Arkansas Foodbank">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="The Arkansas Foodbank is the largest hunger relief organization in the state serving 33 counties in central &amp; southern Arkansas feeding over 280,000 people each year. We serve over 450 partner agencies through our Food For Families, Food For Kids &amp; Food For Seniors programs.">
+<meta name="twitter:title" content="Arkansas Foodbank largest hunger relief organization in the state">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://arkansasfoodbank.org/#organization","name":"Arkansas Foodbank","url":"https://arkansasfoodbank.org/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://arkansasfoodbank.org/#logo","inLanguage":"en-US","url":"https://arkansasfoodbank.org/wp-content/uploads/2015/12/New-Logo-Color-Vertical-e1459286035994.jpg","width":3308,"height":1500,"caption":"Arkansas Foodbank"},"image":{"@id":"https://arkansasfoodbank.org/#logo"}},{"@type":"WebSite","@id":"https://arkansasfoodbank.org/#website","url":"https://arkansasfoodbank.org/","name":"Arkansas Foodbank","inLanguage":"en-US","description":"United to Fight Hunger","publisher":{"@id":"https://arkansasfoodbank.org/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://arkansasfoodbank.org/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"WebPage","@id":"https://arkansasfoodbank.org/#webpage","url":"https://arkansasfoodbank.org/","name":"Arkansas Foodbank largest hunger relief organization in the state","isPartOf":{"@id":"https://arkansasfoodbank.org/#website"},"inLanguage":"en-US","about":{"@id":"https://arkansasfoodbank.org/#organization"},"datePublished":"2015-04-20T18:58:22+00:00","dateModified":"2019-03-13T19:54:15+00:00","description":"The Arkansas Foodbank is the largest hunger relief organization in the state serving 33 counties in central & southern Arkansas feeding over 280,000 people each year. We serve over 450 partner agencies through our Food For Families, Food For Kids & Food For Seniors programs.","potentialAction":[{"@type":"ReadAction","target":["https://arkansasfoodbank.org/"]}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/arkansasfoodbank.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://arkansasfoodbank.org/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://arkansasfoodbank.org/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="spu-public-css-css" href="https://arkansasfoodbank.org/wp-content/plugins/popups/public/assets/css/public.css?ver=1.9.3.8" type="text/css" media="all">
+<link rel="stylesheet" id="sage_css-css" href="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/styles/css/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/styles/css/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme1-css" href="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0_Theme11/assets/styles/css/main.css" type="text/css" media="all">
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="https://arkansasfoodbank.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://arkansasfoodbank.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://arkansasfoodbank.org/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="shortlink" href="https://arkansasfoodbank.org/">
+<link rel="alternate" type="application/json+oembed" href="https://arkansasfoodbank.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Farkansasfoodbank.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://arkansasfoodbank.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Farkansasfoodbank.org%2F&amp;format=xml">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KWZZZKD');</script>
+<!-- End Google Tag Manager -->
+<link rel="shortcut icon" type="image/x-icon" href="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0_Theme11/favicon.ico">    
+  <script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0_Theme11/assets/scripts/jquery.flexslider-min.js"></script>
+  <script src="//api.blackbaud.com/bbi" id="bbi-namespace"></script><script charset="utf-8" src="https://platform.twitter.com/js/moment~timeline~tweet.99ce5e0e4617985354c5c426d7e1b9f4.js"></script><script charset="utf-8" src="https://platform.twitter.com/js/timeline.d228dcf3573461f298b082c9a5c0a42c.js"></script><link rel="stylesheet" href="//api.blackbaud.com/bbi/v/1.1.0/css/bbi.min.css"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+  <body class="home page-template-default page page-id-82 isViewer">
+    <!--[if lt IE 9]>
+      <div class="alert alert-warning">
+        You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.      </div>
+    <![endif]-->
+    <div id="wrapper" style="display: block;">
+      <!-- BBI NAMESPACE -->
+<script>
+(function(a,c,d){if(!a.getElementById(c)){
+var b=a.createElement("script");b.src=d;b.id=c;
+a.getElementsByTagName("head")[0].appendChild(b)
+}})(document,"bbi-namespace","//api.blackbaud.com/bbi");
+</script>
+<!-- BBI PARENT SITE SCRIPT : DO NOT ADD THEME SPECIFIC SCRIPTS HERE -->
+<div class="bbi-script" data-bbi-src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/scripts/bbi-base.js"></div><!-- FACEBOOK ACTIVITY FEED SCRIPT -->
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=755660707858538&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><script>
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+<header id="header" class="navbar navbar-static-top" role="banner">
+	<div id="utility-wrap">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="logo-cont col-sm-6">				
+					<a id="logo" href="/"></a>
+				</div>
+				<div class="action-nav col-sm-6 hidden-xs ">
+					<div class="utility-area-wrap">
+
+						<ul id="menu-action-nav" class="nav navbar-nav"><li class="menu-donate"><a href="http://support.arkansasfoodbank.org/site/Donation2?df_id=1180&amp;mfc_pref=T&amp;1180.donation=form1">Donate</a></li>
+</ul>							<!-- begin cvo snip email only -->
+	<div class="signup-form">
+		<form action="https://secure.arkansasfoodbank.org/site/SSurvey" method="post">
+			
+			<input type="hidden" name="cons_info_component" id="cons_info_component" value="t">
+			<input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="1162">
+			<p><span>Sign Up For eNews</span>
+			<input type="text" name="cons_email" id="cons_email" value="Email Address" size="14" maxlength="255" onfocus="if(this.value == 'Email Address'){this.value='';}" onblur="if(this.value == ''){this.value='Email Address';}">
+			<span style="display:none"><input type="text" name="denySubmit" id="denySubmit" value="" alt="This field is used to prevent form submission by scripts.">Please leave this field empty</span>
+			<input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="GO" class="Button"></p>
+		</form>
+	</div>
+	<!-- end cvo snip email only -->	
+										
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div id="main-nav">
+		<div class="main-nav-cont container-fluid">
+			<div class="main-nav-row row">			
+				<div class="main-nav-section col-md-12">									
+					<ul id="menu-primary-navigation" class="nav navbar-nav hidden-xs"><li class="dropdown menu-i-need-food"><a class="dropdown-toggle" data-toggle="" data-target="#" title="I Need Food" href="https://arkansasfoodbank.org/who-we-serve/service-map/"><span class="hidden-sm hidden-md">i need food </span><span class="hidden-xs hidden-lg">I Need Food</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-agency-locator-map"><a title="Map" href="https://arkansasfoodbank.org/who-we-serve/service-map/">Agency Locator Map</a></li>
+	<li class="menu-snap"><a href="https://arkansasfoodbank.org/who-we-serve/food-stamps-snap-and-the-arkansas-foodbank/">SNAP</a></li>
+</ul>
+</li>
+<li class="dropdown menu-i-want-to-help"><a class="dropdown-toggle" data-toggle="" data-target="#" title="I Want to Help" href="https://arkansasfoodbank.org/how-can-i-help-2/"><span class="hidden-sm hidden-md">i want to help </span><span class="hidden-xs hidden-lg">I Want to Help</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-donate"><a href="https://arkansasfoodbank.org/how-can-i-help-2/donate/">Donate</a></li>
+	<li class="menu-i-want-to-volunteer"><a title="I Want to Volunteer" href="https://arkansasfoodbank.org/how-can-i-help-2/volunteer/">I Want to Volunteer</a></li>
+	<li class="menu-cause-marketing"><a href="https://arkansasfoodbank.org/how-can-i-help-2/cause-marketing/">Cause Marketing</a></li>
+	<li class="menu-hold-a-food-and-fund-drive"><a href="https://arkansasfoodbank.org/how-can-i-help-2/hold-a-food-and-fund-drive/">Hold a Food and Fund Drive</a></li>
+	<li class="menu-events"><a href="https://arkansasfoodbank.org/how-can-i-help-2/events/">Events</a></li>
+	<li class="menu-join-harvesters"><a href="https://arkansasfoodbank.org/about-us/join-harvesters/">Join Harvesters</a></li>
+	<li class="menu-faith-relations-resources"><a href="https://arkansasfoodbank.org/how-can-i-help-2/faith-relations-resources/">Faith Relations Resources</a></li>
+	<li class="menu-corporate-partners"><a href="https://arkansasfoodbank.org/how-can-i-help-2/corporate-partners/">Corporate Partners</a></li>
+</ul>
+</li>
+<li class="dropdown menu-partner-resources"><a class="dropdown-toggle" data-toggle="" data-target="#" title="partner resources" href="https://arkansasfoodbank.org/agency-resources/"><span class="hidden-sm hidden-md">partner resources </span><span class="hidden-xs hidden-lg">partner resources</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-member-agency"><a href="https://arkansasfoodbank.org/how-can-i-help-2/spread-the-word/join-our-online-community/">Member Agency</a></li>
+	<li class="menu-i-want-to-join"><a title="Join" href="https://arkansasfoodbank.org/agency-resources/how-to-join/">I Want to Join</a></li>
+	<li class="menu-backpack-program-tool-kit"><a href="https://arkansasfoodbank.org/agency-resources/backpack-program-tool-kit/">Backpack Program Tool Kit</a></li>
+	<li class="menu-nutrition-education"><a href="https://arkansasfoodbank.org/agency-resources/nutrition-education/">Nutrition Education</a></li>
+</ul>
+</li>
+<li class="dropdown menu-about-us"><a class="dropdown-toggle" data-toggle="" data-target="#" title="about" href="https://arkansasfoodbank.org/about-us/"><span class="hidden-sm hidden-md">about us </span><span class="hidden-xs hidden-lg">about</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-arkansas-foodbank-info"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/">Arkansas Foodbank Info</a></li>
+	<li class="menu-bridging-hope-capital-campaign"><a href="https://arkansasfoodbank.org/about-us/bridging-hope-capital-campaign/">Bridging Hope Capital Campaign</a></li>
+	<li class="menu-programs"><a href="https://arkansasfoodbank.org/programs/">Programs</a></li>
+	<li class="menu-news-feed"><a href="https://arkansasfoodbank.org/blog/">News Feed</a></li>
+	<li class="menu-staff"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/staff-at-arkansas-foodbank/">Staff</a></li>
+	<li class="menu-board-of-directors"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/our-leaders/board-directors-arkansas-foodbank/">Board of Directors</a></li>
+	<li class="menu-careers"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/careers-job-opportunities/">Careers</a></li>
+	<li class="menu-visit-the-foodbank"><a href="https://arkansasfoodbank.org/about-us/hunger-info/">Visit the Foodbank</a></li>
+	<li class="menu-location-hours"><a href="https://arkansasfoodbank.org/about-us/location-and-hours/">Location &amp; Hours</a></li>
+	<li class="menu-contact-us"><a href="http://support.arkansasfoodbank.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&amp;SURVEY_ID=1141">Contact Us</a></li>
+</ul>
+</li>
+<li class="dropdown menu-gift-shop"><a class="dropdown-toggle" data-toggle="" data-target="#" title="shop" href="https://arkansasfoodbank.org/gifts-from-the-heart-gift-shop/"><span class="hidden-sm hidden-md">gift shop </span><span class="hidden-xs hidden-lg">shop</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-gifts-from-the-heart-gift-shop"><a href="https://arkansasfoodbank.org/gifts-from-the-heart-gift-shop/">Gifts From The Heart Gift Shop</a></li>
+</ul>
+</li>
+</ul>					<ul id="menu-action-nav-1" class="nav navbar-nav hidden-sm hidden-md hidden-lg"><li class="menu-donate"><a href="http://support.arkansasfoodbank.org/site/Donation2?df_id=1180&amp;mfc_pref=T&amp;1180.donation=form1">Donate</a></li>
+</ul>					<form role="search" method="get" class="search-form form-inline" action="https://arkansasfoodbank.org/">
+  <label class="sr-only">Search for:</label>
+  <div class="input-group">
+    <input type="search" value="" name="s" class="search-field form-control" placeholder="Search" required="">
+    <span class="input-group-btn">
+      <button type="submit" class="search-submit btn btn-default btn-primary"><i class="fa fa-search"></i></button>
+    </span>
+  </div>
+</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar-default hidden-sm hidden-md hidden-lg" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        		<span class="sr-only">Toggle navigation</span>
+        		Menu <i class="fa fa-bars"></i> 
+      		</button>
+    	</div>
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			<ul id="menu-primary-navigation-1" class="nav navbar-nav hidden-sm hidden-md hidden-lg"><li class="dropdown menu-i-need-food"><a class="dropdown-toggle" data-toggle="" data-target="#" title="I Need Food" href="https://arkansasfoodbank.org/who-we-serve/service-map/"><span class="hidden-sm hidden-md">i need food </span><span class="hidden-xs hidden-lg">I Need Food</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-agency-locator-map"><a title="Map" href="https://arkansasfoodbank.org/who-we-serve/service-map/">Agency Locator Map</a></li>
+	<li class="menu-snap"><a href="https://arkansasfoodbank.org/who-we-serve/food-stamps-snap-and-the-arkansas-foodbank/">SNAP</a></li>
+</ul>
+</li>
+<li class="dropdown menu-i-want-to-help"><a class="dropdown-toggle" data-toggle="" data-target="#" title="I Want to Help" href="https://arkansasfoodbank.org/how-can-i-help-2/"><span class="hidden-sm hidden-md">i want to help </span><span class="hidden-xs hidden-lg">I Want to Help</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-donate"><a href="https://arkansasfoodbank.org/how-can-i-help-2/donate/">Donate</a></li>
+	<li class="menu-i-want-to-volunteer"><a title="I Want to Volunteer" href="https://arkansasfoodbank.org/how-can-i-help-2/volunteer/">I Want to Volunteer</a></li>
+	<li class="menu-cause-marketing"><a href="https://arkansasfoodbank.org/how-can-i-help-2/cause-marketing/">Cause Marketing</a></li>
+	<li class="menu-hold-a-food-and-fund-drive"><a href="https://arkansasfoodbank.org/how-can-i-help-2/hold-a-food-and-fund-drive/">Hold a Food and Fund Drive</a></li>
+	<li class="menu-events"><a href="https://arkansasfoodbank.org/how-can-i-help-2/events/">Events</a></li>
+	<li class="menu-join-harvesters"><a href="https://arkansasfoodbank.org/about-us/join-harvesters/">Join Harvesters</a></li>
+	<li class="menu-faith-relations-resources"><a href="https://arkansasfoodbank.org/how-can-i-help-2/faith-relations-resources/">Faith Relations Resources</a></li>
+	<li class="menu-corporate-partners"><a href="https://arkansasfoodbank.org/how-can-i-help-2/corporate-partners/">Corporate Partners</a></li>
+</ul>
+</li>
+<li class="dropdown menu-partner-resources"><a class="dropdown-toggle" data-toggle="" data-target="#" title="partner resources" href="https://arkansasfoodbank.org/agency-resources/"><span class="hidden-sm hidden-md">partner resources </span><span class="hidden-xs hidden-lg">partner resources</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-member-agency"><a href="https://arkansasfoodbank.org/how-can-i-help-2/spread-the-word/join-our-online-community/">Member Agency</a></li>
+	<li class="menu-i-want-to-join"><a title="Join" href="https://arkansasfoodbank.org/agency-resources/how-to-join/">I Want to Join</a></li>
+	<li class="menu-backpack-program-tool-kit"><a href="https://arkansasfoodbank.org/agency-resources/backpack-program-tool-kit/">Backpack Program Tool Kit</a></li>
+	<li class="menu-nutrition-education"><a href="https://arkansasfoodbank.org/agency-resources/nutrition-education/">Nutrition Education</a></li>
+</ul>
+</li>
+<li class="dropdown menu-about-us"><a class="dropdown-toggle" data-toggle="" data-target="#" title="about" href="https://arkansasfoodbank.org/about-us/"><span class="hidden-sm hidden-md">about us </span><span class="hidden-xs hidden-lg">about</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-arkansas-foodbank-info"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/">Arkansas Foodbank Info</a></li>
+	<li class="menu-bridging-hope-capital-campaign"><a href="https://arkansasfoodbank.org/about-us/bridging-hope-capital-campaign/">Bridging Hope Capital Campaign</a></li>
+	<li class="menu-programs"><a href="https://arkansasfoodbank.org/programs/">Programs</a></li>
+	<li class="menu-news-feed"><a href="https://arkansasfoodbank.org/blog/">News Feed</a></li>
+	<li class="menu-staff"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/staff-at-arkansas-foodbank/">Staff</a></li>
+	<li class="menu-board-of-directors"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/our-leaders/board-directors-arkansas-foodbank/">Board of Directors</a></li>
+	<li class="menu-careers"><a href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/careers-job-opportunities/">Careers</a></li>
+	<li class="menu-visit-the-foodbank"><a href="https://arkansasfoodbank.org/about-us/hunger-info/">Visit the Foodbank</a></li>
+	<li class="menu-location-hours"><a href="https://arkansasfoodbank.org/about-us/location-and-hours/">Location &amp; Hours</a></li>
+	<li class="menu-contact-us"><a href="http://support.arkansasfoodbank.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&amp;SURVEY_ID=1141">Contact Us</a></li>
+</ul>
+</li>
+<li class="dropdown menu-gift-shop"><a class="dropdown-toggle" data-toggle="" data-target="#" title="shop" href="https://arkansasfoodbank.org/gifts-from-the-heart-gift-shop/"><span class="hidden-sm hidden-md">gift shop </span><span class="hidden-xs hidden-lg">shop</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-gifts-from-the-heart-gift-shop"><a href="https://arkansasfoodbank.org/gifts-from-the-heart-gift-shop/">Gifts From The Heart Gift Shop</a></li>
+</ul>
+</li>
+</ul>
+				<!-- begin cvo snip email only -->
+	<div class="signup-form">
+		<form action="https://secure.arkansasfoodbank.org/site/SSurvey" method="post">
+			
+			<input type="hidden" name="cons_info_component" id="cons_info_component" value="t">
+			<input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="1162">
+			<p><span>Sign Up For eNews</span>
+			<input type="text" name="cons_email" id="cons_email" value="Email Address" size="14" maxlength="255" onfocus="if(this.value == 'Email Address'){this.value='';}" onblur="if(this.value == ''){this.value='Email Address';}">
+			<span style="display:none"><input type="text" name="denySubmit" id="denySubmit" value="" alt="This field is used to prevent form submission by scripts.">Please leave this field empty</span>
+			<input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="GO" class="Button"></p>
+		</form>
+	</div>
+	<!-- end cvo snip email only -->			
+		</div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</header>
+
+
+      <main class="main" role="main">
+
+          
+            
+<!-- Home Slider -->
+	<section id="media" class="brand-color-primary">
+
+		<div class="container-fluid">
+
+		 	<div class="row">
+		 		<div class="col-sm-12">
+		 			
+					<div id="blackbaudbc_5e801004e4a02" class="carousel slide">
+	<ol class="carousel-indicators">
+					<li data-target="#blackbaudbc_5e801004e4a02" data-slide-to="0" data-interval="5000" class="active"></li>
+			</ol>
+	<div class="carousel-inner">
+					<a class="item active" id="5037" href="https://arkansasfoodbank.org/arkansas-foodbanks-response-to-covid-19/">
+				<div class="gradient"></div>
+				<img src="https://arkansasfoodbank.org/wp-content/uploads/2020/03/banner-for-website-1-800x214.jpg" class="attachment-slider-img size-slider-img wp-post-image" alt="">							</a>
+			</div>
+			<a class="left carousel-control" href="#blackbaudbc_5e801004e4a02" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#blackbaudbc_5e801004e4a02" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+<script>
+jQuery(document).ready(function () {
+	jQuery('#blackbaudbc_5e801004e4a02').carousel({
+		interval: 5000	});
+});
+</script>
+	
+
+				</div>
+				
+			</div>
+		</div>	
+	</section>
+
+
+<!-- Calls to Action -->
+
+ 	<section id="home-ctas">
+		<div class="container-fluid">
+		 	<div class="row">
+		 		
+                	<div class="col-xs-12 col-sm-4 col-md-4 cta-1 cta">
+    		<a href="https://arkansasfoodbank.org/about-us/" onclick="_gaq.push(['_trackEvent', 'CTA Button', 'Click', 'Home Learn'); ?>']);">
+    			<h4>Learn</h4>
+    			    				<p>what we do</p>
+    			    		</a>
+    	</div>
+                	<div class="col-xs-12 col-sm-4 col-md-4 cta-2 cta">
+    		<a href="https://arkansasfoodbank.org/how-can-i-help-2/" onclick="_gaq.push(['_trackEvent', 'CTA Button', 'Click', 'Home Feed'); ?>']);">
+    			<h4>Feed</h4>
+    			    				<p>give back today</p>
+    			    		</a>
+    	</div>
+                	<div class="col-xs-12 col-sm-4 col-md-4 cta-3 cta">
+    		<a href="https://arkansasfoodbank.org/how-can-i-help-2/volunteer/" onclick="_gaq.push(['_trackEvent', 'CTA Button', 'Click', 'Home Volunteer'); ?>']);">
+    			<h4>Volunteer</h4>
+    			    				<p>how can I help</p>
+    			    		</a>
+    	</div>
+    			</div>
+		</div>
+	</section>
+
+
+<!-- Home Info -->
+
+ 	<section id="home-info">
+		<div class="container-fluid">
+		 	<div class="row">
+		 		<div class="col-sm-12">
+		 			<h2 style="text-align: center;">Who We Are</h2>
+<p style="text-align: center;">United to Fight Hunger</p>
+		 									<div class="bb-section__after"><p><a class="btn btn-primary" href="https://arkansasfoodbank.org/about-us/arkansas-rice-depot-info/our-partners/">LEARN MORE!</a></p>
+</div>
+						
+		 		</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Home Features -->
+
+	<section id="home-features">
+		<div class="container-fluid">
+		 	<div class="row">
+				
+	<div class="feature-title col-sm-12">
+		<h2>Hunger Facts</h2>
+	</div>
+		    		<div class="feature-item col-xs-12 col-sm-12 col-md-3">
+			<div class="inner-block">
+									<i class="fa fa-star"></i>				
+				<h4>23.6%</h4>
+
+								<p>of Arkansas children have limited access to adequate food</p>
+
+				
+
+			</div>
+		</div>
+		    		<div class="feature-item col-xs-12 col-sm-12 col-md-3">
+			<div class="inner-block">
+									<i class="fa fa-star"></i>				
+				<h4>1 in 5</h4>
+
+								<p>Arkansans struggle to provide enough food for their family</p>
+
+				
+
+			</div>
+		</div>
+		    		<div class="feature-item col-xs-12 col-sm-12 col-md-3">
+			<div class="inner-block">
+									<i class="fa fa-star"></i>				
+				<h4>2nd</h4>
+
+								<p>Arkansas ranks 2nd in the nation for very low food security </p>
+
+				
+
+			</div>
+		</div>
+		    		<div class="feature-item col-xs-12 col-sm-12 col-md-3">
+			<div class="inner-block">
+									<i class="fa fa-star"></i>				
+				<h4>17.3%</h4>
+
+								<p>of Arkansans are facing hunger</p>
+
+				
+
+			</div>
+		</div>
+		<div class="bb-section__after"><p><a class="btn btn-primary" href="https://arkansasfoodbank.org/how-can-i-help-2/donate/">DONATE&nbsp;TODAY</a></p>
+</div>
+				</div>
+		</div>
+	</section>
+
+
+<!-- Home Widgets -->
+
+	<section id="home-widgets">
+		<div class="container-fluid">
+		 	<div class="row">
+						    	    		<div class="col-sm-8 widget">
+		
+			<div class="title-row row">
+				<div class="title-col col-sm-12">
+					<h2>News Feed</h2>
+				</div>
+			</div>
+			<!-- Twitter Feed -->
+						<div class="row widget-cont media-cont">
+				<div class="media-col col-sm-12">
+					<div class="media-image  col-sm-5">
+												<img src="https://arkansasfoodbank.org/wp-content/uploads/2020/03/IMG_5018-scaled.jpg">
+					</div>
+					<div class="media-content col-sm-7">
+						<h4>Creating Healthier Pantries</h4>
+						<p>Thanks to generous support from Ambetter from Arkansas Health and Wellness, we have made significant strides in our nutrition efforts. Over the past year, the Arkansas Foodbank, with the help of nutrition ambassadors from the University of Central Arkansas and the University of Arkansas for Medical Sciences, has hosted numerous nutrition workshops for our agencies to learn more about providing nutrition education at their pantries. <a href="https://arkansasfoodbank.org/creating-healthier-pantries/">Read more…</a></p>
+<div id="__if72ru4sdfsdfrkjahiuyi_once" style="display: none;"></div>
+<div id="__hggasdgjhsagd_once" style="display: none;"></div>
+					</div>
+				</div>
+	    	</div>
+
+
+			<!-- Custom Text and Media -->
+			
+						<div class="button-row row">
+				<div class="button-col col-sm-12">
+					<a href="https://arkansasfoodbank.org/blog/" onclick="_gaq.push(['_trackEvent', 'Read More', 'Click', 'https://arkansasfoodbank.org/blog/']);" class="button">
+		    					    				Read More		    					    		</a>
+		    	</div>
+	    	</div>
+			
+		</div>
+		    	    		<div class="col-sm-4 widget">
+		
+			<div class="title-row row">
+				<div class="title-col col-sm-12">
+					<h2>Twitter Feed</h2>
+				</div>
+			</div>
+			<!-- Twitter Feed -->
+							<div class="row widget-cont twitter-feed">
+					<div class="col-sm-12">
+													<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 100%; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px; height: 8315.81px;" data-widget-id="profile:arfoodbank" title="Twitter Timeline"></iframe> <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>											</div>
+				</div>
+						
+
+			<!-- Facebook Feed -->
+			
+						<div class="button-row row">
+				<div class="button-col col-sm-12">
+					<a href="https://twitter.com/arfoodbank" onclick="_gaq.push(['_trackEvent', 'All News', 'Click', 'https://twitter.com/arfoodbank']);" target="_blank" class="button">
+		    					    				All News		    					    		</a>
+		    	</div>
+	    	</div>
+			
+		</div>
+	
+
+
+			
+			</div>
+		</div>
+	</section>
+
+
+<!-- Latest Posts -->
+
+
+
+<!-- Bottom Module -->
+
+ 	<section id="bottom-module" style="background:url('https://arkansasfoodbank.org/wp-content/uploads/2015/04/mapgreen.jpg') no-repeat scroll center center / cover ;">
+		<div class="container-fluid">
+		 	<div class="row">
+		 		<div class="bottom-col col-sm-12">
+		 			<h2>Partners in Our Area</h2>
+		 									<a href="https://arkansasfoodbank.org/who-we-serve/service-map/" class="bb-bottom-button">VIEW PARTNER LOCATIONS</a>
+						
+		 		</div>
+			</div>
+		</div>
+	</section>
+
+				
+	
+
+
+
+
+
+
+
+          
+           
+
+      </main>
+      <footer id="footer" role="contentinfo">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="social-cont col-sm-12 col-md-7">
+									<div class="social-title">
+						<h2>Connect with us</h2>
+					</div>
+					<ul id="menu-social-nav" class="menu-social-nav-container"><li class="menu-facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/arkansasfoodbank/">Facebook</a></li>
+<li class="menu-twitter"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/arfoodbank">Twitter</a></li>
+<li class="menu-instagram"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/arfoodbank/">Instagram</a></li>
+</ul>		
+							
+				<div class="footer-copyright">
+					<p>
+						<span class="name">© 2020 Arkansas Foodbank</span> 
+					</p><p>
+				</p></div>		
+			</div>
+
+			<div class="footer-info col-sm-12 col-md-5">
+				<div class="footer-address">
+					<span class="address">4301 W 65th Street, Little Rock AR 72209  | Phone: 501.565.8121</span>
+				</div>
+				
+<!-- 				<div class="footer-contact-info">
+					<span class="phone"> | Phone: </span>
+					<span class="email">Email: <a href="mailto:"></a></span>
+				</div> -->
+				<nav class="footer-admin-nav-wrap" role="navigation">
+					<ul id="menu-footer-nav" class="footer-admin-nav"><li class="menu-privacy-policy"><a href="https://arkansasfoodbank.org/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-contact-us"><a href="http://support.arkansasfoodbank.org/site/Survey?ACTION_REQUIRED=URI_ACTION_USER_REQUESTS&amp;SURVEY_ID=1141">Contact Us</a></li>
+</ul>				</nav>
+				
+			</div>
+			
+		</div>
+	</div>
+</footer><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWZZZKD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/plugins/wp-google-map-gold/assets/js/vendor/webfont/webfont.js?ver=5.2.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var spuvar = {"is_admin":"","disable_style":"","ajax_mode":"1","ajax_url":"https:\/\/arkansasfoodbank.org\/wp-admin\/admin-ajax.php","ajax_mode_url":"https:\/\/arkansasfoodbank.org\/?spu_action=spu_load","pid":"82","is_front_page":"1","is_category":"","site_url":"https:\/\/arkansasfoodbank.org","is_archive":"","is_search":"","is_preview":"","seconds_confirmation_close":"5"};
+var spuvar_social = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/plugins/popups/public/assets/js/public.js?ver=1.9.3.8"></script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/scripts/modernizr-min.js"></script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/scripts/main.js"></script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/scripts/bootstrap-min.js"></script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0_Theme11/assets/scripts/backgroundIMG.js"></script>
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+<!-- fde7478964242c542017d9127fa8cf23 -->    </div>
+
+
+  <!--   <div class="wrap container-fluid" role="document">
+      <div class="content row">
+        <main class="main" role="main">
+                  </main>
+                  <aside class="sidebar" role="complementary">
+	          <div class="row">
+		          <div class="col-sm-6">
+																 
+		            <?php// if(get_field('2col_spsc')) { ?>
+						<section class="2-col-template-spsc">
+													</section>
+							          </div>
+		          <div class="col-sm-6">
+		          
+							            								          </div>
+	          </div>
+          </aside>
+              </div>
+    </div> -->
+ 
+  
+
+<iframe height="0" width="0" style="display: none; visibility: hidden;" src="//6166351.fls.doubleclick.net/activityi;src=6166351;type=visits1;cat=afb-w0;ord=1707630369131;gtm=2wg3i0;auiddc=1494546616.1585451014;~oref=https%3A%2F%2Farkansasfoodbank.org%2F?"></iframe><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.d0f13be8321eb432fba28cfc1c3351b1.html?origin=https%3A%2F%2Farkansasfoodbank.org" title="Twitter settings iframe" style="display: none;"></iframe>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","211840623077139");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=211840623077139&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" src="https://arkansasfoodbank.org/wp-content/themes/bbwp-3.0/assets/scripts/bbi-base.js"></script> <!-- Popups v1.9.3.8 - https://wordpress.org/plugins/popups/ --><style type="text/css">
+#spu-4995 .spu-close{
+	font-size: 30px;
+	color:#666;
+	text-shadow: 0 1px 0 #fff;
+}
+#spu-4995 .spu-close:hover{
+	color:#000;
+}
+#spu-4995 {
+	background-color: #eeeeee;
+	background-color: rgba(238,238,238,1);
+	color: #333;
+	padding: 25px;
+		border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-box-shadow:  0px 0px 10px 1px #666;
+	-webkit-box-shadow:  0px 0px 10px 1px #666;
+	box-shadow:  0px 0px 10px 1px #666;
+	width: 600px;
+
+}
+#spu-bg-4995 {
+	opacity: 0.5;
+	background-color: #000;
+}
+/*
+		* Add custom CSS for this popup
+		* Be sure to start your rules with #spu-4995 { } and use !important when needed to override plugin rules
+		*/</style>
+<div class="spu-bg" id="spu-bg-4995"></div>
+<div class="spu-box  spu-centered spu-total- " id="spu-4995" data-box-id="4995" data-trigger="seconds" data-trigger-number="2" data-spuanimation="fade" data-tconvert-cookie="d" data-tclose-cookie="d" data-dconvert-cookie="0" data-dclose-cookie="0" data-nconvert-cookie="spu_conversion_4995" data-nclose-cookie="spu_closing_4995" data-test-mode="0" data-auto-hide="0" data-close-on-conversion="1" data-bgopa="0.5" data-total="" style="display: none;" data-width="600">
+	<div class="spu-content"><p style="margin-top: 0px; padding-top: 0px;"><a href="https://arkansasfoodbank.org/arkansas-foodbanks-response-to-covid-19/"><img class="alignnone wp-image-5002 size-full" src="https://arkansasfoodbank.org/wp-content/uploads/2020/03/COVID-19-1.jpg" alt="" width="600" height="400"></a></p>
+<h3 style="margin-bottom: 0px; padding-bottom: 0px;"><a href="https://arkansasfoodbank.org/arkansas-foodbanks-response-to-covid-19/">Click here</a> for any updates on the Arkansas Foodbank’s response to COVID-19</h3>
+</div>
+	<span class="spu-close spu-close-popup top_right"><i class="spu-icon spu-icon-close"></i></span>
+	<span class="spu-timer"></span>
+	</div>
+<!-- / Popups Box -->
+<div id="fb-root" class=" fb_reset"></div></body></html>

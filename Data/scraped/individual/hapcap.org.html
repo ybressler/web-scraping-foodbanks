@@ -1,0 +1,461 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noodp,noydir">
+    <meta name="p:domain_verify" content="26173dcf27b639680489722681611f67">
+    <meta name="Description" content="Mobilizes resources to empower individuals and communities through advocacy and quality services that promote self-sufficiency and improved quality of life.">
+    <title>Southeastern Ohio Food Bank | HAPCAP</title>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="http://hapcap.org/admin/js/jquery.js"></script>
+
+    <!--jQuery Validation Engine-->
+    <link rel="stylesheet" href="http://hapcap.org/css/validationEngine.jquery.css">
+    <script type="text/javascript" src="http://hapcap.org/js/jquery.validationEngine-en.js"></script>
+    <script type="text/javascript" src="http://hapcap.org/js/jquery.validationEngine.js"></script>
+
+    <!--Custom jQuery-->
+    <script type="text/javascript" src="http://hapcap.org/js/custom.js"></script>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/favicon.ico?v=2">
+    
+    <!--Twitter Feed Integration-->
+    <link href="http://hapcap.org/twitter/jquery.tweet.css" media="all" rel="stylesheet" type="text/css">
+    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8" src="/twitter/jquery.tweet.js"></script>
+	<script language="javascript" src="/twitter/jquery.tweet.min.js" type="text/javascript"></script>
+
+
+	<script type="text/javascript">
+    jQuery(function ($) {
+    $("#ticker").tweet({
+        username: "hapcap", // define your twitter username
+        modpath: './twitter/index.php',
+        page: 1,
+        avatar_size: 30, // avatar size in px
+        count: 10, // how many tweets to show
+        //refresh_interval: 60,   
+        loading_text: "loading tweets ..."
+    })});
+    
+    $(document).ready(function() {
+		var ul = $(this).find(".tweet_list");
+		var ticker = function() {
+		setTimeout(function() {
+		var top = ul.position().top;
+		var h = ul.height();
+		var incr = (h / ul.children().length);
+		var newTop = top - incr;
+		if (h + newTop <= 0) newTop = 0;
+		ul.animate( {top: newTop}, 500 );
+		ticker();
+		}, 4000);
+		};
+	ticker();
+});
+</script>
+
+
+<style type="text/css">
+      #ticker {
+        height: 8em;
+        overflow-y: hidden;
+        position: relative;
+        border-radius: 0.5em;
+      }
+      #ticker ul.tweet_list {
+      	margin: 3px 0;
+		padding: 0.5em;
+        position: absolute;
+        
+      }
+      #ticker ul.tweet_list li {
+        height: 8em;
+        list-type: none; 
+		margin: 0;
+		padding: 3px 0 3px 0;
+      }
+    </style>
+
+    <!--Stylesheet-->
+    <link type="text/css" rel="stylesheet" href="http://hapcap.org/css/960_24_col.css">
+    <link type="text/css" rel="stylesheet" href="http://hapcap.org/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="http://hapcap.org/css/text.css">
+    <link type="text/css" rel="stylesheet" href="http://hapcap.org/css/styles.css">
+    <link type="text/css" rel="stylesheet" href="http://hapcap.org/css/content.css">
+</head>
+<body>
+<div class="container_24">
+    <div id="header"><img class="img-center" src="images/logo.gif" alt="">&nbsp;<img class="img-right2" src="upload/PREFERRED USE - Member of Feeding America Logo_30percent.jpg" alt=""></div>
+</div>
+<div id="nav">
+    <ul style="width: 1208px;">
+<li><a href="index.php" title="Home">Home</a>
+</li>
+<li><a href="#" title="About Us">About Us</a>
+<ul>
+<li style=""><a href="http://hapcap.org/jobs" title="Job Opportunities">Job Opportunities</a>
+</li>
+<li style=""><a href="http://hapcap.org/structure" title="Our Structure">Our Structure</a>
+</li>
+<li style=""><a href="http://hapcap.org/media" title="Newsletters &amp; Reports">Newsletters &amp; Reports</a>
+</li>
+<li style=""><a href="http://hapcap.org/latestnews" title="Latest News">Latest News</a>
+</li>
+<li style=""><a href="http://hapcap.org/calendar" title="Trimble Township Community Calendar">Trimble Township Community Calendar</a>
+</li>
+<li style=""><a href="http://hapcap.org/communitycalendar" title="Community Calendar">Community Calendar</a>
+</li>
+<li style=""><a href="http://hapcap.org/history" title="Our History">Our History</a>
+</li>
+</ul>
+</li>
+<li><a href="http://hapcap.org/partnerships" title="Partnerships">Partnerships</a>
+</li>
+<li><a href="http://hapcap.org/volunteer" title="Get Involved">Get Involved</a>
+<ul>
+<li style=""><a href="http://hapcap.org/jobs" title="Job Opportunities">Job Opportunities</a>
+</li>
+<li style=""><a href="http://hapcap.org/volunteer" title="Volunteer">Volunteer</a>
+</li>
+<li style=""><a href="http://hapcap.org/cdbgbidprojects" title="Contractor Bids">Contractor Bids</a>
+</li>
+</ul>
+</li>
+<li><a href="#" title="Programs">Programs</a>
+<ul>
+<li style=""><a href="#" title="Child / Youth">Child / Youth<div class="right-arrow">»</div></a>
+<ul>
+<li style=""><a href="http://hapcap.org/earlyheadstart" title="Early Head Start &amp; Pregnancy Services">Early Head Start &amp; Pregnancy Services</a>
+</li>
+<li style=""><a href="http://hapcap.org/headstart" title="Head Start - Free Pre-School Services">Head Start - Free Pre-School Services</a>
+</li>
+<li style=""><a href="http://hapcap.org/summerfeeding" title="Summer Feeding Program">Summer Feeding Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/summercamp" title="Summer Camp Program">Summer Camp Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/hockingworkforce" title="Hocking Workforce Youth Program">Hocking Workforce Youth Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/freecarseat" title="Free Car Seat Program">Free Car Seat Program</a>
+</li>
+</ul>
+</li>
+<li style=""><a href="#" title="Emergency Services">Emergency Services<div class="right-arrow">»</div></a>
+<ul>
+<li style=""><a href="http://hapcap.org/emergencyfood" title="The Emergency Food Assistance Program (TEFAP)">The Emergency Food Assistance Program (TEFAP)</a>
+</li>
+<li style=""><a href="http://hapcap.org/emergencyheating" title="Winter Crisis Heating Assistance Program">Winter Crisis Heating Assistance Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/summercooling" title="Summer Cooling Crisis Program">Summer Cooling Crisis Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/percentage" title="Percentage of Income Payment (PIPP) Plan">Percentage of Income Payment (PIPP) Plan</a>
+</li>
+<li style=""><a href="http://hapcap.org/safelink" title="SafeLink - Free Cellphone Assistance">SafeLink - Free Cellphone Assistance</a>
+</li>
+<li style=""><a href="http://hapcap.org/heap" title="Regular HEAP">Regular HEAP</a>
+</li>
+</ul>
+</li>
+<li style=""><a href="#" title="Food &amp; Nutrition">Food &amp; Nutrition<div class="right-arrow">»</div></a>
+<ul>
+<li style=""><a href="http://hapcap.org/foodbank" title="The Southeastern Ohio Food Bank" class="active">The Southeastern Ohio Food Bank</a>
+</li>
+<li style=""><a href="http://hapcap.org/commodity" title="Commodity Supplemental Food Program">Commodity Supplemental Food Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/pantries" title="Pantries">Pantries</a>
+</li>
+<li style=""><a href="http://hapcap.org/seniornutrition" title="Senior Nutrition Programs">Senior Nutrition Programs</a>
+</li>
+<li style=""><a href="http://hapcap.org/catering" title="Catering">Catering</a>
+</li>
+<li style=""><a href="http://hapcap.org/seniornutrition" title="Meals on Wheels">Meals on Wheels</a>
+</li>
+<li style=""><a href="http://hapcap.org/servsafe" title="ServSafe Training">ServSafe Training</a>
+</li>
+</ul>
+</li>
+<li style=""><a href="#" title="Transportation">Transportation<div class="right-arrow">»</div></a>
+<ul>
+<li style=""><a href="http://hapcap.org/logantransit" title="Logan Public Transit">Logan Public Transit</a>
+</li>
+<li style=""><a href="http://hapcap.org/athensmobility" title="Athens Mobility Management">Athens Mobility Management</a>
+</li>
+<li style=""><a href="http://hapcap.org/intercity" title="Intercity Bus Route (GoBus)">Intercity Bus Route (GoBus)</a>
+</li>
+<li style=""><a href="http://hapcap.org/transportationconsulting" title="Transportation Consulting Services">Transportation Consulting Services</a>
+</li>
+<li style=""><a href="http://hapcap.org/athenstransit" title="Athens Public Transit">Athens Public Transit</a>
+</li>
+<li style=""><a href="http://hapcap.org/athensodt" title="Athens On Demand Transit">Athens On Demand Transit</a>
+</li>
+</ul>
+</li>
+<li style=""><a href="#" title="Housing">Housing<div class="right-arrow">»</div></a>
+<ul>
+<li style=""><a href="http://hapcap.org/housing" title="Housing Development">Housing Development</a>
+</li>
+<li style=""><a href="http://hapcap.org/homerepair" title="Home Repair">Home Repair</a>
+</li>
+<li style=""><a href="http://hapcap.org/homerehab" title="Home Rehabilitation">Home Rehabilitation</a>
+</li>
+<li style=""><a href="http://hapcap.org/homebuyerassistance" title="Home Buyer Assistance">Home Buyer Assistance</a>
+</li>
+<li style=""><a href="http://hapcap.org/fairhousing" title="Fair Housing">Fair Housing</a>
+</li>
+<li style=""><a href="http://hapcap.org/weatherization" title="Weatherization / Energy Assistance">Weatherization / Energy Assistance</a>
+</li>
+<li style=""><a href="http://hapcap.org/habitatforhumanity" title="Habitat for Humanity Partnership">Habitat for Humanity Partnership</a>
+</li>
+</ul>
+</li>
+<li style=""><a href="#" title="Community Services">Community Services<div class="right-arrow">»</div></a>
+<ul>
+<li style=""><a href="http://hapcap.org/learnandwork" title="Learn &amp; Work Program">Learn &amp; Work Program</a>
+</li>
+<li style=""><a href="http://hapcap.org/collegescholarships" title="College Scholarships">College Scholarships</a>
+</li>
+<li style=""><a href="http://hapcap.org/communitydevelopment" title="Community Development Block Grant (CDBG)">Community Development Block Grant (CDBG)</a>
+</li>
+<li style=""><a href="http://hapcap.org/consulting" title="Consulting, Administrative &amp; IT Services">Consulting, Administrative &amp; IT Services</a>
+</li>
+<li style=""><a href="http://hapcap.org/environmental" title="Environmental Review">Environmental Review</a>
+</li>
+<li style=""><a href="http://hapcap.org/ohiobenefit" title="The Ohio Benefit Bank (OBB)">The Ohio Benefit Bank (OBB)</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://hapcap.org/foodpantries" title="Find a Food Pantry">Find a Food Pantry</a>
+</li>
+<li><a href="#" title="Facilities">Facilities</a>
+<ul>
+<li style=""><a href="http://hapcap.org/locations" title="Locations">Locations</a>
+</li>
+<li style=""><a href="http://hapcap.org/rental" title="Rent a Facility">Rent a Facility</a>
+</li>
+</ul>
+</li>
+<li><a href="http://hapcap.org/donate" title="Donate">Donate</a>
+</li>
+<li><a href="http://hapcap.org/contact-us" title="Contact Us">Contact Us</a>
+</li>
+</ul>
+    <div class="clear"></div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var url;
+            var width = 12;
+            var current_url = 'http://hapcap.org/foodbank';
+            $('#nav > ul li').each(function(){
+                width += $(this).width();
+                url = $('a', this).attr('href');
+                if(url == current_url)
+                    $('a', this).addClass('active');
+            })
+            $('#nav ul ul li').each(function() {
+                if ($(this).has('ul').length) {
+                    $('a:first', this).append('<div class="right-arrow">&raquo;</div>');
+                }
+            })
+            $('#nav a[href="#"]').click(function(e){ e.preventDefault(); });
+            $('#nav > ul').width(width);
+        })
+    </script>
+</div>
+<div class="bg">
+    <div class="container_24">    <div id="gallery">
+                    <a href="/lib/phpThumb/phpThumb.php?src=/images/banners/foodbank-truck.jpg&amp;w=960&amp;h=413" class="" style="display: none;"><img src="/lib/phpThumb/phpThumb.php?src=/images/banners/foodbank-truck.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/rfc.jpg&amp;w=960&amp;h=413" class="" style="display: none;"><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/rfc.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/foodbank-potato.jpg&amp;w=960&amp;h=413" class="show" style="display: inline;"><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/foodbank-potato.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/kitchen.jpg&amp;w=960&amp;h=413" class=""><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/kitchen.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/rfc-semi.jpg&amp;w=960&amp;h=413" class=""><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/rfc-semi.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/foodbank-veg2.jpg&amp;w=960&amp;h=413" class=""><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/foodbank-veg2.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/rfc-mow.jpg&amp;w=960&amp;h=413" class=""><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/rfc-mow.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                        <a href="/lib/phpThumb/phpThumb.php?src=
+/images/banners/foodbank-warehouse.jpg&amp;w=960&amp;h=413" class=""><img src="/lib/phpThumb/phpThumb.php?src=
+/images/banners/foodbank-warehouse.jpg&amp;w=960&amp;h=413" alt="" width="960px" height="414px"></a>
+                </div>
+    <div class="clear"></div>
+    <div id="content" style="padding-top: 30px;">
+    <div id="content-left" class="grid_6" style="height: 2769px;">
+    <div class="padd">
+        
+
+    
+    
+    
+<p style="text-align: center;"><strong><span style="font-size: x-large;">&nbsp;Food &amp; Nutrition</span></strong></p>
+<hr style="width: 100%;" width="100%">
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><span style="font-size: medium;"><span style="text-decoration: underline;"><a href="../commodity"><span style="text-decoration: underline;">Commodity Supplemental Food Program (CSFP)</span></a></span></span></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><span style="text-decoration: underline;"><span style="font-size: medium;"><a href="../seniornutrition"><span style="text-decoration: underline;">Senior Nutrition Programs</span></a></span></span></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><span style="text-decoration: underline;"><span style="font-size: medium;"><a href="../pantries"><span style="text-decoration: underline;">Pantries Order Here</span></a></span></span></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><a href="../catering"><span style="text-decoration: underline;"><span style="font-size: medium;">Catering</span></span></a></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><a href="../summerfeeding"><span style="text-decoration: underline;"><span style="font-size: medium;">Menus</span></span></a></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><a href="../foodbankcalendars"><span style="text-decoration: underline;"><span style="font-size: medium;">Calendars</span></span></a></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="text-decoration: underline;"><a href="../volunteer"><span style="text-decoration: underline;"><span style="font-size: medium;">Volunteer</span></span></a></span></span></strong></p>
+<p style="text-align: center;"><strong><span style="text-decoration: underline;"><span style="font-size: medium;"><span style="text-decoration: underline;"><a href="../rfccontactus"><span style="text-decoration: underline;">Contact RFC</span></a></span></span></span></strong></p>
+<hr>
+<h3 style="text-align: center;"><strong><span style="font-family: georgia, palatino; font-size: x-large;">Partners</span></strong></h3>
+<hr style="width: 100%;" width="100%">
+<p><img style="display: block; margin-left: auto; margin-right: auto;" title=" " src="../upload/feeding-america.jpg" alt="" width="150" height="89" border="0"></p>
+<p style="text-align: center;"><a href="http://www.ohiofoodbanks.org"><img title="Ohio Association of Food Banks HAPCAP Southeastern Ohio Food Bank" src="../upload/OH_Foodbanks_Logo.jpg" alt="Ohio Association of Food Banks HAPCAP Southeastern Ohio Food Bank" width="200" height="196" border="0"></a></p>
+<p style="text-align: center;"><img title="WalMart Logo" src="../images/Wal-MartLogo.jpg" alt="WalMart Logo" width="200" height="59" border="0"></p>
+<p style="text-align: center;"><img title="WalMart Fighting Hunger" src="../images/Wal-MartFightingHungerLogo.jpg" alt="WalMart Fighting Hunger" width="200" height="152" border="0"></p>
+<p style="text-align: center;"><a href="http://www.communityshares.net/" target="_blank" rel="noopener"><img title="Community Shares of Mid-Ohio HAPCAP Southeastern Ohio Food Bank" src="../images/CommunitySharesofmidohiologo.jpg" alt="Community Shares of Mid-Ohio HAPCAP Southeastern Ohio Food Bank" width="200" height="78" border="0"></a></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img title="Banfield Charitable Trust" src="../upload/Banfield-horiz.jpg" alt="Banfield Charitable Trust" width="200" height="58" border="0"></p>
+
+    </div>
+</div><div id="content-right" class="grid_18"><div class="padd">
+
+    
+    
+    
+<p style="text-align: center;" align="JUSTIFY"><strong> <span style="font-size: xx-large;"> The Southeastern Ohio Food Bank&nbsp; </span> </strong> &nbsp;</p>
+<hr style="width: 100%;" width="100%">
+<p style="text-align: center;" align="JUSTIFY"><strong> <span style="font-size: xx-large;"> <iframe src="http://www.youtube.com/embed/sxNGR_bqA2c" width="425" height="350" frameborder="0"></iframe> </span> </strong></p>
+<hr>
+<p style="text-align: center;" align="JUSTIFY"><span style="font-size: medium;"> Located at HAPCAP's Regional Food Center the Southeastern Ohio Food Bank has been working to alleviate hunger throughout our communities for three decades. &nbsp;We work with federal, state and local &nbsp; </span></p>
+<p align="JUSTIFY"><span style="font-size: medium;"> <img class="img-left" title="HAPCAP Southeastern Ohio Food Bank Regional Food Center" src="../upload/foodbankinsideborder.jpg" alt="HAPCAP Southeastern Ohio Food Bank Regional Food Center" width="350" height="241" border="0"> </span> <span style="font-size: medium;"> organizations and community members to provide food to over 70+ food pantries, soup kitchens and congregate meal sites throughout Southeastern Ohio. &nbsp; </span> &nbsp;&nbsp;</p>
+<p style="text-align: center;" align="JUSTIFY"><em> <strong style="font-size: large;"> Our mission is to channel surplus food to those who do not have enough, with a goal of making a positive difference in their lives. </strong> </em></p>
+<p align="JUSTIFY"><span style="font-size: medium;"> In order to achieve our mission we operate hunger related programs throughout the year to supply our elderly and home bound neighbors, children who struggle with hunger after school and during the summer months and families and individuals in need of hunger relief with nutritious meals. </span></p>
+<div style="cursor: pointer;"><hr style="width: 100%;" width="100%">
+<h3 class="western" align="CENTER"><strong> <span style="font-size: x-large;"> How Does a Food Bank Work? </span> </strong></h3>
+</div>
+<div id="a1" class="texter">
+<p align="JUSTIFY"><span style="font-size: medium;"> <img title="areas we serve southeastern ohio food bank" src="../upload/Areasweservefinalbordered.jpg" alt="Areas we serve southeastern ohio food bank" width="250" height="270" border="0"> Southeastern Ohio Food Bank is a large warehouse operation that receives surplus food donations from the government, major food manufacturers, wholesalers and retailers.&nbsp; </span></p>
+<p align="JUSTIFY"><span style="font-size: medium;"> The food is distributed to charitable feeding organizations (food pantries and soup kitchens) throughout 10 counties in Southeastern Ohio. Either these organizations can pick up the food or it can be delivered. Once delivered, the organizations distribute the food throughout their communities to those most in need. &nbsp;The food is also used in many of our programs geared towards providing food for the elderly, disabled and children struggling with hunger. </span></p>
+<p style="text-align: center;" align="left"><span style="font-size: x-large;"> <strong> Our 10 county-service area includes: </strong> </span></p>
+<table style="width: 675px; border: 10px solid #a5a5a5;" border="10" rules="rows" cellspacing="6" cellpadding="10" align="center">
+<tbody>
+<tr>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Athens </span> </strong></td>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Gallia </span> </strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Hocking </span> </strong></td>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Jackson </span> </strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Lawrence </span> </strong></td>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Meigs </span> </strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Morgan </span> </strong></td>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Perry </span> </strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Vinton </span> </strong></td>
+<td style="text-align: center;"><strong> <span style="font-size: x-large;"> Washington </span> </strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="cursor: pointer;"><hr style="width: 100%;" width="100%">
+<p class="western" style="text-align: center;" align="CENTER"><strong> <span style="font-size: xx-large;"> The Senior Nutrition Central Kitchen </span> </strong></p>
+<p class="western" style="text-align: center;" align="CENTER"><span style="font-size: medium;"> Also located inside of the Regional Food Center is the Senior Nutrition Central Kitchen. &nbsp; </span></p>
+<p style="text-align: center;"><span style="font-size: medium;"> The food for Meals on Wheels and the senior dining sites, as well as the summer feeding sites and meals for Head Start Children, are prepared at the RFC’s state of the art Central Kitchen Facility. The central kitchen provides over 1,200 meals every day which are prepared by our permanent staff as well as work study students from Hocking College and Tri County adult career center. We also work with Hocking and Athens County job and family services and police departments to allow their clients to work off community service hours by preparing food for those in need.&nbsp; </span></p>
+<p style="text-align: center;"><span style="font-size: medium;"> The Central Kitchen is also available for <strong> <span style="text-decoration: underline;"> <span style="text-decoration: underline;"> <a title="Southeastern Ohio Food Bank Catering" href="../catering"> <span style="text-decoration: underline;"> catering </span> </a> </span> </span> </strong> purposes. </span> &nbsp;</p>
+<hr style="width: 100%;" width="100%">
+<p class="western" style="text-align: center;" align="CENTER"><span style="font-size: medium;"> Southeastern Ohio Food Bank is one of 196 Second Harvest Regional Food banks throughout the United States and Puerto Rico affiliated with the national </span> <span style="font-size: medium;"> organization&nbsp; </span> <span style="text-decoration: underline; font-size: medium;"> <strong> <span style="text-decoration: underline;"> <a href="http://www.feedingamerica.org/" target="_blank" rel="noopener"> <span style="text-decoration: underline;"> Feeding America </span> </a> </span> </strong> </span> <span style="font-size: medium;"> <span style="text-decoration: underline;"> <strong> <span style="text-decoration: underline;"> . </span> </strong> </span> The food bank also is one of 12 food banks affiliated with the&nbsp; <span style="text-decoration: underline;"> <strong> <a href="http://oashf.org/" target="_new"> <span style="text-decoration: underline;"> Ohio Association of Food Banks </span> </a> </strong> </span> </span> &nbsp;(OAF).<br> <img src="../upload/OH_Foodbanks_Logo.jpg" alt="" width="200" height="196" border="0"></p>
+<p style="text-align: center;" align="JUSTIFY"><span style="font-size: medium;"> The mission of Feeding America and Ohio Association of Second Harvest Food Banks is to assist the nation and state to&nbsp; feed America's hungry through a nationwide network of member food banks and engage our country in the fight to end hunger. </span></p>
+<p style="text-align: center;" align="JUSTIFY"><span style="font-size: medium;"> These entities help purchase and distribute surplus food from farmers and corporations, advocate to state and federal lawmakers and get the nation and Ohio involved in the fight against hunger.&nbsp; &nbsp;Ohio’s food banks in providing food and other resources to people in need and to pursue areas of common interest for the benefit of people in need. </span></p>
+<hr style="width: 100%;" width="100%">
+<h3 class="western" align="CENTER"><span style="font-size: large;"> &nbsp; <a title="ODJFS Non-Discrimination Statement" href="http://jfs.ohio.gov/ocomm_root/foodstamp_disclaimer.stm" target="_blank" rel="noopener">ODJFS Non-Discrimination Statement</a><br></span></h3>
+</div>
+
+</div></div>    <div class="clear"></div><hr><div class="clear"></div>
+</div>
+</div>
+</div>
+<div id="footer">
+    <div class="container_24">
+        <div class="grid_8">
+            <div class="block white-border-right" style="height: 411px;">
+                
+
+
+
+
+<p><a href="../donate"> <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal - The safer, easier way to pay online!" border="0"> </a> <img class="llvqkpubqwpjezxwomzf" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></p>
+<p><strong> <span style="font-size: medium;"> Hocking • Athens • Perry </span> </strong> <br> <strong> <span style="font-size: medium;"> Community Action </span> </strong> <br> <span style="font-size: medium;"> 3 Cardaras Drive </span> <br> <span style="font-size: medium;"> PO Box 220 </span> <br> <span style="font-size: medium;"> Glouster Ohio 45732 </span></p>
+<p><span style="font-size: medium;"> Email: <span style="text-decoration: underline; color: #ffffff;"> <span style="text-decoration: underline;"> <span style="text-decoration: underline;"> <a href="mailto:info@hapcap.org"> <span style="color: #ffffff; text-decoration: underline;"> info@hapcap. </span> </a> org </span> </span> </span> </span> <br> <span style="font-size: medium;"> Phone: (740) 767-4500 or </span> <br> <span style="font-size: medium;"> (800) 686-1093 <br> <br> </span></p>
+
+            </div>
+        </div>
+        <div class="grid_8">
+            <div class="block" style="height: 411px;">
+                
+
+
+
+
+<h5><span style="color: #ffffff; font-size: medium;"> <span style="text-decoration: underline;"> <a href="../latestnews"> <span style="text-decoration: underline; color: #ffffff;"> Latest News </span> </a> </span> </span></h5>
+<div id="ticker" class="query"><ul class="tweet_list"><li class="tweet_first tweet_odd"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1243152603917307905" title="view tweet on twitter">about 2 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/1_134FA">1_134FA</a> MAJ Newman (Left. Ohio Military Reserve Officer in Charge) &amp; CPT McClurg (Right. Task Force Redleg Officer in Charg… <a href="https://t.co/S91fohbdjq">https://t.co/S91fohbdjq</a></span></li><li class="tweet_even"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1242884665784090627" title="view tweet on twitter">about 3 days ago</a></span> <span class="tweet_text">🙌🙌🙌 <a href="https://twitter.com/Joe_Burrow10/status/1242820241023021056">twitter.com/Joe_Burrow10/s…</a></span></li><li class="tweet_odd"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1242796630757212162" title="view tweet on twitter">about 3 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/OhioPovertyLaw">OhioPovertyLaw</a> For most Ohio families, rent and mortgage payments are the largest monthly expense and one that cannot be delayed w… <a href="https://t.co/KeQeEJc3S2">https://t.co/KeQeEJc3S2</a></span></li><li class="tweet_even"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1242067063071551492" title="view tweet on twitter">about 5 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/GovMikeDeWine">GovMikeDeWine</a> Fun idea! Great job, kids - we love your artwork! <a href="http://api.twitter.com/search?q=&amp;tag=InThisTogetherOhio&amp;lang=all" class="tweet_hashtag">#InThisTogetherOhio</a> <a href="https://twitter.com/KatieMang/status/1241854768118730753">twitter.com/KatieMang/stat…</a></span></li><li class="tweet_odd"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1240999159496429569" title="view tweet on twitter">about 8 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/OhioFoodbanks">OhioFoodbanks</a> We couldn't be more grateful for this critical partnership and for the leadership and courage of our adopted "foodb… <a href="https://t.co/7FyXBAkhA7">https://t.co/7FyXBAkhA7</a></span></li><li class="tweet_even"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1239975915905519616" title="view tweet on twitter">about 11 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/Jemy827">Jemy827</a> Looking for something to do <a href="http://api.twitter.com/search?q=&amp;tag=athome&amp;lang=all" class="tweet_hashtag">#athome</a> with your <a href="http://api.twitter.com/search?q=&amp;tag=preschooler&amp;lang=all" class="tweet_hashtag">#preschooler</a>? How about a 2-for-1 reading+math=#FamilyMath… <a href="https://t.co/IXIR75wWyW">https://t.co/IXIR75wWyW</a></span></li><li class="tweet_odd"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1238089048004210689" title="view tweet on twitter">about 16 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/Newcapinc">Newcapinc</a> The Census 2020 Questionnaire is now live! Please share with your family and friends so that everyone is counted! Y… <a href="https://t.co/n8JfASghBy">https://t.co/n8JfASghBy</a></span></li><li class="tweet_even"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1235556545703878662" title="view tweet on twitter">about 23 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/NCCommAction">NCCommAction</a> Your physical and social environment have a major impact on your health. That includes everything from stigma to ed… <a href="https://t.co/44hTB8GeqX">https://t.co/44hTB8GeqX</a></span></li><li class="tweet_odd"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1235275383399907328" title="view tweet on twitter">about 24 days ago</a></span> <span class="tweet_text">🌈 ATHENS COUNTY FAMILIES 🌈 The Dolly Parton Imagination Library has come to Athens County! Each month, children und… <a href="https://twitter.com/i/web/status/1235275383399907328">twitter.com/i/web/status/1…</a></span></li><li class="tweet_even"><a class="tweet_avatar" href="http://twitter.com/hapcap"><img src="http://pbs.twimg.com/profile_images/1050379158906388481/gTVQQN2Q_normal.jpg" height="30" width="30" alt="hapcap's avatar" title="hapcap's avatar" border="0"></a><span class="tweet_time"><a href="http://twitter.com/hapcap/status/1235271027049062400" title="view tweet on twitter">about 24 days ago</a></span> <span class="tweet_text">RT <span class="at">@</span><a href="http://twitter.com/LSSFoodPantries">LSSFoodPantries</a> We were so blessed to be a part of a coalition of Ohio food banks &amp; pantries who went to Capitol Hill yesterday to… <a href="https://t.co/aYjjA5CnSa">https://t.co/aYjjA5CnSa</a></span></li></ul></div>
+<p>&nbsp;</p>
+<ul>
+<li><span style="text-decoration: underline; font-size: medium;"> <span class="footer-text"> We are always looking for new volunteers!&nbsp; <a class="footer-text" href="../volunteer"> Click here </a> </span> for more info. </span></li>
+</ul>
+<h5><span style="font-size: medium;"> Events </span></h5>
+<ul>
+<li><span style="font-size: medium; color: #ffffff;"> <a class="footer-text" href="../calendar"> Click here for our Trimble Township Calendar. </a> </span></li>
+<li><span style="text-decoration: underline;"> <span style="color: #ffffff; text-decoration: underline;"> <span style="font-size: medium;"> <a class="footer-text" href="../communitycalendar"> Click here for Community Calendar </a> </span> </span> </span></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="grid_8">
+            <div class="block white-border-left" style="height: 411px;">
+                
+
+    
+    
+    
+<h5 style="display: inline; font-size: medium;"><label for="search-field"> Search </label></h5>
+<form style="display: inline;" action="search"><input id="search-field" class="txtfield-blur" name="s" size="26" type="text"></form>
+<p>&nbsp;</p>
+<h5><span style="font-size: medium;"> Follow Us </span></h5>
+<div class="social"><a href="https://www.facebook.com/HAPCAP" target="_blank" rel="noopener"> <img src="https://hapcap.org/images/facebook.png" alt="" width="48" height="48" border="0"> </a> <a href="https://twitter.com/#!/hapcap" target="_blank" rel="noopener"> <img src="https://hapcap.org/images/twitter.png" alt="" width="48" height="48" border="0"> </a></div>
+<p>&nbsp;</p>
+<h5 align="left"><span style="font-size: medium;"> Employees </span></h5>
+<p class="footer-text"><a class="footer-text" href="../employee.php"> Login </a></p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+        //Content and sidebar equal height
+        if ($('#content-left').length) {
+            var sidebar_height = $('#content-left').height();
+            var content_height = $('#content-right').height();
+            if (content_height > sidebar_height)
+                $('#content-left').height(content_height);
+        }
+
+        //Footer blocks equal height
+        var height = 0;
+        $('#footer .block').each(function(){
+            var block_height = $(this).height();
+            if (block_height > height)
+                height = block_height;
+        })
+        $('#footer .block').height(height);
+    })
+</script>
+
+</body></html>

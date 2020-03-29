@@ -1,0 +1,371 @@
+<html class="no-js" lang="en"><!--<![endif]--><!--[if IE 8]> <style type="text/css">
+</style><![endif]--><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Foodlink</title>
+  <meta name="description" content="Foodlink provides food to food pantries across the upstate NY region and Rochester, NY.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://foodlinkny.org/wp-content/themes/twentyeleven/css/style.css">
+  <script async="" src="//www.gstatic.com/wcm/impl-1_32.js" nonce="null"></script><script src="https://connect.facebook.net/signals/config/654500795070333?v=2.9.15&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/wcm/loader.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-K56WN4N"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD5fJodupMfkid_zzbG3J-zA1yhHZkvQ3I&amp;sensor=false"></script>
+
+    <script type="text/javascript">
+        function loadScript() {
+          var script = document.createElement("script");
+          script.type = "text/javascript";
+          script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyD5fJodupMfkid_zzbG3J-zA1yhHZkvQ3I&sensor=false";
+          document.body.appendChild(script);
+        }        
+        window.onload = loadScript;
+      var geocoder;
+      var map;
+      function initialize() {
+        geocoder = new google.maps.Geocoder();
+        var latlng = new google.maps.LatLng(43.1547, -77.6158);
+        var myOptions = {
+          zoom: 10,
+          center: latlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById("map"), myOptions);
+        var ctaLayer = new google.maps.KmlLayer('http://pgts.biz/_foodlink/Find_Food_red_dot_v2.kml',{
+          preserveViewport: true,
+          map: map
+        });
+        ctaLayer.setMap(map);
+      }
+      
+      function codeAddress() {
+        var address = document.getElementById("zip").value;
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+          } else {
+            alert("Geocode was not successful for the following reason: " + status);
+          }
+        });
+      }
+      function promptAddress() {
+        var address = prompt('What is your zip code?', 14607);
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+          } else {
+            alert("Geocode was not successful for the following reason: " + status);
+          }
+        });
+      }
+
+      function codeAddress() {
+        var address = document.getElementById("zip").value;
+        geocoder.geocode( { 'address': address}, function(results, status) {
+          if (status == google.maps.GeocoderStatus.OK) {
+            map.setCenter(results[0].geometry.location);
+          } else {
+            alert("Geocode was not successful for the following reason: " + status);
+          }
+        });
+      }
+  </script>
+  <link rel="icon" type="image/png" href="http://foodlinkny.org/favicon.png">
+  <!--script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32386539-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script-->
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K56WN4N');</script>
+<!-- End Google Tag Manager -->
+  <script async="true" type="text/javascript" src="https://s.adroll.com/j/roundtrip.js"></script><script id="adroll_scr_exp" onerror="window.adroll_exp_list = [];" type="text/javascript" src="https://s.adroll.com/j/exp/DZ77Q47625FYPPFJHHQUND/index.js"></script><script type="text/javascript" src="https://s.adroll.com/j/pre/DZ77Q47625FYPPFJHHQUND/4FXSMTRFARAULL4PJB3QVW/index.js"></script><script type="text/javascript" src="https://d.adroll.mgr.consensu.org/consent/iabcheck/DZ77Q47625FYPPFJHHQUND?_s=52ef235a138bdf3e129c10c477ddf7c8&amp;_b=2"></script></head>
+<body onload="initialize()" class="home blog has-dashicons two-column right-sidebar">
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K56WN4N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  <header class="container">
+    <!--<form class="four columns">
+      <input type="text" value="Username"></input>
+      <input type="text" value="Password"></input>
+      <button>Submit</button>
+    </form>-->
+    <div class="five columns clear"><a href="https://foodlinkny.org"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/header_logo.png"></a></div>
+    <div class="eleven columns"><div class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-interior_page menu-item-has-children menu-item-31"><a title="About Foodlink" href="https://foodlinkny.org/fight_hunger/about-us/">About<br>Foodlink</a>
+<ul class="sub-menu">
+	<li id="menu-item-228" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-228"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-1">Overview</a></li>
+	<li id="menu-item-230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-230"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-3">Foodlink History</a></li>
+	<li id="menu-item-229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-229"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-2">Food Banking</a></li>
+	<li id="menu-item-1805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1805"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-6">Member Services</a></li>
+	<li id="menu-item-2577" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2577"><a href="http://foodlinkny.org/fight_hunger/food-safety-training-resources/#tab-1">Member agency trainings</a></li>
+	<li id="menu-item-4292" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4292"><a href="http://foodlinkny.org/fight_hunger/community-health-commitment/#tab-1">Community Health Commitment</a></li>
+	<li id="menu-item-236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-236"><a href="http://foodlinkny.org/fight_hunger/programs-initiatives/#tab-7">Career Empowerment</a></li>
+	<li id="menu-item-1440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1440"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-8">Seeking Food Assistance?</a></li>
+	<li id="menu-item-1456" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1456"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-5">Remembering Tom Ferraro</a></li>
+	<li id="menu-item-232" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-232"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-7">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-interior_page menu-item-has-children menu-item-60"><a title="How We Fight Hunger" href="https://foodlinkny.org/fight_hunger/programs-initiatives/">How We<br>Fight Hunger</a>
+<ul class="sub-menu">
+	<li id="menu-item-235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-235"><a href="http://foodlinkny.org/fight_hunger/programs-initiatives/#tab-2"><strong>Community Kitchen</strong></a></li>
+	<li id="menu-item-3926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3926"><a href="http://foodlinkny.org/fight_hunger/healthy-meals/#tab-1">– Healthy Meals</a></li>
+	<li id="menu-item-3777" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3777"><a href="http://foodlinkny.org/fight_hunger/value-added-processing/#tab-1">– Sliced Apples</a></li>
+	<li id="menu-item-3647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3647"><a href="http://foodlinkny.org/fight_hunger/foodlink-career-fellowship/#tab-1">– Foodlink Career Fellowship</a></li>
+	<li id="menu-item-1441" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1441"><a href="http://foodlinkny.org/fight_hunger/programs-initiatives/#tab-3"><strong>Community Health programs</strong></a></li>
+	<li id="menu-item-2797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2797"><a href="http://foodlinkny.org/fight_hunger/curbside-market/#tab-1">– Curbside Market</a></li>
+	<li id="menu-item-2803" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2803"><a href="http://foodlinkny.org/fight_hunger/the-garden-project/#tab-1">– Lexington Farm</a></li>
+	<li id="menu-item-234" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-234"><a href="http://foodlinkny.org/fight_hunger/programs-initiatives/#tab-4">– Nutrition Education</a></li>
+	<li id="menu-item-233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-233"><a href="http://foodlinkny.org/fight_hunger/programs-initiatives/#tab-1"><strong>Food Bank programs</strong></a></li>
+	<li id="menu-item-2796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2796"><a href="http://foodlinkny.org/fight_hunger/mobile-pantries/#tab-1">– Mobile Pantry</a></li>
+	<li id="menu-item-2799" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2799"><a href="http://foodlinkny.org/fight_hunger/backpack-program/#tab-1">– BackPack Program</a></li>
+</ul>
+</li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-interior_page menu-item-has-children menu-item-38"><a title="Ways to Give" href="https://foodlinkny.org/fight_hunger/ways-to-give/">Ways <br>to Help</a>
+<ul class="sub-menu">
+	<li id="menu-item-239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-239"><a href="http://foodlinkny.org/fight_hunger/ways-to-give/#tab-1"><strong>Donate Money</strong></a></li>
+	<li id="menu-item-4644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4644"><a href="https://give.foodlinkny.org/checkout/11531">– Monthly Giving</a></li>
+	<li id="menu-item-240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-240"><a href="http://foodlinkny.org/fight_hunger/ways-to-give/#tab-2"><strong>Donate Food</strong></a></li>
+	<li id="menu-item-4646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4646"><a href="http://foodlinkny.org/wp-content/uploads/2012/05/Hosting-a-Food-Drive-2019-R3c.pdf">– Donation guide</a></li>
+	<li id="menu-item-246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-246"><a href="http://foodlinkny.org/fight_hunger/get-involved/#tab-3"><strong>Advocacy</strong></a></li>
+	<li id="menu-item-1442" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1442"><a href="http://foodlinkny.org/fight_hunger/programs-initiatives/#tab-6">– SNAP information</a></li>
+</ul>
+</li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-interior_page menu-item-has-children menu-item-30"><a title="Get involved" href="https://foodlinkny.org/fight_hunger/get-involved/">Volunteer<br> with us!</a>
+<ul class="sub-menu">
+	<li id="menu-item-244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-244"><a href="http://foodlinkny.org/fight_hunger/get-involved/#tab-1">Volunteer info</a></li>
+</ul>
+</li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-interior_page menu-item-has-children menu-item-29"><a title="News and Events" href="https://foodlinkny.org/fight_hunger/news-events/">News <br>&amp; Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-4160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4160"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-8">The Get Together</a></li>
+	<li id="menu-item-1443" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1443"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-2">Festival of Food</a></li>
+	<li id="menu-item-1448" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1448"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-3">Hunger Action Month</a></li>
+	<li id="menu-item-1522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1522"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-4">Fill the Bus</a></li>
+	<li id="menu-item-1450" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1450"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-5">Check Out Hunger</a></li>
+	<li id="menu-item-1678" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1678"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-6">Food for Families</a></li>
+	<li id="menu-item-1449" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1449"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-7">Forks &amp; Skis</a></li>
+	<li id="menu-item-1446" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1446"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-9">Newsletters &amp; Press</a></li>
+	<li id="menu-item-1445" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1445"><a href="http://foodlinkny.org/fight_hunger/news-events/#tab-1">Other events &amp; fundraisers</a></li>
+	<li id="menu-item-1447" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1447"><a href="http://foodlinkny.org/blog">Blog</a></li>
+</ul>
+</li>
+<li id="menu-item-27" class="menu-item menu-item-type-post_type menu-item-object-interior_page menu-item-has-children menu-item-27"><a title="Contact us" href="https://foodlinkny.org/fight_hunger/contact/"><br>Contact</a>
+<ul class="sub-menu">
+	<li id="menu-item-251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-251"><a href="http://foodlinkny.org/fight_hunger/contact/#tab-1">Location</a></li>
+	<li id="menu-item-231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-231"><a href="http://foodlinkny.org/fight_hunger/about-us/#tab-4">Leadership / Board</a></li>
+	<li id="menu-item-252" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-252"><a href="http://foodlinkny.org/fight_hunger/contact/#tab-2">Foodlink Staff</a></li>
+	<li id="menu-item-253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-253"><a href="http://foodlinkny.org/fight_hunger/contact/#tab-3">Job Board</a></li>
+	<li id="menu-item-3052" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3052"><a href="http://foodlinkny.org/fight_hunger/take-a-tour/#tab-1">Take a tour</a></li>
+</ul>
+</li>
+</ul></div>    </div>
+  </header><div role="main" class="container">
+    <div class="sixteen columns">
+                    <div class="eleven columns alpha"></div>
+          <div class="banner six columns offset-by-nine">
+            <p>Our mission is to leverage the power of food to end hunger and build healthier communities.</p> <a href="https://give.foodlinkny.org/checkout/5706"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/banner_donate.png" alt="donate today!"></a>
+          </div>
+      <div class="slides omega">
+        <div class="slides_container" style="overflow: hidden; position: relative; display: block; background: url(&quot;/img/loading.gif&quot;) 50% 50% no-repeat;">
+        		  
+		  <div class="slides_control" style="position: relative;"><div style="position: absolute; top: 0px; z-index: 0; opacity: 0.503142;"><img src="http://foodlinkny.org/wp-content/files_mf/940_IMG_7472.jpg?1585452187110" alt="slider2"><a href="https://foodlinkny.org/foodlink-updates-in-response-to-covid-19-coronavirus-concerns-in-our-communities/"><h1 class="headline_text">COVID-19 Response</h1></a></div><div style="position: absolute; top: 0px; z-index: 0; display: none;"><img src="http://foodlinkny.org/wp-content/files_mf/1544542520940curbside.jpg" alt="slider2"><h1 class="headline_text">Curbside Market</h1></div><div style="position: absolute; top: 0px; z-index: 0; display: none;"><img src="http://foodlinkny.org/wp-content/files_mf/1559055465Lex_NM.jpg" alt="slider2"><h1 class="headline_text">Lexington Ave. Community Farm</h1></div><div style="position: absolute; top: 0px; z-index: 0; display: none;"><img src="http://foodlinkny.org/wp-content/files_mf/1562042339940_NE.jpg" alt="slider2"><h1 class="headline_text">Nutrition Education</h1></div><div style="position: absolute; top: 0px; z-index: 0; display: none;"><img src="http://foodlinkny.org/wp-content/files_mf/1581479971940FCF2020_rosas.jpg" alt="slider2"><h1 class="headline_text">Foodlink Community Kitchen</h1></div><div style="position: absolute; top: 0px; z-index: 0; display: none;"><img src="http://foodlinkny.org/wp-content/files_mf/1562161385940_Volunteers.jpg" alt="slider2"><h1 class="headline_text">Volunteer Opportunities</h1></div></div>
+		  
+		  
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+    <div class="sixteen columns">
+      <div class="four columns alpha">
+        <a href="http://foodlinkny.org/need-food-map/" class="four columns alpha omega rounded_a need_food "><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/need_food.png" alt="need food?"></a>
+          <section><a href="http://www.facebook.com/FoodlinkNY"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/facebook.png" alt="facebook"></a>
+            <a href="http://twitter.com/#!/foodlinkny"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/twitter.png" alt="twitter"></a>
+            <a href="http://www.youtube.com/user/FoodlinkNY"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/youtube.png" alt="youtube"></a>
+            <a href="http://www.foodlinkny.org/blog" class="omega"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/blog-icon.png" alt="blog" title="Our Blog"></a>
+          </section>
+          <section>
+            <a href="https://foodlinkny.org/fight_hunger/ways-to-give/?tabs=1"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/donate_food.png" alt="donate food"></a>
+            <a href="https://give.foodlinkny.org/checkout/5706"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/donate_funds_sidebar.png" alt="donate funds"></a>
+            <a href="https://foodlinkny.org/fight_hunger/get-involved/"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/volunteer.png" alt="volunteer"></a>
+          </section>
+          <section>
+                        <p class="testimonial">            </p>
+            <p class="testimonial">“There is no thinking outside the box. There is only living outside the box.” -Tom Ferraro, Foodlink founder</p>
+          </section>
+      </div>
+      <div class="big_bar"></div>
+            <div class="four columns">
+        <div class="subcol_img">
+          <a href="https://foodlinkny.org/rochester-meal-distribution-sites-for-school-age-children/">
+            <img src="http://foodlinkny.org/wp-content/files_mf/1584932877220_IMG_7426.jpg">
+            <h2>ROC MEAL SITES</h2>
+            <p>Foodlink has partnered with the Rochester City School District to ensure children are nourished despite schools being closed due to COVID-19. Visit our blog to find out where meals are accessible for school-age children. </p>
+            </a>
+          </div>
+      </div>
+      <div class="four columns">
+        <div class="subcol_img">
+          <a href="https://bit.ly/3afVSEZ">
+          <img src="http://foodlinkny.org/wp-content/files_mf/1585260148220_IMG_7700.jpg">
+          <h2>VOLUNTEERING</h2>
+          <p>As Foodlink mobilizes a response to the COVID-19 (coronavirus) public health crisis, we have opened up select volunteer opportunities for healthy and willing members of the community who want to lend a hand. Visit the United Way’s volunteer portal to find out more. </p>
+          </a>
+          </div>
+      </div>
+      <div class="four columns omega">
+        <div class="subcol_img">
+          <a href="https://foodlinkny.org/where-to-find-foodlinks-emergency-food-supply-boxes/">
+            <img src="http://foodlinkny.org/wp-content/files_mf/1584990678220_IMG_7831.jpg">
+            <h2>FOOD BOXES</h2>
+            <p>In need of food? Learn where and when to find one of our Emergency Food Supply Boxes, which we are now distributing throughout our service area. </p>
+          </a> 
+          </div>
+      </div>
+      <hr>
+      <div class="sixteen columns alpha">
+        <section class="three columns alpha contact_info">
+          <img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/footer_logo.png" alt="foodlink abundance shared">
+            <p><span style="color: #888888;">1999 Mt. Read Blvd<br></span><span style="color: #888888;">Rochester, NY 14615<br></span></p>
+<p><span style="color: #888888;">Call: (585) 328-3380<br></span><span style="color: #888888;">Fax: (585) 328-9951<br></span><span style="color: #888888;">Agency Fax: (585) 464-0497<br></span><span style="color: #888888;">Email:&nbsp;</span><a style="text-align: left;" href="mailto:info@foodlinkny.org"><span style="color: #888888;">info@foodlinkny.org</span></a></p>
+<section><address>&nbsp;</address><address>&nbsp;</address></section>        </section>
+        <div class="ten columns omega offset-by-three">
+          <div class="footer_social">
+            <ul>
+              <li><a href="http://www.foodlinkny.org/blog"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/foot-blog-icon.png" title="Our Blog"></a></li>
+              <li><a href="http://www.youtube.com/user/FoodlinkNY"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/footer_youtube.png"></a></li>
+              <li><a href="http://twitter.com/#!/foodlinkny"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/footer_twitter.png"></a></li>
+              <li><a href="http://www.facebook.com/FoodlinkNY"><img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/footer_facebook.png"></a></li>              
+            </ul>
+            <p>Stay Connected:</p>
+          </div>
+          <div class="newsletter_form clear">
+            <form action="https://give.foodlinkny.org/charities/5706-foodlink-inc/subscribe">
+              <button href="https://give.foodlinkny.org/charities/5706-foodlink-inc/subscribe">Subscribe to our monthly newsletter</button>
+            </form>
+          </div>
+          <div class="footer_links">
+            <p>
+              <a href="http://foodlinkny.org/need-food-map/">Need Food?</a> | 
+              <a href="https://foodlinkny.org/fight_hunger/contact/">Contact Us</a> | 
+              <a href="https://foodlinkny.org/fight_hunger/terms-of-use/">Terms Of Use</a> |
+              <a href="/fight_hunger/privacy-policy/">Privacy Policy</a> | 
+              <a href="http://foodlinkny.org/fight_hunger/sitemap/">Site Map</a> |
+              <a href="https://foodlinkny.org/fight_hunger/contact/?tabs=0">Careers</a> | 
+              <a href="https://foodlinkny.org/fight_hunger/news-events/?tabs=1">Press Room</a>
+            </p>
+          </div>
+          <section class="ten columns offset-by-six"></section>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="map_nudger"><div class="close"></div><div id="map" style="width:1000px; height:600px;"></div></div>
+	<footer>
+   <div id="tray_wrap" style="bottom: -390px;"> 
+  <div id="tray_button"><a>MORE +</a></div>
+   <div id="tray" class="container">
+    <section class="three columns">
+      <img src="https://foodlinkny.org/wp-content/themes/twentyeleven/img/footer_logo_white.png" alt="foodlinklogo">
+      <p>1999 Mt. Read Blvd Rochester, NY 14615</p>
+      <p><strong>Contact:</strong><br>T: (585) 328-3380<br>F: (585) 328-9951<br>
+<a href="mailto:info@foodlinkny.org">info@foodlinkny.org</a></p>
+    </section>
+    <section class="three columns footer_need_food">
+      <h4>NEED FOOD LOCATOR</h4>
+      <a class="button cboxElement iframe" href="http://foodlinkny.org/need-food-map/">FIND FOOD</a>      
+    </section>
+    <section class="five columns upcoming">
+      <h4>Twitter Feed:</h4>
+      <aside id="twitter-2" class="widget widget_twitter"><div><h3 class="widget-title"><span class="twitterwidget twitterwidget-title">Twitter: foodlinkny</span></h3><ul><li><span class="entry-content">Another week, another heroic effort by our kitchen. Get some rest! Back to work Monday... <a href="https://t.co/F6eZmDqjxD" target="_blank">https://t.co/F6eZmDqjxD</a></span> <span class="entry-meta"><span class="time-meta"><a href="http://twitter.com/FoodlinkNY/statuses/1244051759561089029" target="_blank">about 3 hours ago</a></span> <span class="from-meta">from <a href="https://www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a></span></span></li><li><span class="entry-content">Thanks to the organizers of the "Going the Social Distance Virtual 5K" for raising money for Foodlink! Learn more a… <a href="https://t.co/YhXi3nVExV" target="_blank">https://t.co/YhXi3nVExV</a></span> <span class="entry-meta"><span class="time-meta"><a href="http://twitter.com/FoodlinkNY/statuses/1243974915675631620" target="_blank">about 8 hours ago</a></span> <span class="from-meta">from <a href="https://www.hootsuite.com" rel="nofollow">Hootsuite Inc.</a></span></span></li></ul></div></aside>    </section>
+    <section class="five columns">
+      <h4><a href="http://foodlinkny.org/wp-content/uploads/2012/06/feeding-america-member.png"><img class="alignleft size-medium wp-image-1452" src="http://foodlinkny.org/wp-content/uploads/2012/06/feeding-america-member-300x150.png" alt="feeding america member" width="300" height="150" srcset="https://foodlinkny.org/wp-content/uploads/2012/06/feeding-america-member-300x150.png 300w, https://foodlinkny.org/wp-content/uploads/2012/06/feeding-america-member-1024x512.png 1024w, https://foodlinkny.org/wp-content/uploads/2012/06/feeding-america-member-500x250.png 500w, https://foodlinkny.org/wp-content/uploads/2012/06/feeding-america-member.png 1200w" sizes="(max-width: 300px) 100vw, 300px"></a></h4><p>&nbsp;</p><h4>&nbsp;</h4>    </section>
+   </div>
+  </div>
+  </footer>
+  <script src="https://foodlinkny.org/wp-content/themes/twentyeleven/js/plugins.js"></script>
+  <script src="https://foodlinkny.org/wp-content/themes/twentyeleven/js/jquery.colorbox-min.js"></script>
+  <script src="https://foodlinkny.org/wp-content/themes/twentyeleven/js/script.js"></script>
+  <!-- end scripts -->
+<link rel="stylesheet" id="pwebcontact-bootstrap-custom-css" href="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/css/bootstrap-custom.css?ver=5.2.5" type="text/css" media="all">
+<link rel="stylesheet" id="pwebcontact-layout-css" href="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/css/layout.css?ver=2.3.0" type="text/css" media="all">
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","654500795070333");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=654500795070333&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">adroll_adv_id="DZ77Q47625FYPPFJHHQUND";adroll_pix_id="4FXSMTRFARAULL4PJB3QVW";
+(function(){var a=function(){if(document.readyState&&!/loaded|complete/.test(document.readyState))setTimeout(a,10);else if(window.__adroll_loaded){var b=document.createElement("script"),c="https:"==document.location.protocol?"https://s.adroll.com":"http://a.adroll.com";b.setAttribute("async","true");b.type="text/javascript";b.src=c+"/j/roundtrip.js";((document.getElementsByTagName("head")||[null])[0]||document.getElementsByTagName("script")[0].parentNode).appendChild(b)}else __adroll_loaded=!0,setTimeout(a,
+50)};window.addEventListener?window.addEventListener("load",a,!1):window.attachEvent("onload",a)})();</script>
+<link rel="stylesheet" id="pwebcontact-animations-css" href="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/css/animations.css?ver=5.2.5" type="text/css" media="all">
+<link rel="stylesheet" id="pwebcontact-theme-free-css" href="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/css/themes/free.css?ver=5.2.5" type="text/css" media="all">
+<link rel="stylesheet" id="pwebcontact-488db0c4501297fc89b2d2bd332ef96b-1.css-css" href="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/cache/488db0c4501297fc89b2d2bd332ef96b-1.css?ver=5.2.5" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='pwebcontact-ie8-css'  href='https://foodlinkny.org/wp-content/plugins/pwebcontact/media/css/ie8.css?ver=5.2.5' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="https://foodlinkny.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://foodlinkny.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/bootstrap-2.3.2/js/bootstrap.min.js?ver=2.3.2"></script>
+<script type="text/javascript" src="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/js/jquery.validate.min.js?ver=1.15.0"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var pwebcontact_l10n = pwebcontact_l10n || {}; pwebcontact_l10n.form = {"INIT":"Initializing form...","SENDING":"Sending...","SEND_ERR":"Wait a few seconds before sending next message","REQUEST_ERR":"Request error: ","COOKIES_ERR":"Enable cookies and refresh page to use this form"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://foodlinkny.org/wp-content/plugins/pwebcontact/media/js/jquery.pwebcontact.min.js?ver=2.3.0"></script>
+<!-- PWebContact -->
+
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function($){pwebContact1=new pwebContact({id:1,ajaxUrl:"https://foodlinkny.org/wp-admin/admin-ajax.php?action=pwebcontact_",theme:"free",layout:"slidebox",position:"left",offsetPosition:"top"})});</script>
+<!-- PWebContact end -->
+<div id="modal"></div>
+
+
+<!-- Page generated by LiteSpeed Cache 2.9.9.2 on 2020-03-29 03:01:56 --><div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="pwebcontact1" class="pwebcontact pweb-left pweb-offset-top pweb-slidebox pweb-theme-free pweb-labels-above pweb-horizontal" dir="ltr">
+
+    
+    
+    <div id="pwebcontact1_box" class="pwebcontact-box pweb-slidebox pweb-theme-free pweb-labels-above pweb-horizontal pweb-closed" dir="ltr" style="width: 500px; left: -500px;">
+
+    <div class="pwebcontact-container-outset">
+    <div id="pwebcontact1_container" class="pwebcontact-container">
+    <div class="pwebcontact-container-inset">
+
+        
+        
+        
+        <form name="pwebcontact1_form" id="pwebcontact1_form" class="pwebcontact-form" action="https://foodlinkny.org" method="post" accept-charset="utf-8" novalidate="novalidate">
+
+            
+            <div class="pweb-fields">
+                        </div>
+
+            <div class="pweb-msg pweb-msg-after"><div id="pwebcontact1_msg" class="">&nbsp;</div></div>
+                        <input type="hidden" name="31c96e4918" value="1" id="pwebcontact1_token">
+        <input type="hidden" name="title" value="Foodlink"><input type="hidden" name="url" value="https://foodlinkny.org/"></form>
+
+
+    </div>
+    </div>
+    </div>
+
+    </div>
+    </div></body></html>

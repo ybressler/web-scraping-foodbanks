@@ -1,0 +1,1038 @@
+<html lang="en-US" class="js tablesaw-enhanced" style="--vh:6.84px;"><!--<![endif]--><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="https://bam.nr-data.net/1/ee13445abd?a=379042449&amp;v=1167.2a4546b&amp;to=YwMBZEMHVxVVUUVYWVpJIlNFD1YIG0ZUXEZYBxdVHA5WC1E%3D&amp;rst=1814&amp;ref=https://www.capitalareafoodbank.org/&amp;ap=663&amp;be=322&amp;fe=1801&amp;dc=1395&amp;perf=%7B%22timing%22:%7B%22of%22:1585451233047,%22n%22:0,%22f%22:112,%22dn%22:114,%22dne%22:114,%22c%22:114,%22s%22:139,%22ce%22:166,%22rq%22:167,%22rp%22:208,%22rpe%22:230,%22dl%22:249,%22di%22:1394,%22ds%22:1394,%22de%22:1441,%22dc%22:1800,%22l%22:1800,%22le%22:1802%7D,%22navigation%22:%7B%7D%7D&amp;fp=1438&amp;fcp=1438&amp;at=T0QCEgsdRBs%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script async="" src="https://static.addtoany.com/menu/page.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ee13445abd",applicationID:"379042449"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Food Bank for the Capital Region">
+  <link rel="stylesheet" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/style.css" type="text/css" media="screen">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/favicon-128.png" sizes="128x128">
+  <meta name="application-name" content="Capital Area Food Bank">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/mstile-144x144.png">
+  <meta name="msapplication-square70x70logo" content="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/mstile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/mstile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/mstile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/favicon/mstile-310x310.png">
+  <script>
+      document.documentElement.classList.add('js');
+  </script>
+  <link rel="author" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/humans.txt">
+  <link rel="pingback" href="https://www.capitalareafoodbank.org/xmlrpc.php">
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-8514983-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-8514983-1');
+  </script>
+
+  <script src="//cdn.optimizely.com/js/793060582.js"></script>
+
+  <title>Food Bank for the Washington, DC, Region | Capital Area Food Bank</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The Capital Area Food serves the entire Washington, DC, metropolitan region, providing meals to thousands of people a day while also addressing the root causes of hunger.">
+<link rel="canonical" href="https://www.capitalareafoodbank.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Food Bank for the Washington, DC, Region | Capital Area Food Bank">
+<meta property="og:description" content="The Capital Area Food serves the entire Washington, DC, metropolitan region, providing meals to thousands of people a day while also addressing the root causes of hunger.">
+<meta property="og:url" content="https://www.capitalareafoodbank.org/">
+<meta property="og:site_name" content="Capital Area Food Bank">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="The Capital Area Food serves the entire Washington, DC, metropolitan region, providing meals to thousands of people a day while also addressing the root causes of hunger.">
+<meta name="twitter:title" content="Food Bank for the Washington, DC, Region | Capital Area Food Bank">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.capitalareafoodbank.org/#website","url":"https://www.capitalareafoodbank.org/","name":"Capital Area Food Bank","potentialAction":{"@type":"SearchAction","target":"https://www.capitalareafoodbank.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.capitalareafoodbank.org/#webpage","url":"https://www.capitalareafoodbank.org/","inLanguage":"en-US","name":"Food Bank for the Washington, DC, Region | Capital Area Food Bank","isPartOf":{"@id":"https://www.capitalareafoodbank.org/#website"},"datePublished":"2019-08-21T18:07:36+00:00","dateModified":"2020-02-07T21:35:10+00:00","description":"The Capital Area Food serves the entire Washington, DC, metropolitan region, providing meals to thousands of people a day while also addressing the root causes of hunger."}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//www.capitalareafoodbank.org">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Capital Area Food Bank » Feed" href="https://www.capitalareafoodbank.org/feed/">
+<link rel="alternate" type="application/rss+xml" title="Capital Area Food Bank » Comments Feed" href="https://www.capitalareafoodbank.org/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.capitalareafoodbank.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.capitalareafoodbank.org/wp-includes/js/wp-emoji-release.min.js?ver=5.2.3" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.capitalareafoodbank.org/wp-includes/css/dist/block-library/style.min.css?ver=5.2.3" type="text/css" media="all">
+<link rel="stylesheet" id="styles-css" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/css/index.css?ver=1.1.0" type="text/css" media="all">
+<link rel="stylesheet" id="print-css" href="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/css/print.css?ver=1.1.0" type="text/css" media="print">
+<link rel="stylesheet" id="addtoany-css" href="https://www.capitalareafoodbank.org/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.15" type="text/css" media="all">
+<script type="text/javascript" src="https://www.capitalareafoodbank.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript">
+jQuery.migrateMute = true;
+</script>
+<script type="text/javascript" src="https://www.capitalareafoodbank.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="https://www.capitalareafoodbank.org/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1"></script>
+<link rel="https://api.w.org/" href="https://www.capitalareafoodbank.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.capitalareafoodbank.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.capitalareafoodbank.org/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://www.capitalareafoodbank.org/">
+<link rel="alternate" type="application/json+oembed" href="https://www.capitalareafoodbank.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.capitalareafoodbank.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.capitalareafoodbank.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.capitalareafoodbank.org%2F&amp;format=xml">
+
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+
+
+		
+	</head>
+
+	<body class="home page-template page-template-template-home page-template-template-home-php page page-id-6 js" data-template="base.twig">
+					<div class="max-bound">
+				<div class="alert-banner" role="alert">
+    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="30" width="30" class="alert-banner__icon"><path fill="currentColor" d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path></svg>
+    <div class="alert-banner__content">
+        <p>The Capital Area Food Bank is prepared to respond to COVID-19. See the latest information and updates <a href="https://www.capitalareafoodbank.org/covid19response/">here</a>.</p>
+
+    </div>
+</div>			</div>
+				<div class="max-bound page-max-bound">
+			<a href="#main-content" class="skip-nav-link" tabindex="0">Skip to main content</a>
+
+							<header class="site-header">
+  <div class="outer-pad">
+    <div class="site-header__inner">
+      <div class="site-header__logos">
+        <a href="https://www.capitalareafoodbank.org">
+          <img class="cafb-logo" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/CAFB_Logo.svg" alt="Capital Area Food Bank logo">
+        </a>
+        <a href="https://www.feedingamerica.org/" target="_blank" class="silc-display--none-1023">
+          <img class="feeding-america-logo" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/Feeding_America_Logo.svg" alt="Feeding America logo">
+        </a>
+      </div>
+      <div class="site-header__mobile-controls">
+        <div class="site-header__search site-header__search-mobile">
+          <a href="#site-search" class="site-search-trigger" role="button" aria-label="Search" id="site-header-search-mobile-trigger">
+            <span class="visible-for-screen-readers">Toggle search</span>
+            <span aria-hidden="true" class="icon-Magnifying_Glass"></span>
+          </a>
+        </div>
+        <a href="#site-header-nav" class="site-header__offcanvas-trigger" role="button" aria-label="Menu" id="site-header-offcanvas-trigger" aria-expanded="false" aria-controls="site-header-nav">
+          <span class="visible-for-screen-readers">Menu</span>
+          <span class="offcanvas-icon" role="presentation">
+            <span role="presentation"></span>
+            <span role="presentation"></span>
+            <span role="presentation"></span>
+            <span role="presentation"></span>
+          </span>
+        </a>
+      </div>
+      <nav id="site-header-nav" class="site-header__nav" aria-label="Main site navigation" aria-hidden="false" aria-labelledby="site-header-offcanvas-trigger">
+        <div class="site-header__nav-primary">
+          	<ul class="">
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-698">
+			<a href="https://www.capitalareafoodbank.org/hunger-in-our-region/" class="">Hunger In Our Region</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-197 menu-item-has-children">
+			<a href="https://www.capitalareafoodbank.org/what-we-do/" class="" data-expanded="false">What We Do<span class="site-header__dropdown-icon" role="presentation"></span></a>
+				<ul>
+			<li class="parent"><a href="https://www.capitalareafoodbank.org/what-we-do/" class="">Overview</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-202 menu-item-has-children">
+			<a target="" href="https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/">Direct Food Distribution</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36857 menu-item-has-children">
+			<a target="" href="https://www.capitalareafoodbank.org/what-we-do/nutrition-and-wellness/">Nutrition &amp; Wellness</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36858 menu-item-has-children">
+			<a target="" href="https://www.capitalareafoodbank.org/what-we-do/farms-and-gardening/">Farms &amp; Gardening</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36859 menu-item-has-children">
+			<a target="" href="https://www.capitalareafoodbank.org/what-we-do/food-plus-partnerships/">Food+ Partnerships</a>
+					</li>
+		</ul>
+		</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-198">
+			<a href="https://www.capitalareafoodbank.org/impact/" class="">Impact</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-830 menu-item-has-children">
+			<a href="https://www.capitalareafoodbank.org/how-to-help/" class="" data-expanded="false">How To Help<span class="site-header__dropdown-icon" role="presentation"></span></a>
+				<ul>
+			<li class="parent"><a href="https://www.capitalareafoodbank.org/how-to-help/" class="">Overview</a></li><li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36860">
+			<a target="" href="https://www.capitalareafoodbank.org/donate/">Give Funds</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36921 menu-item-has-children">
+			<a target="" href="https://www.capitalareafoodbank.org/how-to-help/donate-food/">Donate Food</a>
+					</li>
+			<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-36861 menu-item-has-children">
+			<a target="" href="https://volunteer.capitalareafoodbank.org/">Volunteer</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36862">
+			<a target="" href="https://www.capitalareafoodbank.org/how-to-help/how-to-help-corporate-engagement/">Corporate Engagement</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36863 menu-item-has-children">
+			<a target="" href="https://www.capitalareafoodbank.org/how-to-help/more-ways-to-help/">More Ways to Help</a>
+					</li>
+		</ul>
+		</li>
+		</ul>
+          <a href="/donate" class="button button--orange site-header__donate">Donate</a>
+        </div>
+        <div class="site-header__nav-secondary">
+          	<ul class="">
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-37326">
+			<a href="https://www.capitalareafoodbank.org/upcoming/" class="">Events &amp; Campaigns</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-807">
+			<a href="https://www.capitalareafoodbank.org/blog/" class="">Blog</a>
+					</li>
+			<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-816">
+			<a href="https://volunteer.capitalareafoodbank.org/" class="" target="_blank">Volunteer</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36779">
+			<a href="https://www.capitalareafoodbank.org/partners/" class="">Partners</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36780">
+			<a href="https://www.capitalareafoodbank.org/find-food-assistance/" class="">Get Help</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36781">
+			<a href="https://www.capitalareafoodbank.org/contact/" class="">Contact</a>
+					</li>
+		</ul>
+          <div class="site-header__search site-header__search-desktop">
+            <a href="#site-search" class="site-search-trigger" role="button" aria-label="Search" id="site-header-search-desktop-trigger">
+              <span class="visible-for-screen-readers">Toggle search</span>
+              <span aria-hidden="true" class="icon-Magnifying_Glass"></span>
+            </a>
+          </div>
+        </div>
+        <div class="site-header__nav-footer">
+          <a href="">
+            <img class="feeding-america-logo" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/Feeding_America_Logo.svg" alt="Feeding America logo">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="offcanvas-overlay" aria-hidden="true"></div>
+  <div class="search-overlay silc-display--none-1024"></div>
+</header>
+<div class="site-search" id="site-search" aria-hidden="true">
+  <div class="site-search__overlay" role="presentation"></div>
+  <a href="#main-content" class="site-search__close" role="button" aria-label="Dismiss site search"><span class="icon icon-Close_Icon" aria-hidden="true"></span></a>
+  <form class="site-search__form" action="/">
+    <label for="site-search-input" class="visible-for-screen-readers">Search</label>
+    <input name="s" type="text" id="site-search-input" class="site-search__input" placeholder="Search..." tabindex="-1">
+    <button type="submit" class="site-search__submit" aria-label="Submit" tabindex="-1">
+      <span aria-hidden="true" class="icon icon-Magnifying_Glass"></span>
+    </button>
+  </form>
+</div>			
+			<main id="main-content">
+
+				
+				  <h1 class="visible-for-screen-readers">Capital Area Food Bank</h1>
+
+        <div class="home-hero">
+      <div class="home-hero__content">
+        <h2>Good food today. Brighter futures tomorrow.</h2>
+                  <a href="#home-map-section" class="button button--yellow button--xl">See how <span aria-hidden="true" class="icon icon-Chevron_Down"></span></a>
+        
+      </div>
+              <div class="home-hero__image">
+          <div class="oval-image oval-image--right">
+            <img src="https://live-capital-area-food-bank.pantheonsite.io/wp-content/uploads/2019/09/Hero_FWG20659-Edit.jpg" alt="">
+          </div>
+        </div>
+          </div>
+  
+        <div class="home-map-section home-section page-section" id="home-map-section">
+      <div class="outer-pad">
+        <div class="silc-grid silc-grid--justify-center-600 silc-grid--justify-left-1024">
+                      <div class="silc-grid__col silc-grid__col--12">
+              <h2 class="home-section__heading">Hunger exists in every zip code in our region.</h2>
+            </div>
+                    <div class="silc-grid__col silc-grid__col--7-1024 silc-grid__col--6-1200">
+            <div class="home-section__content">
+                                <a href="https://live-capital-area-food-bank.pantheonsite.io/hunger-in-our-region/" class="fancy-link">
+    Learn the facts about hunger in our community
+  </a>
+                                            <p>Hunger stretches across the map of our area. That’s why our network of nonprofit partners does, too. Take a look to learn more about the scope of need in our region.</p>
+              
+                              <ul class="home-map__filters">
+                                  <li><a href="#home-map-layer-0" class="button home-map__filter" role="button" id="home-map-filter-0" aria-controls="home-map-layer-0" aria-selected="true">Need</a></li>
+                                  <li><a href="#home-map-layer-1" class="button home-map__filter" role="button" id="home-map-filter-1" aria-controls="home-map-layer-1" aria-selected="false">Impact</a></li>
+                                  <li><a href="#home-map-layer-2" class="button home-map__filter" role="button" id="home-map-filter-2" aria-controls="home-map-layer-2" aria-selected="false">Partners</a></li>
+                                  <li><a href="#home-map-layer-3" class="button home-map__filter" role="button" id="home-map-filter-3" aria-controls="home-map-layer-3" aria-selected="false">People</a></li>
+                                </ul>
+                            <div class="home-map-section__cta">
+                                    <a href="https://cafb.maps.arcgis.com/apps/webappviewer/index.html?id=8431eda28c1f4aaeb56192941cee249b" class="fancy-link" target="_blank">
+    See Full Map
+  </a>
+                              </div>
+            </div>
+          </div>
+          <div class="silc-grid__col silc-grid__col--10-600 silc-grid__col--8-900 silc-grid__col--5-1024 silc-grid__col--6-1200 home-map__col">
+                          <div class="home-map">
+                <div class="home-map__base-layer" role="presentation">
+                  <img src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/CAFB_Map-Background.svg" alt="">
+                </div>
+                                  <div id="home-map-layer-1" class="home-map__layer" role="presentation" aria-labelledby="home-map-filter-0" aria-hidden="false">
+                                          <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/CAFB_Map-Need.svg" alt="">
+                                                          </div>
+                                  <div id="home-map-layer-2" class="home-map__layer" role="presentation" aria-labelledby="home-map-filter-1" aria-hidden="true">
+                                          <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/CAFB_Map-Impact.svg" alt="">
+                                                          </div>
+                                  <div id="home-map-layer-3" class="home-map__layer" role="presentation" aria-labelledby="home-map-filter-2" aria-hidden="true">
+                                          <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/CAFB_Map-Partners.svg" alt="">
+                                                                                    <a href="#home-map-layer-3-modal-1" id="home-map-layer-3-point-1" class="home-map__point home-map__point--simple" role="button" style="top:55%;left:75%;" data-micromodal-trigger="home-map-layer-3-modal-1">
+                        <span class="visible-for-screen-readers">Read More About Martha's Table</span>
+                      </a>
+                                                                <a href="#home-map-layer-3-modal-2" id="home-map-layer-3-point-2" class="home-map__point home-map__point--simple" role="button" style="top:60%;left:70%;" data-micromodal-trigger="home-map-layer-3-modal-2">
+                        <span class="visible-for-screen-readers">Read More About DC Central Kitchen</span>
+                      </a>
+                                                                <a href="#home-map-layer-3-modal-3" id="home-map-layer-3-point-3" class="home-map__point home-map__point--simple" role="button" style="top:55%;left:65%;" data-micromodal-trigger="home-map-layer-3-modal-3">
+                        <span class="visible-for-screen-readers">Read More About Bread for the City</span>
+                      </a>
+                                                                <a href="#home-map-layer-3-modal-4" id="home-map-layer-3-point-4" class="home-map__point home-map__point--simple" role="button" style="top:25%;left:70%;" data-micromodal-trigger="home-map-layer-3-modal-4">
+                        <span class="visible-for-screen-readers">Read More About Manna</span>
+                      </a>
+                                                                <a href="#home-map-layer-3-modal-5" id="home-map-layer-3-point-5" class="home-map__point home-map__point--simple" role="button" style="top:60%;left:45%;" data-micromodal-trigger="home-map-layer-3-modal-5">
+                        <span class="visible-for-screen-readers">Read More About Food for Others</span>
+                      </a>
+                                      </div>
+                                  <div id="home-map-layer-4" class="home-map__layer" role="presentation" aria-labelledby="home-map-filter-3" aria-hidden="true">
+                                                                                    <a href="#home-map-layer-4-modal-1" id="home-map-layer-4-point-1" class="home-map__point home-map__point--image" role="button" style="top:58%;left:62%; background-image: url(https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Justin_Modal.jpg)" data-micromodal-trigger="home-map-layer-4-modal-1">
+                        <span class="visible-for-screen-readers">Read More About Justin</span>
+                      </a>
+                                                                <a href="#home-map-layer-4-modal-2" id="home-map-layer-4-point-2" class="home-map__point home-map__point--image" role="button" style="top:45%;left:80%; background-image: url(https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/0.0-People-Map-Wanda-01-1.jpg)" data-micromodal-trigger="home-map-layer-4-modal-2">
+                        <span class="visible-for-screen-readers">Read More About Wanda</span>
+                      </a>
+                                                                <a href="#home-map-layer-4-modal-3" id="home-map-layer-4-point-3" class="home-map__point home-map__point--image" role="button" style="top:52%;left:37%; background-image: url(https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/0.0-People-Map-Deborah-01-1.jpg)" data-micromodal-trigger="home-map-layer-4-modal-3">
+                        <span class="visible-for-screen-readers">Read More About Deborah</span>
+                      </a>
+                                                                <a href="#home-map-layer-4-modal-4" id="home-map-layer-4-point-4" class="home-map__point home-map__point--image" role="button" style="top:70%;left:80%; background-image: url(https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/0.0-People-Map-Jose-01-1.jpg)" data-micromodal-trigger="home-map-layer-4-modal-4">
+                        <span class="visible-for-screen-readers">Read More About Jose</span>
+                      </a>
+                                      </div>
+                              </div>
+                      </div>
+        </div>
+      </div>
+
+                                                                    <div class="modal" id="home-map-layer-3-modal-1">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Martha's Table modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-3-modal-1-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Marthas_Table_Modal.png" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Martha's Table</h2>
+                              <div class="modal__subtitle">2375 Elvans Road SE<br>Washington, DC 20020</div>
+                          </div>
+                          <a href="https://marthastable.org/" class="fancy-link">Visit Website</a>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>For nearly 40 years, Martha’s table has worked to support strong children, strong families, and strong communities in Washington, D.C.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-3-modal-2">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="DC Central Kitchen modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-3-modal-2-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/DCCK_Logo-hi-res_01-04.png" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">DC Central Kitchen</h2>
+                              <div class="modal__subtitle">425 2nd ST, NW<br>Washington, DC  20001</div>
+                          </div>
+                          <a href="https://dccentralkitchen.org/" class="fancy-link">Visit Website</a>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>As the nation’s first and leading community kitchen, DC Central Kitchen develops and operates social ventures that break the cycle of hunger and poverty.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-3-modal-3">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Bread for the City modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-3-modal-3-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/BreadForTheCity_01.png" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Bread for the City</h2>
+                          </div>
+                          <a href="https://breadforthecity.org/" class="fancy-link">Visit Website</a>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>Bread for the City provides food, clothing, medical care, and legal and social services to reduce the burden of poverty and help Washington, D.C., residents living with low income develop their power to determine the future of their own communities.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-3-modal-4">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Manna modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-3-modal-4-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Mannafood_01.jpg" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Manna</h2>
+                              <div class="modal__subtitle">12301 Old Columbia Pike, Suite 200<br>Silver Spring, MD 20904</div>
+                          </div>
+                          <a href="https://www.mannafood.org/" class="fancy-link">Visit Website</a>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>Since 1983, Manna Food Center has worked to eliminate hunger in Montgomery County, Maryland, by offering food distribution, education, and advocacy.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-3-modal-5">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Food for Others modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-3-modal-5-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/10/FoodForOthers_02.jpg" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Food for Others</h2>
+                              <div class="modal__subtitle">2938 Prosperity Avenue<br>Fairfax, VA 22031</div>
+                          </div>
+                          <a href="https://www.foodforothers.org/" class="fancy-link">Visit Website</a>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>Food for Others is an important part of Northern Virginia’s safety net for those needing food when an emergency strikes and for the growing number of working poor who need to supplement their inadequate food supplies.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                                          <div class="modal" id="home-map-layer-4-modal-1">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Justin modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-4-modal-1-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Justin_Modal.jpg" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Justin</h2>
+                              <div class="modal__subtitle">D.C.</div>
+                          </div>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>Thanks to Family Markets, Justin no longer worries that his children have enough food to grow and thrive.</p>
+<p>Justin’s family budget was already stretched as far as it could go, with little left over to invest in additional groceries. One day, his kids’ school notified Justin of a new partnership with the Capital Area Food Bank to offer a monthly Family Market at the school. This partnership would help provide families with fresh fruits, vegetables and non-perishable, healthy groceries each month right at the school. With more healthy food added into the family’s diet, Justin noticed an improvement in the kids’ energy levels. His oldest, an eighth grader, will soon be hard at work on applications to get into the best middle schools. “I’m just so happy she’ll have the food she’ll need to focus on her studies and applications,” Justin grins. And Justin can focus on ensuring his kids have the resources they need for success.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-4-modal-2">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Wanda modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-4-modal-2-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/0.0-People-Map-Wanda-01-1.jpg" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Wanda</h2>
+                              <div class="modal__subtitle">Landover Hills, MD</div>
+                          </div>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>With help from her local pantry, Wanda no longer needs to choose between rent, medicine, and food.</p>
+<p>When the retirement benefits she received weren’t enough to cover her essential living costs, Wanda was confronted with the choice between paying bills and buying groceries. On the recommendation her church, Wanda connected with Landover Hills Baptist Church, a partner of the Capital Area Food Bank that operates a weekly food pantry known as Feed My Sheep. She recalls walking in to the space, filled with food and compassion, and feeling overcome. “It felt like divine intervention,” she said, recounting the experience. With help stretching her food budget, the choices between food, rent, and medicine have been alleviated. Wanda no longer worries about whether she’ll have enough food to eat each week and has taken to spending time cooking with her daughter and grandchildren – one of her favorite pastimes.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-4-modal-3">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Deborah modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-4-modal-3-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/0.0-People-Map-Deborah-01-1.jpg" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Deborah</h2>
+                              <div class="modal__subtitle">Virginia</div>
+                          </div>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>Free community markets help Deborah fill in budgeting gaps to ensure her three grandchildren get the food they need to grow strong and healthy.</p>
+<p>Deborah is a senior who takes care of her three grandchildren, including the youngest—an energetic four-year-old. She wants to make sure that all her grandchildren get the food healthiest food possible, but that can sometimes be hard to do on her limited budget. When she needs to, Deborah visits one of the Capital Area Food Bank’s free community markets in her neighborhood, where she can select fresh fruits and vegetable that help her fill in the gaps. She laughs happily about her grandson’s growing appetite for fresh produce now, saying that he shows no signs of slowing down. “I’m looking for a growth spurt from him soon!” she said. Mothers and grandmothers, often there with young kids, are always among those served at these farmers market-style markets.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                            <div class="modal" id="home-map-layer-4-modal-4">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+    <div class="modal__container" role="dialog" aria-modal="true" aria-label="Jose modal">
+      <div class="modal__header">
+        <a href="#" role="button" class="modal__close" aria-label="Close modal" data-micromodal-close="">
+          <span class="icon-Close_Icon" aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="modal__content" id="home-map-layer-4-modal-4-content">
+        <div class="modal__content-top">
+                      <div class="modal__image">
+                            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/0.0-People-Map-Jose-01-1.jpg" alt="">
+            </div>
+                    <div class="modal__subject-info">
+            <div class="modal__heading">
+              <h2 class="h4 modal__title">Jose</h2>
+                              <div class="modal__subtitle">District Heights, MD</div>
+                          </div>
+                      </div>
+        </div>
+        <div class="modal__content-body">
+          <p>The food Jose receives from the CAFB is making a big difference for his family’s ability to eat well, and to stretch dollars further.</p>
+<p>Dads across our area dream of the same things for their children: health and bright futures. José, a proud father of four, works as a custodian at a high school in Columbia Heights. As the primary bread winner, he feels the weight of filling the refrigerator with fresh vegetables, fruits, and other healthy groceries for his busy family. He’s committed to making sure his kids have the food they need to stay healthy, learn, and excel, even on a tight budget. “I’ve had a lot of help from the food,” he said of food received from the CAFB. “It’s helped me save some money every month for my family.”</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                  </div>
+  
+        <div class="home-highlight">
+      <div class="outer-pad">
+                  <div class="home-highlight__image oval-image oval-image--left oval-image--shadow oval-image--green">
+            <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Leaf1_NEW_0.0-Homepage-Leaf-1_v2-2.jpg" alt="">
+          </div>
+                          <div class="home-highlight__content">
+            <div class="outer-pad">
+              The Capital Area Food Bank leads our region’s efforts to provide good, healthy food to people struggling with hunger and food insecurity. Each year, we source and distribute the food for over 30 million meals.
+            </div>
+          </div>
+              </div>
+    </div>
+  
+        <div class="home-hunger-section home-section page-section">
+      <div class="outer-pad">
+        <div class="silc-grid">
+          <div class="silc-grid__col silc-grid__col--7-800 silc-grid__col--6-1200">
+            <div class="home-section__content">
+                              <h2 class="home-section__heading">How we’re helping people in need</h2>
+                                            <p>Together with over 450 local partners, we’re providing the food people need to thrive today. We’re also working with partners to pair food with services that can create permanent pathways out of hunger tomorrow.</p>
+                              <a href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/" class="button button--yellow button--xl">
+    Learn about our work
+  </a>
+            </div>
+          </div>
+          <div class="silc-grid__col silc-grid__col--5-800 silc-grid__col--6-1200">
+                          <div class="oval-image oval-image--right oval-image--shadow oval-image--yellow">
+                <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Leaf2_190111_Volunteers_GovtShutdown00002.jpg" alt="">
+              </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  
+        <div class="home-distribution-section home-section page-section page-section--off-white">
+      <div class="outer-pad">
+        <div class="home-section__content">
+                      <h2>Providing Good Food To Help Today.</h2>
+                  </div>
+        <div class="silc-grid">
+          <div class="silc-grid__col silc-grid__col--7-800 silc-grid__col--6-1200">
+                          <h3 class="heading-icon silc-mtop--0-800 silc-mtop--32-1100">Distributing Food Where It’s Needed Most</h3>
+                                      <p>With the help of farmers, wholesalers, restaurants, community members, and others, we source the food for over 30 million meals each year. And thanks to our hundreds of partners in the community, we’re able to get that food to the individuals and families who need it most.</p>
+
+                                                        <a href="https://live-capital-area-food-bank.pantheonsite.io/partners/" class="fancy-link">
+    Nonprofit Distribution Partners
+  </a>
+                                <a href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/direct-food-distribution-programs/" class="fancy-link">
+    Direct Distribution Programs
+  </a>
+                                    </div>
+          <div class="silc-grid__col silc-grid__col--5-800 silc-grid__col--6-1200">
+                          <p class="home-assistance-partners-stat">450<span class="plus">+</span> Food <span>Assistance Partners</span></p>
+                                      <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/CAFB_FoodBankBreakdown_01.svg" alt="" aria-hidden="true" class="distribution-diagram silc-display--none-799">
+                      </div>
+        </div>
+      </div>
+    </div>
+  
+        <div class="home-futures-section home-section page-section">
+      <div class="outer-pad">
+        <div class="home-section__content">
+                      <h2>Creating Hunger Solutions for Tomorrow.</h2>
+                                <div class="silc-grid silc-mtop--32 silc-mtop--48-800 silc-mtop--64-1200">
+<div class="silc-grid__col silc-grid__col--5-1024 silc-grid__col--5-1200">While food is essential, we know it takes more than food to solve hunger.  Employment, health, housing, and other issues can all contribute to the conditions that cause food insecurity. If we’re going to solve hunger, we have to address its root causes. Which is why we’ve developed programs and partnerships designed to help people meet their food needs today while also getting access to services that can help them build paths out of food insecurity tomorrow.</div>
+<div class="silc-grid__col silc-grid__col--7-1024 silc-grid__col--7-1200">
+<div class="iframe"><iframe src="https://www.youtube.com/embed/nvXPuk6Ym84" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="iframe__media"></iframe></div>
+</div></div>
+
+                                <div class="silc-grid silc-grid--justify-center cards-grid">
+                              <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--4-1200">
+                  <div class="card card--cta" role="link" href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/nutrition-and-wellness/" tabindex="0">
+                                          <div class="card__media">
+                        <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Card_0.0-Homepage-Nutrition-Education.jpg" alt="">
+                      </div>
+                                        <div class="card__compartment">
+                      <div class="card__content">
+                                                  <h2 class="card__title">Nutrition Education</h2>
+                                                                          <div class="card__body">
+                            <p>Good nutrition helps people thrive. So nutrition is at the core of our mission.</p>
+
+                          </div>
+                                              </div>
+                                              <a href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/nutrition-and-wellness/" class="cta card__cta">Learn More <span class="visible-for-screen-readers">Nutrition Education</span></a>
+                                          </div>
+                  </div>
+                </div>
+                              <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--4-1200">
+                  <div class="card card--cta" role="link" href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/farms-and-gardening/" tabindex="0">
+                                          <div class="card__media">
+                        <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Card_Farms_180413_CommunityGarden_00031.jpg" alt="">
+                      </div>
+                                        <div class="card__compartment">
+                      <div class="card__content">
+                                                  <h2 class="card__title">Farms &amp; Gardening</h2>
+                                                                          <div class="card__body">
+                            <p>From nearby farms to backyard gardens, we’re committed to helping people get the produce they need for good health.</p>
+
+                          </div>
+                                              </div>
+                                              <a href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/farms-and-gardening/" class="cta card__cta">Learn More <span class="visible-for-screen-readers">Farms &amp; Gardening</span></a>
+                                          </div>
+                  </div>
+                </div>
+                              <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--4-1200">
+                  <div class="card card--cta" role="link" href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/food-plus-partnerships/" tabindex="0">
+                                          <div class="card__media">
+                        <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Card3_Access-Affordability-hero.jpg" alt="">
+                      </div>
+                                        <div class="card__compartment">
+                      <div class="card__content">
+                                                  <h2 class="card__title">Food+ Partnerships</h2>
+                                                                          <div class="card__body">
+                            <p>We partner with organizations that provide skills training, health screenings, financial advice, and more to address the root causes of hunger and food insecurity.</p>
+
+                          </div>
+                                              </div>
+                                              <a href="https://live-capital-area-food-bank.pantheonsite.io/what-we-do/food-plus-partnerships/" class="cta card__cta">Learn More <span class="visible-for-screen-readers">Food+ Partnerships</span></a>
+                                          </div>
+                  </div>
+                </div>
+                          </div>
+                  </div>
+      </div>
+    </div>
+  
+        <div class="home-impact-section home-section page-section">
+      <div class="outer-pad">
+        <div class="home-section__content">
+          <div class="silc-grid silc-grid--collapse silc-grid--justify-between">
+            <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--5-1200">
+              <div class="leaf-heading">
+                                  <h2>Food has the power to transform lives.</h2>
+                                                    <a href="https://live-capital-area-food-bank.pantheonsite.io/impact/" class="button button--yellow button--xl">
+    See Our Impact
+  </a>
+                              </div>
+            </div>
+            <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--6-1200">
+                              <blockquote class="blockquote blockquote--yellow blockquote--image">
+          <div class="blockquote__photo">
+        <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/EpiphaneyGitten_01_webready-1.jpg" alt="">
+      </div>
+              <p>They gave us more than food—they gave us hope.</p>
+
+              <footer>
+                  <span class="blockquote__author">Epiphaney Gitten</span>
+                          <span class="blockquote__title">Participant</span>
+              </footer>
+      </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+        <div class="home-donate-section home-section page-section">
+      <div class="outer-pad">
+        <div class="home-section__content">
+          <div class="silc-grid">
+            <div class="silc-grid__col silc-grid__col--6-800">
+                              <h2 class="home-section__heading">Make a difference in your community.</h2>
+                          </div>
+            <div class="silc-grid__col silc-grid__col--6-800">
+                              <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/1_dollar_equals_2-5_meals.svg" alt="one dollar equals two and a half meals">
+                          </div>
+                          <div class="silc-grid__col silc-grid__col--12">
+                <div class="cta-panel">
+                  <ul class="cta-panel__ctas">
+                                        <li>
+                      <a href="https://live-capital-area-food-bank.pantheonsite.io/donate/" class="cta-panel__cta" tabindex="1">
+                        <div class="cta-panel__cta-content">
+                                                      <span class="cta-panel__cta-title">Donate</span>
+                                                                                <span class="cta-panel__cta-body">Your donation helps people in need by providing food and opportunity. Just $1 provides 2.5 meals.</span>
+                                                  </div>
+                        <span class="icon icon-Chevron_Right" aria-hidden="true"></span>
+                      </a>
+                                              <div class="cta-panel__image">
+                          <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Slider_Donate_DEKALB201.jpg" alt="">
+                        </div>
+                                          </li>
+                                        <li>
+                      <a href="https://volunteer.capitalareafoodbank.org/" class="cta-panel__cta" tabindex="2">
+                        <div class="cta-panel__cta-content">
+                                                      <span class="cta-panel__cta-title">Volunteer</span>
+                                                                                <span class="cta-panel__cta-body">We welcome volunteer help at our warehouse and across our region.</span>
+                                                  </div>
+                        <span class="icon icon-Chevron_Right" aria-hidden="true"></span>
+                      </a>
+                                              <div class="cta-panel__image">
+                          <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Slider_Volunteer_180615_VolunteersPwC_00056.jpg" alt="">
+                        </div>
+                                          </li>
+                                        <li>
+                      <a href="https://live-capital-area-food-bank.pantheonsite.io/partners/" class="cta-panel__cta" tabindex="3">
+                        <div class="cta-panel__cta-content">
+                                                      <span class="cta-panel__cta-title">Partner</span>
+                                                                                <span class="cta-panel__cta-body">We’d love to talk to your organization about becoming one of the food bank’s nonprofit partners.</span>
+                                                  </div>
+                        <span class="icon icon-Chevron_Right" aria-hidden="true"></span>
+                      </a>
+                                              <div class="cta-panel__image">
+                          <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Slider_Partner_NEW_0.0-Homepage-Slider-Partner-CTA-Alterative-2-1.jpg" alt="">
+                        </div>
+                                          </li>
+                                      </ul>
+                </div>
+              </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  
+        <div class="home-connect-section home-section page-section">
+      <div class="outer-pad">
+        <div class="home-section__content">
+                      <h2>Stay connected</h2>
+                    <div class="silc-grid">
+            <div class="silc-grid__col  silc-grid__col--4-1200">
+                                            <div class="newsletter-cta">
+                  <div class="outer-pad">
+                                          <h3>Sign up for our Newsletter</h3>
+                                                              <p>Impact in your inbox. Learn about upcoming events, new initiatives, and the many ways you can and do make a difference.</p>
+
+                                                                <a href="https://live-capital-area-food-bank.pantheonsite.io/sign-up/" class="button button--green button--large">
+    Sign up
+  </a>
+                                      </div>
+                </div>
+                                            <div class="oval-image oval-image--left oval-image--shadow oval-image--green silc-display--none-1199">
+                  <img src="https://www.capitalareafoodbank.org/wp-content/uploads/2019/09/Leaf3_TB_2019_15.jpg" alt="">
+                </div>
+                          </div>
+                                      <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--4-1200">
+                                  <h3 class="h4 home-connect-feed__heading">Events &amp; Campaigns</h3>
+                                                <ul class="home-connect-feed">
+                                      <li>
+                      <div class="home-connect-feed__item">
+                        <h4 class="home-connect-feed__item-title">2020 Food From The Bar DC</h4>
+                                                <div class="home-connect-feed__item-body">
+                          Food From the Bar is the legal community’s response to hunger in the Washington, DC metropolitan region. From May 1 – 31, 2020, law firms &amp; legal professionals will compete…
+                        </div>
+                        <a href="https://www.capitalareafoodbank.org/upcoming/campaigns/2020-food-from-the-bar-dc/" class="fancy-link">Learn More<span class="visible-for-screen-readers"> About 2020 Food From The Bar DC</span></a>
+                      </div>
+                    </li>
+                                      <li>
+                      <div class="home-connect-feed__item">
+                        <h4 class="home-connect-feed__item-title">A Party Against Hunger</h4>
+                                                <div class="home-connect-feed__item-body">
+                          You could spend a regular day making an impact in so many ways: Donate your lunch fund when you #skiplunch; Make your next birthday, bar/bat mizvah, or any get together…
+                        </div>
+                        <a href="https://www.capitalareafoodbank.org/upcoming/campaigns/party-against-hunger/" class="fancy-link">Learn More<span class="visible-for-screen-readers"> About A Party Against Hunger</span></a>
+                      </div>
+                    </li>
+                                  </ul>
+                              </div>
+                                                  <div class="silc-grid__col silc-grid__col--6-800 silc-grid__col--4-1200">
+                                  <h3 class="h4 home-connect-feed__heading">From Our Blog</h3>
+                                                  <ul class="home-connect-feed">
+                                          <li>
+                        <div class="home-connect-feed__item">
+                          <h4 class="home-connect-feed__item-title">Investing in Brighter Futures for Women and Girls</h4>
+                          <div class="home-connect-feed__item-body">
+                            As a girl, I remember visiting my grandmother in India. At the end of a meal she would offer food to the women who worked in her home, knowing most…
+                          </div>
+                          <a href="https://www.capitalareafoodbank.org/2020/03/08/investing-in-brighter-futures-for-women-and-girls/" class="fancy-link">Read More<span class="visible-for-screen-readers"> About Investing in Brighter Futures for Women and Girls</span></a>
+                        </div>
+                      </li>
+                                          <li>
+                        <div class="home-connect-feed__item">
+                          <h4 class="home-connect-feed__item-title">CAFB Hunger Heat Map: Making An Invisible Problem More Visible</h4>
+                          <div class="home-connect-feed__item-body">
+                            Hunger stretches across the map of our area. But in a region known for its affluence, that can be challenging to see. Our Hunger Heat Map reveals the breadth of…
+                          </div>
+                          <a href="https://www.capitalareafoodbank.org/2020/02/26/cafb-hunger-heat-map-making-an-invisible-problem-more-visible/" class="fancy-link">Read More<span class="visible-for-screen-readers"> About CAFB Hunger Heat Map: Making An Invisible Problem More Visible</span></a>
+                        </div>
+                      </li>
+                                      </ul>
+                              </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+  
+
+													
+			</main>
+							
+
+<footer class="site-footer">
+  <div class="site-footer__main">
+    <div class="outer-pad">
+      <div class="silc-grid">
+        <div class="silc-grid__col silc-grid__col--3-800 silc-grid__col--2-1200">
+          <div class="site-footer__social">
+            <a href="https://www.capitalareafoodbank.org">
+              <img class="cafb-logo" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/CAFB_Logo.svg" alt="Capital Area Food Bank logo">
+            </a>
+            <ul class="social">
+              <li>
+                <a href="https://www.facebook.com/CapitalAreaFoodBank" target="_blank" class="social-item">
+                  <span class="icon-Facebook" aria-hidden="true"></span>
+                  <span class="visible-for-screen-readers">Visit our Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/foodbankmetrodc" target="_blank" class="social-item">
+                  <span class="icon-Twitter" aria-hidden="true"></span>
+                  <span class="visible-for-screen-readers">Visit our Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/capitalareafoodbank/" target="_blank" class="social-item">
+                  <span class="icon-Instagram" aria-hidden="true"></span>
+                  <span class="visible-for-screen-readers">Visit our Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCAYzcvJNH9imavDTTEpJYUw" target="_blank" class="social-item">
+                  <span class="icon-Youtube" aria-hidden="true"></span>
+                  <span class="visible-for-screen-readers">Visit our Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="silc-grid__col silc-grid__col--4-800">
+          <nav class="site-footer__nav" aria-label="Footer navigation">
+            <div class="silc-grid">
+              <div class="silc-grid__col silc-grid__col--7-1200">
+                <div class="site-footer__nav-primary">
+                  	<ul class="">
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-698">
+			<a href="https://www.capitalareafoodbank.org/hunger-in-our-region/" class="">Hunger In Our Region</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-197 menu-item-has-children">
+			<a href="https://www.capitalareafoodbank.org/what-we-do/" class="">What We Do</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-198">
+			<a href="https://www.capitalareafoodbank.org/impact/" class="">Impact</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-830 menu-item-has-children">
+			<a href="https://www.capitalareafoodbank.org/how-to-help/" class="">How To Help</a>
+					</li>
+		</ul>
+                </div>
+              </div>
+              <div class="silc-grid__col silc-grid__col--5-1200">
+                <div class="site-footer__nav-secondary">
+                  	<ul class="">
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-210 menu-item-has-children">
+			<a href="https://www.capitalareafoodbank.org/about-us/" class="">About Us</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36850">
+			<a href="https://www.capitalareafoodbank.org/financial-tax-info/" class="">Financial &amp; Tax Info</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-36541">
+			<a href="https://www.capitalareafoodbank.org/food-bank-careers/" class="">Careers</a>
+					</li>
+			<li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-206">
+			<a href="https://www.capitalareafoodbank.org/newsroom/" class="">Newsroom</a>
+					</li>
+			<li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-38243">
+			<a href="http://www.capitalareafoodbank.org/privacy-policy/" class="">Privacy Policy</a>
+					</li>
+		</ul>
+                </div>
+              </div>
+              <div class="silc-grid__col">
+                <a href="/donate" class="button button--orange site-footer__donate">Donate</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="silc-grid__col silc-grid__col--3-800 silc-grid__col--4-1200">
+          <div class="site-footer__locations">
+            <h2 class="site-footer__locations-heading"><span class="icon icon-Pin" aria-hidden="true"></span> Locations</h2>
+            <div class="silc-grid">
+              <div class="silc-grid__col silc-grid__col--auto-1200">
+                <div class="site-footer__location">
+                  <h3 class="site-footer__location-name">District of Columbia</h3>
+                  <p>4900 Puerto Rico Avenue, NE<br>Washington, DC 20017</p>
+                  <p>
+                    <a href="tel:+12026449800">P: (202) 644-9800</a>
+                    <a href="tel:+12025291767">F: (202) 529-1767</a>
+                  </p>
+                  <a href="https://goo.gl/maps/tWSjQVXeFKoPY5xF7" class="fancy-link">Directions</a>
+                </div>
+              </div>
+              <div class="silc-grid__col silc-grid__col--auto-1200">
+                <div class="site-footer__location">
+                  <h3 class="site-footer__location-name">Virginia</h3>
+                  <p>6833 Hill Park Drive<br>Lorton, VA 22079</p>
+                  <p>
+                    <a href="tel:+15714824770">P: (571) 482-4770</a>
+                    <a href="tel:+17035410179">F: (703) 541-0179</a>
+                  </p>
+                  <a href="https://goo.gl/maps/jdj6w4v6LxRuDgRe6" class="fancy-link">Directions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="silc-grid__col silc-grid__col--2-800">
+          <div class="site-footer__accreditations">
+            <a href="https://www.feedingamerica.org/" target="_blank">
+              <img class="feeding-america-logo" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/Feeding_America_Logo.svg" alt="Feeding America logo">
+            </a>
+            <a href="https://www.charitynavigator.org" target="_blank">
+              <img class="charity-navigator-badge" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/img/Charity_Navigator_Badge.svg" alt="Charity Navigator Four Star Charity">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-footer__sole">
+    <div class="outer-pad">
+      <div class="silc-grid silc-grid--collapse">
+        <div class="silc-grid__col silc-grid__col--7-800">
+          <div class="site-footer__donor-info">
+            <span>Donor Info</span>
+            <span>United Way: #8052</span>
+            <span>CFC: #30794</span>
+            <span>Tax ID: #52-1167581</span>
+          </div>
+        </div>
+        <div class="silc-grid__col silc-grid__col--5-800">
+          <div class="site-footer__legal">
+            <span class="site-footer__copyright">© Capital Area Food Bank, 2019</span> | <a href="/privacy-policy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+				<script type="text/javascript" src="https://www.capitalareafoodbank.org/wp-content/themes/capital-area-food-bank/silc/build/js/index.js?ver=1.0.2"></script>
+<script type="text/javascript" src="https://www.capitalareafoodbank.org/wp-includes/js/wp-embed.min.js?ver=5.2.3"></script>
+
+					</div>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ee13445abd","applicationID":"379042449","transactionName":"YwMBZEMHVxVVUUVYWVpJIlNFD1YIG0ZUXEZYBxdVHA5WC1E=","queueTime":0,"applicationTime":663,"atts":"T0QCEgsdRBs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+</body></html>
