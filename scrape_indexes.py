@@ -124,6 +124,7 @@ for item in all_items:
     rec = {
         "org_id" : org_id,
         "org_link" : org_link,
+        "org_type": "foodbank",
         "org_name" : org_name,
         "org_url" : org_url,
         "address_street":address_street,
@@ -153,6 +154,7 @@ for item in all_items:
         rec = {
             "org_id" : org_id, # use parent org id
             "org_link" : org_link, # use parent org link
+            "org_type": "distribution",
             "org_name" : org_name,
             "org_url" : org_url,
             "address_street":address_street,
