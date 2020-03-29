@@ -1,0 +1,818 @@
+<html lang="en-US" id="arve" class="wf-shariksans-n7-active wf-shariksans-n4-active wf-shariksans-i4-active wf-shariksans-i7-active wf-active"><head><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript" src="https://bam.nr-data.net/1/dfa6bc9b70?a=132004040&amp;v=1167.2a4546b&amp;to=YVIAZUdVVxIFBk1cCVgYN0NcGxYICgFcTUhGXxI%3D&amp;rst=3800&amp;ref=https://www.feedingal.org/&amp;ap=581&amp;be=878&amp;fe=3636&amp;dc=2070&amp;perf=%7B%22timing%22:%7B%22of%22:1585450949780,%22n%22:0,%22f%22:95,%22dn%22:96,%22dne%22:96,%22c%22:96,%22s%22:115,%22ce%22:148,%22rq%22:148,%22rp%22:797,%22rpe%22:810,%22dl%22:819,%22di%22:2070,%22ds%22:2070,%22de%22:2186,%22dc%22:3635,%22l%22:3635,%22le%22:3646%7D,%22navigation%22:%7B%7D%7D&amp;fp=1692&amp;fcp=1692&amp;at=TRUDEw9PRBw%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script src="https://connect.facebook.net/signals/config/2166044510369837?v=2.9.15&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NLWZFRW"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"dfa6bc9b70",applicationID:"132004040"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Community Food Bank of Central Alabama | Birmingham</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.feedingal.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Community Food Bank of Central Alabama | Birmingham">
+<meta property="og:url" content="https://www.feedingal.org/">
+<meta property="og:site_name" content="CFBCA">
+<meta property="og:image" content="https://www.feedingal.org/wp-content/uploads/2018/10/elaine-casap-86020-unsplash-1024x683.jpg">
+<meta property="og:image:secure_url" content="https://www.feedingal.org/wp-content/uploads/2018/10/elaine-casap-86020-unsplash-1024x683.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="683">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Community Food Bank of Central Alabama | Birmingham">
+<meta name="twitter:site" content="@feedingal">
+<meta name="twitter:image" content="https://www.feedingal.org/wp-content/uploads/2018/10/elaine-casap-86020-unsplash.jpg">
+<meta name="twitter:creator" content="@feedingal">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.feedingal.org/#organization","name":"Community Food Bank of Central Alabama","url":"https://www.feedingal.org/","sameAs":["https://www.facebook.com/feedingAL/","https://www.instagram.com/feedingal/","https://www.linkedin.com/company/feedingal","https://www.youtube.com/user/FoodBankCentralAL","https://twitter.com/feedingal"],"logo":{"@type":"ImageObject","@id":"https://www.feedingal.org/#logo","url":"https://www.feedingal.org/wp-content/uploads/2019/07/logo-blue.png","width":699,"height":496,"caption":"Community Food Bank of Central Alabama"},"image":{"@id":"https://www.feedingal.org/#logo"}},{"@type":"WebSite","@id":"https://www.feedingal.org/#website","url":"https://www.feedingal.org/","name":"CFBCA","description":"Community Food Bank of Central Alabama","publisher":{"@id":"https://www.feedingal.org/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.feedingal.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.feedingal.org/#primaryimage","url":"https://www.feedingal.org/wp-content/uploads/2018/10/elaine-casap-86020-unsplash.jpg","width":2200,"height":1467},{"@type":"WebPage","@id":"https://www.feedingal.org/#webpage","url":"https://www.feedingal.org/","inLanguage":"en-US","name":"Community Food Bank of Central Alabama | Birmingham","isPartOf":{"@id":"https://www.feedingal.org/#website"},"about":{"@id":"https://www.feedingal.org/#organization"},"primaryImageOfPage":{"@id":"https://www.feedingal.org/#primaryimage"},"datePublished":"2018-07-26T21:13:23+00:00","dateModified":"2020-03-23T17:50:38+00:00"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//maps.google.com">
+<link rel="dns-prefetch" href="//www.feedingal.org">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//use.typekit.net">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//unpkg.com">
+<link rel="dns-prefetch" href="//cloud.typography.com">
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.feedingal.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.feedingal.org/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.feedingal.org/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="stylesheet-css" href="https://www.feedingal.org/wp-content/plugins/gsfb-foodmap/storelocator-jquery/css/map.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="wpos-slick-style-css" href="https://www.feedingal.org/wp-content/plugins/wp-logo-showcase-responsive-slider-slider/assets/css/slick.css?ver=2.4" type="text/css" media="all">
+<link rel="stylesheet" id="logo_showcase_style-css" href="https://www.feedingal.org/wp-content/plugins/wp-logo-showcase-responsive-slider-slider/assets/css/logo-showcase.css?ver=2.4" type="text/css" media="all">
+<link rel="stylesheet" id="sage/fonts/typography.css-css" href="https://cloud.typography.com/6812632/7482592/css/fonts.css" type="text/css" media="all">
+<link rel="stylesheet" id="sage/magnific/magnific.css-css" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="sage/main.css-css" href="https://www.feedingal.org/wp-content/themes/anchour-base/dist/styles/main_8a8d9e0c.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="https://www.feedingal.org/wp-content/plugins/jetpack/css/jetpack.css?ver=8.0" type="text/css" media="all">
+<script type="text/javascript" src="https://www.feedingal.org/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="https://www.feedingal.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.feedingal.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.feedingal.org/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="shortlink" href="https://wp.me/Payp3G-3">
+<link rel="alternate" type="application/json+oembed" href="https://www.feedingal.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.feedingal.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.feedingal.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.feedingal.org%2F&amp;format=xml">
+
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<style type="text/css">img#wpstats{display:none}</style><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLWZFRW');</script>
+<!-- End Google Tag Manager --><link rel="icon" href="https://www.feedingal.org/wp-content/uploads/2018/10/cropped-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.feedingal.org/wp-content/uploads/2018/10/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.feedingal.org/wp-content/uploads/2018/10/cropped-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.feedingal.org/wp-content/uploads/2018/10/cropped-favicon-270x270.png"><style type="text/css">.tk-sharik-sans{font-family:"sharik-sans",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-sharik-sans-n7;src:url(https://use.typekit.net/af/f6d6d0/0000000000000000000146d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f6d6d0/0000000000000000000146d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f6d6d0/0000000000000000000146d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-sharik-sans-i4;src:url(https://use.typekit.net/af/8c520f/0000000000000000000146d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/8c520f/0000000000000000000146d2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/8c520f/0000000000000000000146d2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:tk-sharik-sans-n4;src:url(https://use.typekit.net/af/95030c/0000000000000000000146d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/95030c/0000000000000000000146d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/95030c/0000000000000000000146d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-sharik-sans-i7;src:url(https://use.typekit.net/af/76439e/0000000000000000000146d8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/76439e/0000000000000000000146d8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/76439e/0000000000000000000146d8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style><style type="text/css">@font-face{font-family:sharik-sans;src:url(https://use.typekit.net/af/f6d6d0/0000000000000000000146d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/f6d6d0/0000000000000000000146d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/f6d6d0/0000000000000000000146d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:sharik-sans;src:url(https://use.typekit.net/af/8c520f/0000000000000000000146d2/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/8c520f/0000000000000000000146d2/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/8c520f/0000000000000000000146d2/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}@font-face{font-family:sharik-sans;src:url(https://use.typekit.net/af/95030c/0000000000000000000146d3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/95030c/0000000000000000000146d3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/95030c/0000000000000000000146d3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:sharik-sans;src:url(https://use.typekit.net/af/76439e/0000000000000000000146d8/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/76439e/0000000000000000000146d8/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/76439e/0000000000000000000146d8/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}</style>
+</head>
+  <body class="home page-template-default page page-id-3 page-parent sticky-header-in" style="padding-top: 144px;">
+    <!--[if IE]>
+<div class="upgrade-notice">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<p>
+				Looks like you're using an outdated browser! Upgrade to a modern browser
+				for the best experience on this site.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<![endif]-->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLWZFRW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><header class="banner">
+    <div class="super-nav-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar super-nav">
+                        <div class="menu-super-nav-container"><ul id="menu-super-nav" class="nav navbar-nav"><li id="menu-item-1039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1039 nav-item nav-item nav-item--super-nav nav-item--agency-portal"><a href="https://sites.google.com/view/feedingal-agencyportal/home">Agency Portal</a></li>
+<li id="menu-item-1071" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1071 nav-item nav-item nav-item--super-nav nav-item--primarius-web-window"><a href="https://feedingal.primarius.app/pww/Home/Login/">Primarius Web Window</a></li>
+<li id="menu-item-1040" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1040 nav-item nav-item nav-item--super-nav nav-item--program-login"><a href="https://goo.gl/forms/DUpSwqzY8Uh5EQYd2">Program Login</a></li>
+<li id="menu-item-1041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1041 nav-item nav-item nav-item--super-nav nav-item--become-an-agency-partner"><a href="https://www.feedingal.org/how-we-help/our-impact/becoming-a-partner-agency/">Become an Agency Partner</a></li>
+</ul></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-wrap">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12">
+	                <a class="brand" href="https://www.feedingal.org/">
+  <span class="sr-only">
+      CFBCA
+  </span>
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" data-target="#primary-navigation-wrap">
+    <span class="navbar-toggler-icon-bar"></span>
+    <span class="navbar-toggler-icon-bar"></span>
+    <span class="navbar-toggler-icon-bar"></span>
+    <span class="navbar-toggler-text sr-only">Menu</span>
+</button>
+
+<nav class="banner__nav navbar navbar-toggleable-md">
+            <div id="primary-navigation-wrap" class="collapse">
+            <div class="menu-primary-navigation-container"><ul id="menu-primary-navigation" class="nav navbar-nav"><li id="menu-item-641" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-641 nav-item nav-item nav-item--primary-navigation nav-item--find-food"><a href="https://www.feedingal.org/how-we-help/find-food/" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Find Food</a></li>
+<li id="menu-item-1048" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1048 nav-item nav-item nav-item--primary-navigation nav-item--get-involved"><a href="https://www.feedingal.org/get-involved/" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Get Involved</a></li>
+<li id="menu-item-1046" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1046 nav-item nav-item nav-item--primary-navigation nav-item--our-impact"><a href="https://www.feedingal.org/how-we-help/our-impact/" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Our Impact</a>
+<ul class="sub-menu">
+	<li id="menu-item-1055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1055 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--our-programs"><a href="https://www.feedingal.org/how-we-help/our-impact/">Our Programs</a></li>
+	<li id="menu-item-1222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1222 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--newsletters"><a href="https://www.feedingal.org/publications/">Newsletters</a></li>
+	<li id="menu-item-1047" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1047 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--latest-posts"><a href="https://www.feedingal.org/how-we-help/latest-news/">Latest Posts</a></li>
+</ul>
+</li>
+<li id="menu-item-1042" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1042 nav-item nav-item nav-item--primary-navigation nav-item--hunger-here"><a href="https://www.feedingal.org/hunger-here/" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Hunger Here</a>
+<ul class="sub-menu">
+	<li id="menu-item-1044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1044 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--the-facts"><a href="https://www.feedingal.org/hunger-here/the-facts/">The Facts</a></li>
+	<li id="menu-item-1043" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1043 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--research"><a href="https://www.feedingal.org/hunger-here/research/">Research</a></li>
+</ul>
+</li>
+<li id="menu-item-1049" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1049 nav-item nav-item nav-item--primary-navigation nav-item--about-us"><a href="https://www.feedingal.org/how-we-help/about-us/" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-1446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1446 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--who-we-are"><a href="https://www.feedingal.org/how-we-help/about-us/">Who We Are</a></li>
+	<li id="menu-item-1050" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1050 nav-item sub-nav-item sub-nav-item--primary-navigation nav-item--faq"><a href="https://www.feedingal.org/hunger-here/faq/">FAQ</a></li>
+</ul>
+</li>
+</ul></div>
+        </div>
+    </nav>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</header>
+
+    
+    <a href="https://donate.feedingal.org/checkout/1654" target="_blank" class="donate-button">Donate</a>
+	
+    <section class="hero hero--page am-txt-black am-align-x-middle am-align-y-middle hero--md hero--home" style="background-image: url(https://www.feedingal.org/wp-content/uploads/2018/10/elaine-casap-86020-unsplash.jpg);">
+    <div class="hero__content container am-flex-item-wrap">
+        <article>
+            <h1 class="hero__title">
+                Together, we can solve hunger!
+            </h1>
+
+            
+            <div class="am-buttons">
+                                <div class="am-button-wrap">
+                <a href="https://donate.feedingal.org/checkout/1654" target="_blank" class="am-button am-button-tertiary">
+                    <span>Donate</span>
+                </a>
+            </div>
+                                <div class="am-button-wrap">
+                <a href="https://www.feedingal.org/how-we-help/our-impact/" class="am-button am-button-quaternary">
+                    <span>How We Help</span>
+                </a>
+            </div>
+            </div>
+        </article>
+    </div>
+
+        <a href="http://www.feedingamerica.org/" target="_blank" class="logo-link">
+        <img src="https://www.feedingal.org/wp-content/themes/anchour-base/dist/images/feeding-america_b57f6f3d.png" alt="Member of Feeding America">
+    </a>
+</section>
+        <div class="wrap" role="document">
+      <div class="content">
+        <main class="main">
+                       <div class="page-header sr-only">
+  <h1>Home</h1>
+</div>
+                    </main>
+              </div>
+    </div>
+    
+    <section class="am am-one-column-text am-txt-white am-bg-primary am-align-x-left am-content-width-md am-padding-top-0 am-padding-bottom-0 am-first">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                    
+<div class="am-flex-item-wrap am-column">
+        <h2 class="am-title">Impact of Coronavirus on the Food Bank</h2>
+    <div class="am-content">
+        <div class="am-content">
+<p>In coordination with&nbsp;<a href="https://www.facebook.com/FeedingAmerica/?__tn__=K-R&amp;eid=ARAvFHoVQJaHfFaR4g55oECcN9pu0bsZ6359-g0UHHzhStyE6_x-htYoq9IL0zf04XdtSmheafObVnJP&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARDG2n_a95VSlULqzqNFDPwJCsBueVk40ITbTKkhO1boxyD9iv3KKfXpVkfvBZCuegLpRUz5Pm2mTHRTt1fMC4e2SkYZbx3AyfXT_p9f7SoAA4sqKpNEYD6NmwpQXqH3T34s9ht5Kky1cxsfhF3P9iWb8Ztyk7In8f2MDEkPiuUNp7PuXpjj1nXc-M5cC9t3TUBR_nt3RrTTAukk-mXNCn1uDT_JdAoWwjTJz-_Ocyhfz34x-M9bmS45yS6K4bnAjfVyrYVU9pfe19mbxC5v0hoAP9WpNc7dEwxaUlE4ljKmSNrBPiOWAV5p_42UexX8tpfKrxGVnH_b_iPRFA">Feeding America</a>, Community Food Bank of Central Alabama is actively monitoring developments related to COVID-19 (coronavirus). We are taking proactive measures to protect the health and well-being of our staff, volunteers, and clients as we continue to serve our community.</p>
+<p>The Food Bank plans to provide uninterrupted service, supplying food to its agency partners. We are, however, suspending volunteer activities within our warehouse until further notice. Additionally, CFB is making adjustments to its direct-service programs to meet the changing needs and new challenges facing our community.</p>
+</div>
+<p>For the safety of our staff and the public, the Corner Market Mobile Grocery Store has suspended operations for remainder of this month.The Food Bank is also discussing the mobilization of additional resources to benefit impacted individuals and communities should the situation necessitate it.</p>
+<p>The Food Bank has not received reports of coronavirus cases from our staff or partner agency network.We are monitoring the situation closely and taking necessary precautions to help make sure that food and product remains safe, our staff remain healthy, and that our distributions can continue.</p>
+<p>Anyone associated with the Food Bank’s activity including community volunteers, clients, and staff members are being encouraged to follow the guidelines set by the&nbsp;<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>&nbsp;and&nbsp;<a href="http://www.alabamapublichealth.gov/">Alabama Department of Public Health</a>.</p>
+<p><span style="color: #ffa300;"><a style="color: #ffa300;" href="https://www.feedingal.org/home/covid-19-impact/" target="_blank" rel="noopener">TO GET HELP, <span style="color: #00ff84;">GIVE HELP,</span> or LEARN MORE, <span style="color: #ffffff;"><strong>CLICK HERE</strong></span></a>.</span></p>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-text-image-split am-txt-white am-header-white am-bg-secondary am-align-x-left am-align-y-middle am-image-bg-tertiary am-flip-columns">
+        <div class="crust" style="opacity: 1;">
+            <div class="mantle">
+                <div class="core">
+                    
+<div class="am-flex-item-wrap am-column-wrap">
+    <div class="am-column am-column-txt">
+            <h3 class="am-header">Our Mission</h3>
+            <div class="am-content">
+        <h5>No one in Alabama should go hungry. And we believe there is a solution to the problem of hunger in Alabama. For every person who is currently in need, there are even more people in Alabama willing and able to reach out with a helping hand.</h5>
+    </div>
+            <div class="am-buttons">
+                    <div class="am-button-wrap">
+                <a href="https://www.feedingal.org/get-involved/" class="am-button am-button-quaternary">
+                    <span>Get Involved</span>
+                </a>
+            </div>
+            </div>
+    </div>
+
+    <div class="am-column am-column-img">
+            <div class="am-image-wrap">
+        <img width="4333" height="2889" src="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653.jpg" data-original="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653.jpg" class="attachment-am-image size-am-image loading" alt="" data-original-set="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653.jpg 4333w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-300x200.jpg 300w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-768x512.jpg 768w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-1024x683.jpg 1024w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-256x171.jpg 256w" sizes="(max-width: 4333px) 100vw, 4333px" data-attachment-id="1147" data-permalink="https://www.feedingal.org/summermeals/img_2653/" data-orig-file="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653.jpg" data-orig-size="4333,2889" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;4&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS Rebel T6&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1531481134&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;25&quot;,&quot;iso&quot;:&quot;250&quot;,&quot;shutter_speed&quot;:&quot;0.033333333333333&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_2653" data-image-description="" data-medium-file="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-300x200.jpg" data-large-file="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-1024x683.jpg" srcset="https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653.jpg 4333w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-300x200.jpg 300w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-768x512.jpg 768w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-1024x683.jpg 1024w, https://www.feedingal.org/wp-content/uploads/2019/02/IMG_2653-256x171.jpg 256w">    </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-text-image-split am-txt-black am-header-black am-bg-white am-align-x-left am-align-y-top">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                    
+<div class="am-flex-item-wrap am-column-wrap">
+    <div class="am-column am-column-txt">
+            <h3 class="am-header">What Hunger Looks Like in Central Alabama</h3>
+            <div class="am-content">
+        <p>In 2019, Community Food Bank completed its most comprehensive <a href="https://www.feedingal.org/hunger-here/research">study of hunger in Central Alabama.</a> We found that the people we serve are facing tough choices between buying food and paying for basic needs. These parents, students, seniors, and working families are struggling with hunger and depend on food assistance to make ends meet.</p>
+    </div>
+            </div>
+
+    <div class="am-column am-column-img">
+            <div class="am-image-wrap">
+        <img width="2413" height="1200" src="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs.png" data-original="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs.png" class="attachment-am-image size-am-image loaded" alt="" data-original-set="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs.png 2413w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-300x149.png 300w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-768x382.png 768w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-1024x509.png 1024w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-256x127.png 256w" sizes="(max-width: 2413px) 100vw, 2413px" data-attachment-id="1176" data-permalink="https://www.feedingal.org/home/tradeoffs/" data-orig-file="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs.png" data-orig-size="2413,1200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="tradeoffs" data-image-description="" data-medium-file="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-300x149.png" data-large-file="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-1024x509.png" srcset="https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs.png 2413w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-300x149.png 300w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-768x382.png 768w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-1024x509.png 1024w, https://www.feedingal.org/wp-content/uploads/2019/02/tradeoffs-256x127.png 256w">    </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-multi-column-text am-txt-white am-header-white am-bg-secondary am-align-x-middle am-align-y-middle am-column-count-2 am-padding-top-0 am-padding-bottom-0">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                        <div class="am-flex-item-wrap am-column-wrap">
+                    <div class="am-column">
+                    <h3 class="am-header">Support Families in Central Alabama</h3>
+                    <div class="am-content">
+        <p style="text-align: center;">We rely on the generosity and support of our communities to help us in our fight to end hunger in Central Alabama. Did you know you can help us provide up to 200 meals by donating just $25?</p>
+    </div>
+                    <div class="am-buttons">
+                    <div class="am-button-wrap">
+                <a href="https://www.giveffect.com/checkout/1654" target="_blank" class="am-button am-button-tertiary">
+                    <span>Donate</span>
+                </a>
+            </div>
+            </div>
+            </div>
+                    <div class="am-column">
+                                    <div class="am-content">
+        <div id="amznCharityBanner"><script type="text/javascript">(function() {var iFrame = document.createElement('iframe'); iFrame.style.display = 'none'; iFrame.style.border = "none"; iFrame.width = 310; iFrame.height = 256; iFrame.setAttribute && iFrame.setAttribute('scrolling', 'no'); iFrame.setAttribute('frameborder', '0'); setTimeout(function() {var contents = (iFrame.contentWindow) ? iFrame.contentWindow : (iFrame.contentDocument.document) ? iFrame.contentDocument.document : iFrame.contentDocument; contents.document.open(); contents.document.write(decodeURIComponent("%3Cdiv%20id%3D%22amznCharityBannerInner%22%3E%3Ca%20href%3D%22https%3A%2F%2Fsmile.amazon.com%2Fch%2F63-0837956%22%20target%3D%22_blank%22%3E%3Cdiv%20class%3D%22text%22%20height%3D%22%22%3E%3Cdiv%20class%3D%22support-wrapper%22%3E%3Cdiv%20class%3D%22support%22%20style%3D%22font-size%3A%2024px%3B%20line-height%3A%2027px%3B%20margin-top%3A%202.5px%3B%20margin-bottom%3A%202.5px%3B%22%3ESupport%20%3Cspan%20id%3D%22charity-name%22%20style%3D%22display%3A%20inline-block%3B%22%3ECommunity%20Food%20Bank%20of%20Central%20Alabama.%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cp%20class%3D%22when-shop%22%3EWhen%20you%20shop%20at%20%3Cb%3Esmile.amazon.com%2C%3C%2Fb%3E%3C%2Fp%3E%3Cp%20class%3D%22donates%22%3EAmazon%20donates.%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cstyle%3E%23amznCharityBannerInner%7Bbackground-image%3Aurl(https%3A%2F%2Fm.media-amazon.com%2Fimages%2FG%2F01%2Fx-locale%2Fpaladin%2Fcharitycentral%2Fbanner-background-image._CB309675353_.png)%3Bwidth%3A300px%3Bheight%3A250px%3Bposition%3Arelative%7D%23amznCharityBannerInner%20a%7Bdisplay%3Ablock%3Bwidth%3A100%25%3Bheight%3A100%25%3Bposition%3Arelative%3Bcolor%3A%23000%3Btext-decoration%3Anone%7D.text%7Bposition%3Aabsolute%3Btop%3A20px%3Bleft%3A15px%3Bright%3A15px%3Bbottom%3A100px%7D.support-wrapper%7Boverflow%3Ahidden%3Bmax-height%3A86px%7D.support%7Bfont-family%3AArial%2Csans%3Bfont-weight%3A700%3Bline-height%3A28px%3Bfont-size%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.when-shop%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A25px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D.donates%7Bfont-family%3AArial%2Csans%3Bfont-size%3A15px%3Bfont-weight%3A400%3Bline-height%3A21px%3Bcolor%3A%23333%3Btext-align%3Acenter%3Bmargin%3A0%3Bpadding%3A0%3Bbackground%3A0%200%7D%3C%2Fstyle%3E")); contents.document.close(); iFrame.style.display = 'block';}); document.getElementById('amznCharityBanner').appendChild(iFrame); })(); </script><iframe width="310" height="256" scrolling="no" frameborder="0" style="display: block; border: none;"></iframe></div>
+    </div>
+                            </div>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-text-image-split am-txt-black am-header-black am-bg-white am-align-x-left am-align-y-middle am-padding-bottom-0">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                    
+<div class="am-flex-item-wrap am-column-wrap">
+    <div class="am-column am-column-txt">
+            <h3 class="am-header">Need Food?</h3>
+            <div class="am-content">
+        <p>The Food Bank provides food for over 200 Partner Agencies (soup kitchens, food pantries, shelters, etc.) To find the closest one to you, click below.</p>
+<p>Additionally, United Way’s 211 service can help you find any type of assistance that you need, whether it is food, shelter, clothing, utility assistance, and more. If you are in the Birmingham area and need assistance, dial 211 for United Way Referral Line or if you have internet access, you can reach the referral system below.</p>
+    </div>
+            </div>
+
+    <div class="am-column am-column-img">
+            <div class="am-image-wrap">
+        <img width="5184" height="3456" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAAA1BMVEWysrKSPAk+AAAACklEQVQIHWNgAAAAAgABz8g15QAAAABJRU5ErkJggg==" data-original="https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x.jpg" class="attachment-am-image size-am-image" alt="" data-original-set="https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x.jpg 5184w, https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x-300x200.jpg 300w, https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x-768x512.jpg 768w, https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x-1024x683.jpg 1024w, https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x-256x171.jpg 256w" sizes="(max-width: 5184px) 100vw, 5184px" data-attachment-id="1061" data-permalink="https://www.feedingal.org/hunger-here/corner-market-wrap-around-x/" data-orig-file="https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x.jpg" data-orig-size="5184,3456" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;4.5&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS Rebel T6&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1505305591&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;29&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.025&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Corner Market Wrap Around x" data-image-description="" data-medium-file="https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x-300x200.jpg" data-large-file="https://www.feedingal.org/wp-content/uploads/2018/12/Corner-Market-Wrap-Around-x-1024x683.jpg">    </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-one-column-text am-txt-black am-bg-white am-align-x-middle am-content-width-xl">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                    
+<div class="am-flex-item-wrap am-column">
+        <div class="am-buttons">
+                    <div class="am-button-wrap">
+                <a href="https://www.feedingal.org/how-we-help/find-food/" class="am-button am-button-quaternary">
+                    <span>Find Food Map</span>
+                </a>
+            </div>
+                    <div class="am-button-wrap">
+                <a href="http://www.211connectsalabama.org/food/" target="_blank" class="am-button am-button-quaternary">
+                    <span>Need Other Services?</span>
+                </a>
+            </div>
+                    <div class="am-button-wrap">
+                <a href="https://snapapplication.wufoo.com/forms/z18lmlfp0bnt12l/" target="_blank" class="am-button am-button-quaternary">
+                    <span>Apply for SNAP (Food Stamps)</span>
+                </a>
+            </div>
+            </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-latest-posts am-txt-white am-header-white am-bg-black">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                        <h2 class="am-title">Lastest Posts</h2>
+    <div class="am-column-wrap am-flex-item-wrap masonry-wrap" style="position: relative; height: 431.25px;">
+                    <a class="am-column masonry-item" href="https://www.feedingal.org/latest-news/2019/11/27/enterprise-rent-a-car-foundation-donates-40040-to-the-community-food-bank-of-central-alabama/" style="position: absolute; left: 0px; top: 0px;">
+                <div class="am-column-inner" style="background-image:url(https://www.feedingal.org/wp-content/uploads/2019/08/fa-fruit-logo-image-1.png);">
+                    <article>
+                        <span class="am-article-inner">
+                            <h4>Enterprise Rent-A-Car Foundation Donates $40,040 to the Community Food Bank of Central Alabama</h4>
+                            <span class="am-hover-show">
+                                <span class="am-excerpt">
+                                                                    </span>
+                            </span>
+                        </span>
+                    </article>
+                </div>
+            </a>
+                    <a class="am-column masonry-item" href="https://www.feedingal.org/latest-news/2019/11/25/the-milk2myplate-program-brings-nutrient-rich-milk-to-the-food-insecure/" style="position: absolute; left: 292.5px; top: 0px;">
+                <div class="am-column-inner" style="background-image:url(https://www.feedingal.org/wp-content/uploads/2019/06/dairy-alliance.png);">
+                    <article>
+                        <span class="am-article-inner">
+                            <h4>The Milk2MyPlate Program brings nutrient-rich milk to the food insecure</h4>
+                            <span class="am-hover-show">
+                                <span class="am-excerpt">
+                                                                    </span>
+                            </span>
+                        </span>
+                    </article>
+                </div>
+            </a>
+                    <a class="am-column masonry-item" href="https://www.feedingal.org/latest-news/2019/11/11/community-food-bank-leader-tapped-for-national-role/" style="position: absolute; left: 585px; top: 0px;">
+                <div class="am-column-inner" style="background-image:url(https://www.feedingal.org/wp-content/uploads/2018/10/oranges.jpg);">
+                    <article>
+                        <span class="am-article-inner">
+                            <h4>Community Food Bank Leader Tapped for National Role</h4>
+                            <span class="am-hover-show">
+                                <span class="am-excerpt">
+                                                                    </span>
+                            </span>
+                        </span>
+                    </article>
+                </div>
+            </a>
+                    <a class="am-column masonry-item" href="https://www.feedingal.org/latest-news/2019/10/17/bold-goals-coalition-brainstorms-solutions-to-hunger-education-mental-health/" style="position: absolute; left: 877.5px; top: 0px;">
+                <div class="am-column-inner" style="background-image:url(https://www.feedingal.org/wp-content/uploads/2019/10/71892597_10157412386414799_5185784341149515776_n.jpg);">
+                    <article>
+                        <span class="am-article-inner">
+                            <h4>Bold Goals Coalition brainstorms solutions to hunger, education, mental health</h4>
+                            <span class="am-hover-show">
+                                <span class="am-excerpt">
+                                                                    </span>
+                            </span>
+                        </span>
+                    </article>
+                </div>
+            </a>
+                    <a class="am-column masonry-item" href="https://www.feedingal.org/latest-news/2019/09/23/2019-october-impact-report/" style="position: absolute; left: 292.5px; top: 215.625px;">
+                <div class="am-column-inner" style="background-image:url();">
+                    <article>
+                        <span class="am-article-inner">
+                            <h4>2019 October Impact Report</h4>
+                            <span class="am-hover-show">
+                                <span class="am-excerpt">
+                                                                    </span>
+                            </span>
+                        </span>
+                    </article>
+                </div>
+            </a>
+                    <a class="am-column masonry-item" href="https://www.feedingal.org/latest-news/2019/04/30/1410/" style="position: absolute; left: 877.5px; top: 215.625px;">
+                <div class="am-column-inner" style="background-image:url(https://www.feedingal.org/wp-content/uploads/2018/11/IMG_2625.jpg);">
+                    <article>
+                        <span class="am-article-inner">
+                            <h4>Birmingham Considers Roving Stores to Fill Food Gaps</h4>
+                            <span class="am-hover-show">
+                                <span class="am-excerpt">
+                                                                    </span>
+                            </span>
+                        </span>
+                    </article>
+                </div>
+            </a>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="am am-one-column-text am-txt-black am-bg-white am-align-x-left am-content-width-lg am-padding-top-0 am-padding-bottom-0">
+        <div class="crust" style="opacity: 0;">
+            <div class="mantle">
+                <div class="core">
+                    
+<div class="am-flex-item-wrap am-column">
+        <h2 class="am-title">Our Supporters</h2>
+    <div class="am-content">
+        				<style>
+			#wpls-logo-showcase-slider-1 .wp-post-image,
+			#wpls-logo-showcase-slider-1 .wp-post-image img.wp-post-image{max-height:250px; }
+		</style>
+		<div class="wpls-logo-showcase-slider-wrp wpls-logo-clearfix">
+			<div class="wpls-logo-showcase logo_showcase wpls-logo-slider  wpls-design-1  sliderimage_hide_border  slick-initialized slick-slider slick-dotted" id="wpls-logo-showcase-slider-1" role="toolbar"><button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: inline-block;">Previous</button>
+				
+<div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 4761px; transform: translate3d(-828px, 0px, 0px);"><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://alfba.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/AFBA_LOGO_FINAL-300x105.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://publixcharities.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/publix-charities-logo.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.uab.edu/benfund/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/UAB-Benevolent-Fund.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.uwca.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/UWCA.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://foundation.carmax.com/" target="_self" tabindex="0">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/CarMax-Foundation-logo.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.shipt.com/?param=home&amp;noredirect" target="_self" tabindex="0">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/shipt.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide02" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://powerofgood.com/" target="_self" tabindex="0">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/southernco_v_cmyk.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide03" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.amfirst.org/" target="_self" tabindex="0">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/america-s-first-federal-credit-union-squarelogo-1427200443846.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide04" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.bcbsal.org/web/index.html" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/Blue-Cross-Blue-Shield.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide05" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.brookwoodbaptisthealth.com/connect-with-us/our-blog/our-blog-detail/newsroom/2018/05/31/brookwood-baptist-health-to-host-healthy-over-hungry-cereal-drive-june-1-8" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/Brookwood-Baptist-Health.jpe" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="6" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide06" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.yourcommunityfirst.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/Community-Foundation-Northeast-Alabama.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="7" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide07" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="http://www.allegalfoodfrenzy.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/Alabama-Legal-Food-Frenzy.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="8" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide08" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.tysonfoods.com/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/TysonFoodsLogoBlue_0.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="9" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide09" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.allwithinmyhands.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/awmh.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="10" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide010" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.techbridge.org/alabama/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/tech-bridge.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="11" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide011" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://alfba.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/AFBA_LOGO_FINAL-300x105.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="12" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide012" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://publixcharities.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/publix-charities-logo.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="13" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide013" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.uab.edu/benfund/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/UAB-Benevolent-Fund.png" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide" data-slick-index="14" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide014" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.uwca.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/UWCA.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://foundation.carmax.com/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/CarMax-Foundation-logo.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.shipt.com/?param=home&amp;noredirect" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/shipt.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://powerofgood.com/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/04/southernco_v_cmyk.jpg" alt="">
+			</a>		
+			
+	</div>
+	</div><div class="wpls-logo-cnt slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" tabindex="-1" style="width: 197px;">	
+	<div class="wpls-fix-box">		
+					
+			<a href="https://www.amfirst.org/" target="_self" tabindex="-1">
+				<img class="wp-post-image" src="https://www.feedingal.org/wp-content/uploads/2019/02/america-s-first-federal-credit-union-squarelogo-1427200443846.png" alt="">
+			</a>		
+			
+	</div>
+	</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: inline-block;">Next</button><ul class="slick-dots" role="tablist" style="display: block;"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01"><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation02" id="slick-slide02"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation03" id="slick-slide03"><button type="button" data-role="none" role="button" tabindex="0">4</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation04" id="slick-slide04"><button type="button" data-role="none" role="button" tabindex="0">5</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation05" id="slick-slide05"><button type="button" data-role="none" role="button" tabindex="0">6</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation06" id="slick-slide06"><button type="button" data-role="none" role="button" tabindex="0">7</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation07" id="slick-slide07"><button type="button" data-role="none" role="button" tabindex="0">8</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation08" id="slick-slide08"><button type="button" data-role="none" role="button" tabindex="0">9</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation09" id="slick-slide09"><button type="button" data-role="none" role="button" tabindex="0">10</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation010" id="slick-slide010"><button type="button" data-role="none" role="button" tabindex="0">11</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation011" id="slick-slide011"><button type="button" data-role="none" role="button" tabindex="0">12</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation012" id="slick-slide012"><button type="button" data-role="none" role="button" tabindex="0">13</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation013" id="slick-slide013"><button type="button" data-role="none" role="button" tabindex="0">14</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation014" id="slick-slide014"><button type="button" data-role="none" role="button" tabindex="0">15</button></li></ul></div>
+			<div class="wpls-logo-showacse-slider-conf" data-conf="{&quot;slides_column&quot;:&quot;4&quot;,&quot;slides_scroll&quot;:&quot;1&quot;,&quot;dots&quot;:&quot;true&quot;,&quot;arrows&quot;:&quot;true&quot;,&quot;autoplay&quot;:&quot;true&quot;,&quot;autoplay_interval&quot;:&quot;2000&quot;,&quot;loop&quot;:&quot;true&quot;,&quot;rtl&quot;:&quot;false&quot;,&quot;speed&quot;:&quot;1000&quot;,&quot;center_mode&quot;:&quot;false&quot;}"></div>
+		</div>
+			
+		
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="content-info">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <a href="/" class="brand brand--footer">
+                    <span class="sr-only">
+                        CFBCA
+                    </span>
+                </a>
+
+                                    <div class="footer-contact">
+                        <section class="widget text-2 widget_text">			<div class="textwidget"><p>107 Walter Davis Drive<br>
+Birmingham, Alabama 35209<br>
+Phone: 205-942-8911<br>
+Fax: 205-942-8838</p>
+</div>
+		</section>                    </div>
+                
+                                    <div class="social-links">
+                        <div class="menu-social-navigation-container"><ul id="menu-social-navigation" class="nav"><li id="menu-item-475" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-475 nav-item nav-item nav-item--social-links nav-item--facebook"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/feedingAL/">Facebook</a></li>
+<li id="menu-item-474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-474 nav-item nav-item nav-item--social-links nav-item--twitter"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/feedingAL">Twitter</a></li>
+<li id="menu-item-1003" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1003 nav-item nav-item nav-item--social-links nav-item--instagram"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/feedingAL/">Instagram</a></li>
+<li id="menu-item-473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-473 nav-item nav-item nav-item--social-links nav-item--youtube"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/FoodBankCentralAL">Youtube</a></li>
+</ul></div>
+                    </div>
+                
+            </div>
+
+                            <div class="footer-col footer-form">
+                    <section class="widget gform_widget-2 gform_widget"><link rel="stylesheet" id="gforms_reset_css-css" href="https://www.feedingal.org/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.16" type="text/css" media="all">
+<link rel="stylesheet" id="gforms_formsmain_css-css" href="https://www.feedingal.org/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.16" type="text/css" media="all">
+<link rel="stylesheet" id="gforms_ready_class_css-css" href="https://www.feedingal.org/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.4.16" type="text/css" media="all">
+<link rel="stylesheet" id="gforms_browsers_css-css" href="https://www.feedingal.org/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.4.16" type="text/css" media="all">
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.4.16"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.feedingal.org\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.feedingal.org\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.4.16"></script>
+
+                <div class="gf_browser_chrome gform_wrapper" id="gform_wrapper_2"><div id="gf_2" class="gform_anchor" tabindex="-1"></div><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2" action="/#gf_2">
+                        <div class="gform_heading">
+                            <span class="gform_description">Keep up with what we’re doing to help end hunger in Central Alabama!</span>
+                        </div>
+                        <div class="gform_body"><ul id="gform_fields_2" class="gform_fields top_label form_sublabel_below description_below"><li id="field_2_1" class="gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible"><label class="gfield_label" for="input_2_1">Your Email<span class="gfield_required">*</span></label><div class="ginput_container ginput_container_email">
+                            <input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your Email" aria-required="true" aria-invalid="false">
+                        </div></li>
+                            </ul></div>
+        <div class="gform_footer top_label"> <input type="submit" id="gform_submit_button_2" class="button gform_button button" value="Join Us" tabindex="2" onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  window[&quot;gf_submitting_2&quot;]=true;  " onkeypress="if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_2&quot;]){return false;} window[&quot;gf_submitting_2&quot;]=true;  jQuery(&quot;#gform_2&quot;).trigger(&quot;submit&quot;,[true]); }"> <input type="hidden" name="gform_ajax" value="form_id=2&amp;title=&amp;description=1&amp;tabindex=1">
+            <input type="hidden" class="gform_hidden" name="is_submit_2" value="1">
+            <input type="hidden" class="gform_hidden" name="gform_submit" value="2">
+            
+            <input type="hidden" class="gform_hidden" name="gform_unique_id" value="">
+            <input type="hidden" class="gform_hidden" name="state_2" value="WyJbXSIsIjdlYjJiYjE4OTQ0OTk4NWYxOTczYTJiNWI1YmJhZjllIl0=">
+            <input type="hidden" class="gform_hidden" name="gform_target_page_number_2" id="gform_target_page_number_2" value="0">
+            <input type="hidden" class="gform_hidden" name="gform_source_page_number_2" id="gform_source_page_number_2" value="1">
+            <input type="hidden" name="gform_field_values" value="">
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style="display:none;width:0px;height:0px;" src="about:blank" name="gform_ajax_frame_2" id="gform_ajax_frame_2">This iframe contains the logic required to handle Ajax powered Gravity Forms.</iframe>
+                <script type="text/javascript">jQuery(document).ready(function($){gformInitSpinner( 2, 'https://www.feedingal.org/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_2').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_2');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_2').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_2').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_2').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_2').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_2').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_2').val();gformInitSpinner( 2, 'https://www.feedingal.org/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [2, current_page]);window['gf_submitting_2'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_2').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_2').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [2]);window['gf_submitting_2'] = false;}, 50);}else{jQuery('#gform_2').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [2, current_page]);} );} );</script><script type="text/javascript"> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 2) {if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type="text/javascript"> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [2, 1]) } ); </script></section><section class="widget_text widget custom_html-4 widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.guidestar.org/profile/63-0837956" target="_blank" rel="noopener noreferrer"><img src="https://widgets.guidestar.org/gximage2?o=8007078&amp;l=v4"></a>
+<span id="siteseal"><script async="" type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=9Z4qQ7J3Im72xg0O5R48rYZh2nZOgom6kuTbjtASXj9636dVO9gTRmtLYHeO"></script><img style="cursor:pointer;cursor:hand" src="https://seal.godaddy.com/images/3/en/siteseal_gd_3_h_l_m.gif" onclick="verifySeal();" alt="SSL site seal - click to verify"></span></div></section>                </div>
+            
+                            <div class="footer-col footer-nav">
+                    <h4>Navigation</h4>
+                    <div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="nav flex-column"><li id="menu-item-181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3 current_page_item menu-item-181 nav-item nav-item nav-item--footer-navigation nav-item--home"><a href="https://www.feedingal.org/" aria-current="page">Home</a></li>
+<li id="menu-item-188" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-188 nav-item nav-item nav-item--footer-navigation nav-item--hunger-here"><a href="https://www.feedingal.org/hunger-here/">Hunger Here</a></li>
+<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-186 nav-item nav-item nav-item--footer-navigation nav-item--how-we-help"><a href="https://www.feedingal.org/how-we-help/">How We Help</a></li>
+<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187 nav-item nav-item nav-item--footer-navigation nav-item--latest-news"><a href="https://www.feedingal.org/how-we-help/latest-news/">Latest News</a></li>
+<li id="menu-item-182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-182 nav-item nav-item nav-item--footer-navigation nav-item--job-openings"><a href="https://www.feedingal.org/how-we-help/about-us/job-openings/">Job Openings</a></li>
+<li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183 nav-item nav-item nav-item--footer-navigation nav-item--contact-us"><a href="https://www.feedingal.org/contact-us/">Contact Us</a></li>
+</ul></div>
+
+                    <div class="united-way"></div>
+                </div>
+            
+
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="content-info__copyright">
+                    <a href="/privacy-policy">Privacy Policy</a> © 2020 CFBCA – All Rights Reserved. <a href="https://www.anchour.com" target="_blank">Website by Anchour</a>.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+    <script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyDKXLUMhOO0hwTwvGmBoeOgUX2Diw0h7Yw&amp;region=US"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/gsfb-foodmap/storelocator-jquery/js/handlebars-1.0.0.min.js"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/gsfb-foodmap/storelocator-jquery/js/jquery.storelocator.js"></script>
+<script type="text/javascript" src="https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=202013"></script>
+<script type="text/javascript" src="//use.typekit.net/ivr4rtx.js"></script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2166044510369837");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2166044510369837&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/themes/anchour-base/dist/scripts/main_8a8d9e0c.js"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/wp-logo-showcase-responsive-slider-slider/assets/js/slick.min.js?ver=2.4"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Wpls = {"is_mobile":"0","is_rtl":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/wp-logo-showcase-responsive-slider-slider/assets/js/wpls-public.js?ver=2.4"></script>
+<script type="text/javascript" src="https://www.feedingal.org/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.4.16"></script>
+<script type="text/javascript" src="https://stats.wp.com/e-202013.js" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.0',blog:'155962840',post:'3',tz:'0',srv:'www.feedingal.org'} ]);
+	_stq.push([ 'clickTrackerInit', '155962840', '3' ]);
+</script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"dfa6bc9b70","applicationID":"132004040","transactionName":"YVIAZUdVVxIFBk1cCVgYN0NcGxYICgFcTUhGXxI=","queueTime":0,"applicationTime":581,"atts":"TRUDEw9PRBw=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<img src="https://pixel.wp.com/g.gif?v=ext&amp;j=1%3A8.0&amp;blog=155962840&amp;post=3&amp;tz=0&amp;srv=www.feedingal.org&amp;host=www.feedingal.org&amp;ref=&amp;fcp=1692&amp;rand=0.970279356505604" alt=":)" width="6" height="5" id="wpstats"><div style="display: none; visibility: hidden;"><script type="text/javascript">var ssaUrl="https://pixel.sitescout.com/iap/b3f1c4becf694489";(new Image).src=ssaUrl;(function(a){var c="https://pixel.sitescout.com/dmp/asyncPixelSync",b=a.createElement("iframe");(b.frameElement||b).style.cssText="width: 0; height: 0; border: 0;";b.src="javascript:false";a.body.appendChild(b);a=b.contentWindow.document;a.open().write("\x3cbody onload\x3d\"window.location.href\x3d'"+c+"'\"\x3e");a.close()})(document);</script></div><iframe src="javascript:false" style="width: 0px; height: 0px; border: 0px;"></iframe></body></html>

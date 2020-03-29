@@ -1,0 +1,951 @@
+<html class=" js flexbox svg" lang="en-US" prefix="og: http://ogp.me/ns#" style="height: 100%;"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="https://bam.nr-data.net/1/658628749e?a=31948875&amp;v=1167.2a4546b&amp;to=ZFABZUYCD0tXUEENX10aNkNdTE5RWFdQHB5DXRM%3D&amp;rst=1460&amp;ref=https://www.feedoc.org/&amp;ap=877&amp;be=438&amp;fe=1421&amp;dc=777&amp;perf=%7B%22timing%22:%7B%22of%22:1585451072375,%22n%22:0,%22f%22:121,%22dn%22:122,%22dne%22:122,%22c%22:122,%22s%22:141,%22ce%22:186,%22rq%22:186,%22rp%22:316,%22rpe%22:321,%22dl%22:340,%22di%22:777,%22ds%22:777,%22de%22:787,%22dc%22:1420,%22l%22:1420,%22le%22:1422%7D,%22navigation%22:%7B%7D%7D&amp;fp=708&amp;fcp=708&amp;at=SBcCEw4YHEU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script src="https://connect.facebook.net/signals/config/2059508720981017?v=2.9.15&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TKHJ9K"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"658628749e",applicationID:"31948875"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="alternate" type="application/rss+xml" title="Second Harvest Food Bank of Orange County Feed" href="https://www.feedoc.org/feed/">
+  <title>Home - Second Harvest Food Bank of Orange County</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v3.3.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Second Harvest Food Bank brings nourishment and hope to 301,000 hungry people throughout Orange County. Every $1 donated provides food for 3 meals.">
+<meta name="robots" content="noodp">
+<link rel="canonical" href="https://www.feedoc.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home - Second Harvest Food Bank of Orange County">
+<meta property="og:description" content="Second Harvest Food Bank brings nourishment and hope to 301,000 hungry people throughout Orange County. Every $1 donated provides food for 3 meals.">
+<meta property="og:url" content="https://www.feedoc.org/">
+<meta property="og:site_name" content="Second Harvest Food Bank of Orange County">
+<meta property="DC.date.issued" content="2016-03-23T21:59:53+00:00">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.feedoc.org\/","name":"Second Harvest Food Bank of Orange County","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.feedoc.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.feedoc.org\/","sameAs":[],"name":"Second Harvest Food Bank of Orange County","logo":"http:\/\/live-fb-shfboc.pantheonsite.io\/wp-content\/uploads\/2016\/05\/SHFBOC_LOGO_2x.png"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel="dns-prefetch" href="//www.feedoc.org">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.feedoc.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.feedoc.org/wp-includes/js/wp-emoji-release.min.js?ver=5.3.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.feedoc.org/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="wpsl-styles-css" href="https://www.feedoc.org/wp-content/plugins/wp-store-locator/css/styles.min.css?ver=2.2.232" type="text/css" media="all">
+<link rel="stylesheet" id="cobalt_fontawesome-css" href="https://www.feedoc.org/wp-content/themes/rrcb_cobalt_master/assets/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="cobalt_css-css" href="https://www.feedoc.org/wp-content/themes/rrcb_cobalt_master/assets/css/main.min.css?b31ca2ea6118f4756e2e8bab036ee355" type="text/css" media="all">
+<link rel="stylesheet" id="parent-style-css" href="https://www.feedoc.org/wp-content/themes/rrcb_cobalt_master/style.css?ver=5.3.2" type="text/css" media="all">
+<link rel="stylesheet" id="child-style-css" href="https://www.feedoc.org/wp-content/themes/FB_SHFBOC/assets/css/style.css?ver=5.3.2" type="text/css" media="all">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://www.feedoc.org/wp-content/themes/rrcb_cobalt_master/assets/vendor/jquery/dist/jquery.min.js?1.11.1"><\/script>')</script>
+<script type="text/javascript" src="https://www.feedoc.org/wp-content/themes/FB_SHFBOC/js/scripts.js?ver=5.3.2"></script>
+<link rel="https://api.w.org/" href="https://www.feedoc.org/wp-json/">
+<link rel="alternate" type="application/json+oembed" href="https://www.feedoc.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.feedoc.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.feedoc.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.feedoc.org%2F&amp;format=xml">
+<style type="text/css"> 
+@media (max-width: 767px){
+.footer.footer-1 .container .sub1 .sub1-info, .footer.footer-1 .container-fluid .sub1 .sub1-info { 
+z-index:1000;
+}
+}
+</style><!-- custom theme styles --><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"></script></head>
+
+<body class="home page" style="position: relative; min-height: 100%; top: 0px;">
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TKHJ9K"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-TKHJ9K');</script>
+<!-- End Google Tag Manager -->
+	<!--[if lt IE 9]>
+		<div class="alert alert-warning">
+			You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.		</div>
+	<![endif]-->
+
+
+
+
+<div class="site-wrapper">
+
+	<!--== HEADER ==-->
+
+	<div class="side-nav-bar hidden-lg hidden-md">
+    <div class="navbar-collapse sidebar-offcanvas" id="sidebar" role="navigation">
+                <div class="offcanvas-home-logo">
+			<div class="">
+                <a href="https://www.feedoc.org/">
+                <img id="logo" src="https://www.feedoc.org/wp-content/uploads/2016/05/SHFBOC_LOGO_2x.png">
+                </a>                  
+			</div>
+        </div>
+        <div class="sidebar-donate-btn">
+            <div class="inner">
+				<a class="btn btn-donate" role="button" href="https://www.feedoc.org/donate/">Donate</a>
+            </div>
+        </div>
+<!--=== Feature: nav | Version: 1 ===-->
+   <section class="nav nav-1 nav-nth-1">
+        <div class="container">
+    <nav class="header-nav panel-group navbar-collapse" id="main-side-nav" role="navigation">
+	    <ul id="slideMenu" class="list-unstyled main-menu sidebar"><li class="dropdown menu-give"><a class="dropdown-toggle top-level" data-toggle="dropdown" data-target="#" href="https://www.feedoc.org/give/">Give <span class="caret-wrap"><b class="caret"></b></span></a>
+<ul class="list-unstyled">
+	<li class="menu-give-now"><a href="https://www.feedoc.org/donate-now/">Give Now</a></li>
+	<li class="menu-give-monthly"><a href="https://www.feedoc.org/give-monthly/">Give Monthly</a></li>
+	<li class="menu-give-food"><a href="https://www.feedoc.org/give/give-food/">Give Food</a></li>
+	<li class="menu-other-ways-to-give"><a href="https://www.feedoc.org/give/other-ways-to-give/">Other Ways to Give</a></li>
+	<li class="menu-thank-you-to-our-donors"><a href="https://www.feedoc.org/give/thankyou/">Thank You to Our Donors</a></li>
+</ul>
+</li>
+<li class="dropdown menu-get-involved"><a class="dropdown-toggle top-level" data-toggle="dropdown" data-target="#" href="https://www.feedoc.org/get-involved/">Get Involved <span class="caret-wrap"><b class="caret"></b></span></a>
+<ul class="list-unstyled">
+	<li class="menu-volunteer"><a href="https://www.feedoc.org/get-involved/volunteer/">Volunteer</a></li>
+	<li class="menu-harvesters"><a href="https://www.feedoc.org/harvesters/">Harvesters</a></li>
+	<li class="menu-opportunities-for-kids"><a href="https://www.feedoc.org/get-involved/opportunities-for-kids/">Opportunities for Kids</a></li>
+	<li class="menu-start-a-food-drive"><a href="https://www.feedoc.org/get-involved/start-a-food-drive/">Start a Food Drive</a></li>
+	<li class="menu-virtual-food-drives"><a target="_blank" rel="noopener noreferrer" href="https://www.yourfooddrive.org">Virtual Food Drives</a></li>
+	<li class="menu-advocate"><a href="https://www.feedoc.org/get-involved/advocate/">Advocate</a></li>
+	<li class="menu-events-fundraisers"><a href="https://www.feedoc.org/get-involved/events-fundraisers/">Events &amp; Fundraisers</a></li>
+</ul>
+</li>
+<li class="menu-stories"><a class="top-level" href="https://www.feedoc.org/stories/">Stories</a></li>
+<li class="dropdown menu-learn"><a class="dropdown-toggle top-level" data-toggle="dropdown" data-target="#" href="https://www.feedoc.org/learn/">Learn <span class="caret-wrap"><b class="caret"></b></span></a>
+<ul class="list-unstyled">
+	<li class="menu-about-hunger"><a href="https://www.feedoc.org/learn/about-hunger/">About Hunger</a></li>
+	<li class="menu-how-we-help"><a href="https://www.feedoc.org/learn/how-we-help/">How We Help</a></li>
+	<li class="menu-how-it-works"><a href="https://www.feedoc.org/learn/how-it-works/">How It Works</a></li>
+	<li class="menu-about-us"><a href="https://www.feedoc.org/learn/about-us/">About Us</a></li>
+	<li class="menu-tour-the-food-bank"><a href="https://www.feedoc.org/learn/tour-the-food-bank/">Tour the Food Bank</a></li>
+	<li class="menu-getting-to-second-harvest"><a href="https://www.feedoc.org/learn/second_harvest_directions/">Getting To Second Harvest</a></li>
+	<li class="menu-in-the-news"><a href="https://www.feedoc.org/learn/in-the-news/">In the News</a></li>
+</ul>
+</li>
+<li class="dropdown menu-get-help"><a class="dropdown-toggle top-level" data-toggle="dropdown" data-target="#" href="https://www.feedoc.org/get-help/">Get Help <span class="caret-wrap"><b class="caret"></b></span></a>
+<ul class="list-unstyled">
+	<li class="menu-get-food"><a href="https://www.feedoc.org/get-help/">Get Food</a></li>
+	<li class="menu-calfresh-assistance"><a href="https://www.feedoc.org/get-help/calfresh-assistance/">CalFresh Assistance</a></li>
+</ul>
+</li>
+</ul>    </nav>       </div> <!--/.container-->
+   </section> <!--/.nav-1-->
+  <!--=== // Feature: nav | Version: 1 ===-->
+
+<!--=== Feature: search | Version: 1 ===-->
+   <section class="search search-1 search-nth-1">
+        <div class="container">
+<div class="search-container search-1">
+    <form action="/">
+        <input type="search" placeholder="Search" name="s" class="searchbox searchbox-input searchbox-inset" required="">
+        <button type="submit" class="searchbox-submit" value="">
+        <span class="searchbox-icon"></span>
+        <i class="fa fa-search" style=""></i>
+        </button>
+    </form>
+</div>
+       </div> <!--/.container-->
+   </section> <!--/.search-1-->
+  <!--=== // Feature: search | Version: 1 ===-->
+
+<div class="useful-title">USEFUL LINKS</div><!--=== Feature: nav | Version: 1 ===-->
+   <section class="nav nav-1 nav-nth-2">
+        <div class="container">
+    <nav class="header-nav" id="" role="navigation">
+	    <ul id="menu-useful-links" class="sidebar-util-nav"><li class="menu-contact-us"><a href="https://www.feedoc.org/contact-us/">Contact Us</a></li>
+<li class="menu-volunteer"><a href="https://www.feedoc.org/get-involved/volunteer/">Volunteer</a></li>
+<li class="menu-blog"><a href="https://www.feedoc.org/blog/">Blog</a></li>
+<li class="menu-newsletters"><a href="https://www.feedoc.org/newsletters/">Newsletters</a></li>
+<li class="menu-news-and-media"><a href="https://www.feedoc.org/news-and-media/">News and Media</a></li>
+<li class="menu-financial-stewardship"><a href="https://www.feedoc.org/learn/about-us/financial-stewardship/">Financial Stewardship</a></li>
+<li class="menu-jobs"><a href="https://www.feedoc.org/jobs/">Jobs</a></li>
+<li class="menu-maps"><a href="https://www.feedoc.org/learn/second_harvest_directions/">Maps</a></li>
+<li class="menu-privacy-policy"><a href="https://www.feedoc.org/privacy-policy/">Privacy Policy</a></li>
+<li class="menu-partner-resources"><a href="https://www.feedoc.org/partners/">Partner Resources</a></li>
+</ul>    </nav>       </div> <!--/.container-->
+   </section> <!--/.nav-1-->
+  <!--=== // Feature: nav | Version: 1 ===-->
+
+<!--=== Feature: social-icons | Version: 1 ===-->
+   <aside class="social-icons social-icons-1 social-icons-nth-1">
+        <div class="container-social">
+<div class="btn-group btn-group-sidebar">
+</div>       </div> <!--/.container-social-->
+   </aside> <!--/.social-icons-1-->
+  <!--=== // Feature: social-icons | Version: 1 ===-->
+
+ 
+
+    </div> <!--/.sidebar-offcanvas-->
+</div>
+<!--=== Feature: header | Version: 1 ===-->
+   <header class="header header-1 header-nth-1">
+        <div class="container">
+				<div class="home-logo">
+					<a href="https://www.feedoc.org/"><img class="logo" src="https://www.feedoc.org/wp-content/uploads/2016/05/SHFBOC_LOGO_2x.png"></a>
+				</div><!-- /.home-logo -->
+				<div class="utility-bar">
+                    <ul class="container-utility-bar">
+                        <li>
+    <nav class="header-nav" id="" role="navigation">
+	    <ul id="menu-utility-nav" class="util-nav"><li class="menu-blog"><a class="dropdown-toggle" href="https://www.feedoc.org/blog/"><span class="nav-title-copy">Blog</span></a></li>
+<li class="menu-partners-resources"><a class="dropdown-toggle" href="/partners"><span class="nav-title-copy">Partners Resources</span></a></li>
+</ul>    </nav>                        </li>
+
+                        <li>
+                            <!--=== Feature: translate | Version: 1 ===-->
+   <section class="translate translate-1 translate-nth-1">
+        <div class="container">
+
+<style type="text/css">
+<!--
+
+.prisna-gwt-align-left {
+	text-align: left !important;
+}
+.prisna-gwt-align-right {
+	text-align: right !important;
+}
+
+
+
+body {
+	top: 0 !important;
+}
+.goog-te-banner-frame {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.goog-tooltip,
+.goog-tooltip:hover {
+	display: none !important;
+}
+.goog-text-highlight {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+-->
+</style>
+
+
+
+<div id="google_translate_element" class="prisna-gwt-align-right"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+function initializeGoogleTranslateElement() {
+	new google.translate.TranslateElement({
+		pageLanguage: "en",
+		layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+		includedLanguages: "en,es,vi"
+	}, "google_translate_element");
+}
+/*]]>*/
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script>       </div> <!--/.container-->
+   </section> <!--/.translate-1-->
+  <!--=== // Feature: translate | Version: 1 ===-->
+
+                        </li>
+                        <li>
+					<div class="search-container search-1">
+    <form action="/">
+        <input type="search" placeholder="Search" name="s" class="searchbox searchbox-input searchbox-inset" required="">
+        <button type="submit" class="searchbox-submit" value="">
+        <span class="searchbox-icon"></span>
+        <i class="fa fa-search" style=""></i>
+        </button>
+    </form>
+</div>
+                        </li>
+                        <li>
+					        <a class="btn btn-donate" role="button" href="https://www.feedoc.org/donate/" target="_self">Donate</a>
+                        </li>
+                    </ul>
+				</div>
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar icon-bar-top"></span>
+                        <span class="icon-bar icon-bar-middle"></span>
+                        <span class="icon-bar icon-bar-bottom"></span>
+                      </button>
+                    </div>
+
+                <div class="clearfix"></div>
+        
+                <nav class="navbar hidden-sm hidden-xs">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <nav class="header-nav hidden-sm hidden-xs" id="" role="navigation">
+	    <ul id="menu-main-menu" class="nav navbar-nav navbar-right"><li class="dropdown menu-give"><a class="dropdown-toggle" href="https://www.feedoc.org/give/"><span class="nav-title-copy">Give</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-give-now"><a href="https://www.feedoc.org/donate-now/">Give Now</a></li>
+	<li class="menu-give-monthly"><a href="https://www.feedoc.org/give-monthly/">Give Monthly</a></li>
+	<li class="menu-give-food"><a href="https://www.feedoc.org/give/give-food/">Give Food</a></li>
+	<li class="menu-other-ways-to-give"><a href="https://www.feedoc.org/give/other-ways-to-give/">Other Ways to Give</a></li>
+	<li class="menu-thank-you-to-our-donors"><a href="https://www.feedoc.org/give/thankyou/">Thank You to Our Donors</a></li>
+</ul>
+</li>
+<li class="dropdown menu-get-involved"><a class="dropdown-toggle" href="https://www.feedoc.org/get-involved/"><span class="nav-title-copy">Get Involved</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-volunteer"><a href="https://www.feedoc.org/get-involved/volunteer/">Volunteer</a></li>
+	<li class="menu-harvesters"><a href="https://www.feedoc.org/harvesters/">Harvesters</a></li>
+	<li class="menu-opportunities-for-kids"><a href="https://www.feedoc.org/get-involved/opportunities-for-kids/">Opportunities for Kids</a></li>
+	<li class="menu-start-a-food-drive"><a href="https://www.feedoc.org/get-involved/start-a-food-drive/">Start a Food Drive</a></li>
+	<li class="menu-virtual-food-drives"><a target="_blank" rel="noopener noreferrer" href="https://www.yourfooddrive.org">Virtual Food Drives</a></li>
+	<li class="menu-advocate"><a href="https://www.feedoc.org/get-involved/advocate/">Advocate</a></li>
+	<li class="menu-events-fundraisers"><a href="https://www.feedoc.org/get-involved/events-fundraisers/">Events &amp; Fundraisers</a></li>
+</ul>
+</li>
+<li class="menu-stories"><a class="dropdown-toggle" href="https://www.feedoc.org/stories/"><span class="nav-title-copy">Stories</span></a></li>
+<li class="dropdown menu-learn"><a class="dropdown-toggle" href="https://www.feedoc.org/learn/"><span class="nav-title-copy">Learn</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-about-hunger"><a href="https://www.feedoc.org/learn/about-hunger/">About Hunger</a></li>
+	<li class="menu-how-we-help"><a href="https://www.feedoc.org/learn/how-we-help/">How We Help</a></li>
+	<li class="menu-how-it-works"><a href="https://www.feedoc.org/learn/how-it-works/">How It Works</a></li>
+	<li class="menu-about-us"><a href="https://www.feedoc.org/learn/about-us/">About Us</a></li>
+	<li class="menu-tour-the-food-bank"><a href="https://www.feedoc.org/learn/tour-the-food-bank/">Tour the Food Bank</a></li>
+	<li class="menu-getting-to-second-harvest"><a href="https://www.feedoc.org/learn/second_harvest_directions/">Getting To Second Harvest</a></li>
+	<li class="menu-in-the-news"><a href="https://www.feedoc.org/learn/in-the-news/">In the News</a></li>
+</ul>
+</li>
+<li class="dropdown menu-get-help"><a class="dropdown-toggle" href="https://www.feedoc.org/get-help/"><span class="nav-title-copy">Get Help</span></a>
+<ul class="dropdown-menu">
+	<li class="menu-get-food"><a href="https://www.feedoc.org/get-help/">Get Food</a></li>
+	<li class="menu-calfresh-assistance"><a href="https://www.feedoc.org/get-help/calfresh-assistance/">CalFresh Assistance</a></li>
+</ul>
+</li>
+</ul>    </nav>                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+			
+
+
+       </div> <!--/.container-->
+   </header> <!--/.header-1-->
+  <!--=== // Feature: nav | Version: 1 ===-->
+
+
+	<!--== // HEADER ==-->
+
+
+	<!--== CONTENT ==-->
+
+	<!--=== Feature: hero | Version: 1 ===-->
+   <section class="hero hero-1 hero-nth-1">
+        <div class="container">
+	<div class="hero-container container hero-size-hero-image" style="position:relative;">
+        <a class="hero_link" href="https://www.feedoc.org/give-now-5-3/" style="display:block; height:100%; width:100%; position:absolute; z-index:1;"></a><!-- hero hot link -->
+        <div class="row content-right">
+            <div class="col-md-7 hero-img">
+                <div class="featured-image" style="background-image:url('https://www.feedoc.org/wp-content/uploads/2019/12/55993_Holiday-Homepage-Image_SHFBOC_FINAL.jpg')"></div>
+            </div>
+            <div class="col-md-5 content">
+                <div class="inner">
+                    <h2 class="hdr">Give Love. Give Hope. Give Meals. Make sure no one goes hungry.</h2>
+                    <br>
+                    <p>Every $1 helps provide 3 meals. </p>
+    				<br>
+                    <p><a class="btn btn-donate" href="https://www.feedoc.org/give-now-5-3/" target="_self" role="button">DONATE NOW</a></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+       </div> <!--/.container-->
+   </section> <!--/.hero-1-->
+  <!--=== // Feature: hero | Version: 1 ===-->
+
+<!--=== Feature: valueprop | Version: 1 ===-->
+   <section class="valueprop valueprop-1 valueprop-nth-1">
+        <div class="container">
+
+<div class="hdr"><p><a href="http://ocfoodhelp.org/orange-county-free-food-map/" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-19831" src="https://www.feedoc.org/wp-content/uploads/2020/03/Need-Food.jpg" alt="" width="150" height="49"></a></p>
+<p><a href="https://www.feedoc.org/harvest-truck-brigade/" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-19834" src="https://www.feedoc.org/wp-content/uploads/2020/03/HTB.jpg" alt="" width="240" height="49"></a><a href="https://www.feedoc.org/field-distribution-team/" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-19833" src="https://www.feedoc.org/wp-content/uploads/2020/03/FDT.jpg" alt="" width="240" height="49"></a><a href="https://www.feedoc.org/covid-19-update/" target="_blank" rel="noopener"><img class="alignnone size-full wp-image-19832" src="https://www.feedoc.org/wp-content/uploads/2020/03/CovidUpdate.jpg" alt="" width="150" height="49"></a></p>
+<p>&nbsp;</p>
+</div>
+       </div> <!--/.container-->
+   </section> <!--/.valueprop-1-->
+  <!--=== // Feature: valueprop | Version: 1 ===-->
+
+<!--=== Feature: touts | Version: 2 ===-->
+   <section class="touts touts-2 touts-nth-1">
+        <div class="container">
+
+
+<div class="container-fluid">
+    <div class="row ">
+         
+        <div class="col-md-4 mod">
+        	<div class="hdr-container">
+            <a href="https://www.feedoc.org/give/give-monthly/" title="" style="background-image:url(https://www.feedoc.org/wp-content/uploads/2016/03/touts-1-274x274.jpg); height:274px; width:274px; display:inherit;"></a>
+			</div>
+                        <a href="https://www.feedoc.org/give/give-monthly/" title="Donate Monthly" class="read-more">Give Monthly <i class="fa fa-caret-right"></i></a>
+        	<div class="brdr"></div>
+            			                        <p></p>
+                                </div>
+    
+            
+        <div class="col-md-4 mod">
+        	<div class="hdr-container">
+            <a href="https://www.feedoc.org/get-involved/volunteer/" title="" style="background-image:url(https://www.feedoc.org/wp-content/uploads/2016/03/touts-2.jpg); height:274px; width:274px; display:inherit;"></a>
+			</div>
+                        <a href="https://www.feedoc.org/get-involved/volunteer/" title="Donate Monthly" class="read-more">Volunteer <i class="fa fa-caret-right"></i></a>
+        	<div class="brdr"></div>
+            			                        <p></p>
+                                </div>
+    
+            
+        <div class="col-md-4 mod">
+        	<div class="hdr-container">
+            <a href="https://www.feedoc.org/get-involved/start-a-food-drive/" title="" style="background-image:url(https://www.feedoc.org/wp-content/uploads/2016/03/touts-3.jpg); height:274px; width:274px; display:inherit;"></a>
+			</div>
+                        <a href="https://www.feedoc.org/get-involved/start-a-food-drive/" title="Donate Monthly" class="read-more">Start a Food Drive <i class="fa fa-caret-right"></i></a>
+        	<div class="brdr"></div>
+            			                        <p></p>
+                                </div>
+    
+            
+    </div>
+</div>       </div> <!--/.container-->
+   </section> <!--/.touts-2-->
+  <!--=== // Feature: touts | Version: 2 ===-->
+
+<!--=== Feature: cpt | Version: 1 ===-->
+   <section class="cpt cpt-1 cpt-nth-1">
+        <div class="container">
+<div class="cpt-hdr">
+    <h2>O.C. Events</h2>
+        <div class="cpt-hdr-subtitle">
+        <p>Learn more about the latest hunger-fighting events that are helping raise food, funds and awareness for hungry families throughout Orange County.</p>
+    </div>
+    </div>
+        <div class="cpt-group">
+            <div class="row cpt-group-item-row">
+        <div class="row cpt-medium-row">
+                <div class="cpt-member-container col-md-12 col-sm-12">
+        <div class="container-fluid event-item">
+        	<div class="row row-odd">
+                <div class="row-inner">
+                    <div class="event-items-left">
+                        <div class="inner">
+                             <a href="https://www.feedoc.org/get-involved/events-fundraisers/" title="NALC Stamp Out Hunger Food Drive">
+                                <div class="timestamp">
+                            	    <span class="month">May</span>
+                                    <span class="day">09</span>
+                                </div>
+                                <div class="event_thumbnail" style="background-image:url('https://www.feedoc.org/wp-content/uploads/2018/03/Food-Drive-18-RGB-flat-4-255x210.jpg');width:255px;height:210px;background-position:50% 50%;background-size:cover;"><img src="https://www.feedoc.org/wp-content/themes/FB_SHFBOC/images/blank.png" style="width:255; height:210; display:none;"></div>                            </a>
+                        </div>
+                    </div>
+                    <div class="event event-items-body">
+                        <div class="inner">
+                            <div class="event-items-heading">
+                                <h4 class="hdr">
+                                    <a href="https://www.feedoc.org/get-involved/events-fundraisers/" title="NALC Stamp Out Hunger Food Drive">
+                                        NALC Stamp Out Hunger Food Drive                                    </a>
+
+                                </h4>
+                            </div>
+                            <div class="event-details">
+                                <div class="strong">
+                                    May 09, 2020                                </div>
+                                <div class="event-location">Orange County</div>
+                            </div>
+                            <div class="description"><p>Stamp Out Hunger 2020 will be on Saturday, May 9th. Be on the lookout for your Stamp Out Hunger bags in May so you can help end hunger in...</p></div>
+                        </div>
+                    </div>
+            	    <div class="clearfix"></div>
+                </div>
+            </div><!--/.row-->
+	    </div>
+                                    </div>
+                </div> <!--/.row medium-->
+        <div class="row cpt-medium-row">
+                <div class="cpt-member-container col-md-12 col-sm-12">
+        <div class="container-fluid event-item">
+        	<div class="row row-even">
+                <div class="row-inner">
+                    <div class="event-items-left">
+                        <div class="inner">
+                             <a href="https://www.feedoc.org/golftournament/" title="Second Harvest's Par 3 Golf Invitational">
+                                <div class="timestamp">
+                            	    <span class="month">Jun</span>
+                                    <span class="day">01</span>
+                                </div>
+                                <div class="event_thumbnail" style="background-image:url('https://www.feedoc.org/wp-content/uploads/2020/03/HomePageToutGOlf-255x210.jpg');width:255px;height:210px;background-position:50% 50%;background-size:cover;"><img src="https://www.feedoc.org/wp-content/themes/FB_SHFBOC/images/blank.png" style="width:255; height:210; display:none;"></div>                            </a>
+                        </div>
+                    </div>
+                    <div class="event event-items-body">
+                        <div class="inner">
+                            <div class="event-items-heading">
+                                <h4 class="hdr">
+                                    <a href="https://www.feedoc.org/golftournament/" title="Second Harvest's Par 3 Golf Invitational">
+                                        Second Harvest's Par 3 Golf Invitational                                    </a>
+
+                                </h4>
+                            </div>
+                            <div class="event-details">
+                                <div class="strong">
+                                    June 01, 2020                                </div>
+                                <div class="event-location">Aliso Viejo Country Club</div>
+                            </div>
+                            <div class="description"><p>Join us for a fun day on the greens hosted by our Associate Board on Monday, June 1st at Aliso Viejo Country Club.</p>
+...</div>
+                            <a class="secondary-text-cta arrow" href="https://www.feedoc.org/golftournament/" title="Second Harvest's Par 3 Golf Invitational">Learn more.                             <i class="fa fa-caret-right"></i></a>
+                        </div>
+                    </div>
+            	    <div class="clearfix"></div>
+                </div>
+            </div><!--/.row-->
+	    </div>
+                                    </div>
+                </div> <!--/.row medium-->
+				<div class="clearfix"></div>
+            </div>
+        </div>
+    <div class="cpt-footer">
+    <div class="cpt-cta">
+        <a href="/event" class="btn cpt-white-btn">See All Events</a>
+    </div>
+</div>
+
+       </div> <!--/.container-->
+   </section> <!--/.cpt-1-->
+  <!--=== // Feature: cpt | Version: 1 ===-->
+
+<!--=== Feature: infographic | Version: 2 ===-->
+   <section class="infographic infographic-2 infographic-nth-1">
+        <div class="container">
+
+		<div class="infographics col-sm-12 infographic_16">
+				
+			<h3 class="hdr infographic-title">Hunger in Orange County</h3>
+            <span class="sub-title infographic-sub-title">The face of hunger in Orange County is varied and includes the young and old alike — along with hard-working parents who struggle to provide food for their families.</span>
+ 
+			<div class="infographic-item col-md-4 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.feedoc.org/learn/about-hunger/" target="_self">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/touts-1-2.jpg" alt="Children">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr">Children</h4>
+                                <span class="description"></span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+ 
+			<div class="infographic-item col-md-4 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.feedoc.org/learn/about-hunger/" target="_self">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/touts-2-2.jpg" alt="Seniors">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr">Seniors</h4>
+                                <span class="description"></span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+ 
+			<div class="infographic-item col-md-4 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.feedoc.org/learn/about-hunger/" target="_self">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/touts-3-2.jpg" alt="Working Poor">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr">Working Poor</h4>
+                                <span class="description"></span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+			
+		</div><!--/.infographics-->
+		
+		       </div> <!--/.container-->
+   </section> <!--/.infographic-2-->
+  <!--=== // Feature: infographic | Version: 2 ===-->
+
+<!--=== Feature: infographic | Version: 2 ===-->
+   <section class="infographic infographic-2 infographic-nth-2">
+        <div class="container">
+
+		<div class="infographics col-sm-12 infographic_17">
+				
+			<h3 class="hdr infographic-title">The Impact We Make Together</h3>
+            <span class="sub-title infographic-sub-title"></span>
+ 
+			<div class="infographic-item col-md-4 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.feedoc.org/learn/how-it-works/" target="_self">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/impact-touts-3.png" alt="26,500,000">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr">26,500,000 <i class="fa fa-arrow-right"></i></h4>
+                                <span class="description">meals distributed last year</span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+ 
+			<div class="infographic-item col-md-4 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.feedoc.org/learn/how-it-works/" target="_self">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/impact-touts-2.png" alt="250,000">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr">250,000 <i class="fa fa-arrow-right"></i></h4>
+                                <span class="description">hungry people receive food each month</span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+ 
+			<div class="infographic-item col-md-4 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.feedoc.org/learn/how-it-works/" target="_self">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/impact-touts-1.png" alt="2,700">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr">2,700 <i class="fa fa-arrow-right"></i></h4>
+                                <span class="description">children receive after-school meals through Kids Cafe each day</span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+			
+		</div><!--/.infographics-->
+		
+		       </div> <!--/.container-->
+   </section> <!--/.infographic-2-->
+  <!--=== // Feature: infographic | Version: 2 ===-->
+
+<!--=== Feature: infographic | Version: 2 ===-->
+   <section class="infographic infographic-2 infographic-nth-3">
+        <div class="container">
+
+		<div class="infographics col-sm-12 infographic_18">
+				
+			<h3 class="hdr infographic-title">Thanks to Our Generous Sponsors</h3>
+            <span class="sub-title infographic-sub-title"></span>
+ 
+			<div class="infographic-item col-md-3 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.bankofamerica.com" target="_blank">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/boa.jpg" alt="">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr"></h4>
+                                <span class="description"></span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+ 
+			<div class="infographic-item col-md-3 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="https://www.ralphs.com/" target="_blank">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/ralphs.jpg" alt="">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr"></h4>
+                                <span class="description"></span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+ 
+			<div class="infographic-item col-md-3 col-sm-6 col-xs-6">
+				<div class="inner">
+                	<div class="featured-img">
+                                            <a href="http://www.albertsons.com/" target="_blank">
+                                            <img class="img" src="https://www.feedoc.org/wp-content/uploads/2016/03/abertson.jpg" alt="">
+                                            </a>
+                       
+                    </div>
+                    <div class="infographic-title">
+                        <div class="inner">
+                            <h4 class="hdr"></h4>
+                                <span class="description"></span>
+			            </div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div><!--/.infographic-item-->
+			
+		</div><!--/.infographics-->
+		
+		       </div> <!--/.container-->
+   </section> <!--/.infographic-2-->
+  <!--=== // Feature: infographic | Version: 2 ===-->
+
+
+	<!--== // CONTENT ==-->
+
+
+	<!--== FOOTER ==-->
+	<!--=== Feature: footer | Version: 1 ===-->
+   <footer class="footer footer-1 footer-nth-1">
+        <div class="container">
+	<div class="row mobile-footer sub1 hidden-md hidden-lg">
+			
+		<div class="col col-sm-12 sub2-info">
+			<div class="inner">
+<h5 class="hdr">Useful Links</h5>
+<ul>
+<li><a href="https://www.feedoc.org/get-help/">Get Help</a></li>
+<li><a href="https://www.feedoc.org/contact-us/">Contact Us</a></li>
+<li><a href="https://www.feedoc.org/get-involved/volunteer/">Volunteer</a></li>
+<li><a href="https://www.feedoc.org/blog/">Blog</a></li>
+<li><a href="https://www.feedoc.org/newsletter/">Newsletter</a></li>
+<li><a href="https://www.feedoc.org/news-and-media/">News and Media</a></li>
+<li><a href="https://www.feedoc.org/learn/about-us/financial-stewardship/">Financial Stewardship</a></li>
+<li><a href="https://www.feedoc.org/jobs/">Jobs</a></li>
+<li><a href="https://www.feedoc.org/learn/second_harvest_directions/">Maps</a></li>
+<li><a href="https://www.feedoc.org/privacy-policy/">Privacy Policy</a></li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="https://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=16715" target="_blank" rel="noopener"><img class="alignleft wp-image-11781 size-full" src="https://www.feedoc.org/wp-content/uploads/2018/02/4Star-125x125-e1518573403541.jpg" alt="" width="125" height="125"></a></p>
+</div>
+<p><a href="https://www.guidestar.org/profile/32-0362611" target="_blank" rel="noopener noreferrer"><img class="alignleft" src="https://widgets.guidestar.org/gximage2?o=9180485&amp;l=v4"></a></p>
+		</div><!-- /.sub2-info -->
+			
+		<div class="col col-sm-12 sub1-info">
+			<div class="inner">
+<h5 class="hdr">Donate</h5>
+<p>Every $1 donated helps us provide 3 meals for hungry children, seniors and families.</p>
+<p><a class="btn btn-donate" title="Call to Action" href="https://www.feedoc.org/donate/">Donate</a></p>
+<p>&nbsp;</p>
+<div class="feeding-am hidden-xs">
+<p><a href="https://www.feedoc.org/harvesters/" target="_blank" rel="noopener"><img class="alignnone wp-image-19716" src="https://www.feedoc.org/wp-content/uploads/2020/01/Harvesters-28th-Event-Button-127x.jpg" alt="" width="172" height="126"></a></p>
+<p>&nbsp;</p>
+<p><img class="alignnone" src="/wp-content/themes/FB_SHFBOC/assets/images/feedamerica-md.png" alt="Feeding America"></p>
+<p class="description">Second Harvest Food Bank of Orange County is a member of Feeding America</p>
+</div>
+</div>
+		</div><!-- /.sub1-info -->
+				
+		<div class="col col-sm-12 contact-info">
+			<div class="inner">
+<div class="footer-social">
+<h5 class="hdr">Stay Connected</h5>
+<p>Get updates on our fight against hunger.</p>
+<p><a class="btn signup-btn btn-donate" href="https://www.feedoc.org/email-sign-up/">Email Sign Up </a></p>
+<ul class="footer-social__list">
+<li><a href="https://www.facebook.com/SecondHarvestFoodBankOC/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+<li><a class="twitter" href="https://twitter.com/SecondHarvestFB" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+<li><a class="instagram" href="https://www.instagram.com/secondharvestfoodbankoc" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+<li><a class="youtube" href="https://www.youtube.com/user/feedocdotorg" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+<li><a class="pinrest" href="https://www.pinterest.com/shfboc/" target="_blank" rel="noopener noreferrer">Pintrest</a></li>
+</ul>
+</div>
+<div class="footer-food-img"><a href="https://www.feedoc.org/"><img src="/wp-content/themes/FB_SHFBOC/assets/images/logo-300x137.png" alt="Second Harvest Food Bank Orange County"></a></div>
+<h5 class="hdr">Second Harvest Food Bank Of Orange County</h5>
+<p>8014 Marine Way<br>
+Irvine, CA 92618<br>
+Phone: 949.653.2900<br>
+Fax: 949.653.0700</p>
+</div>
+<p><strong class="disclaimer">Federal Tax ID # 32-0362611</strong></p>
+<div class="inner">
+<div class="hidden-md hidden-lg">
+<p><strong class="disclaimer">Second Harvest Food Bank of Orange County, Inc. is a 501 (c)(3) private nonprofit organization.</strong></p>
+<p>© 2018 Second Harvest Food Bank of Orange County, Inc.</p>
+</div>
+<div class="feeding-am hidden-sm hidden-md hidden-lg">
+<p><a href="http://www.feedingamerica.org/"><img src="/wp-content/themes/FB_SHFBOC/assets/images/feedamerica-md.png" alt="Feeding America"></a></p>
+<p class="description">Second Harvest Food Bank of Orange County is a member of Feeding America</p>
+<p class="description">
+</p></div>
+</div>
+		</div><!-- /.contact-info -->
+				
+	</div><!-- /.row mobile -->
+	<div class="row sub1 hidden-sm hidden-xs">
+			
+		<div class="col col-md-5 contact-info">
+			<div class="inner">
+<div class="footer-social">
+<h5 class="hdr">Stay Connected</h5>
+<p>Get updates on our fight against hunger.</p>
+<p><a class="btn signup-btn btn-donate" href="https://www.feedoc.org/email-sign-up/">Email Sign Up </a></p>
+<ul class="footer-social__list">
+<li><a href="https://www.facebook.com/SecondHarvestFoodBankOC/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+<li><a class="twitter" href="https://twitter.com/SecondHarvestFB" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+<li><a class="instagram" href="https://www.instagram.com/secondharvestfoodbankoc" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+<li><a class="youtube" href="https://www.youtube.com/user/feedocdotorg" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+<li><a class="pinrest" href="https://www.pinterest.com/shfboc/" target="_blank" rel="noopener noreferrer">Pintrest</a></li>
+</ul>
+</div>
+<div class="footer-food-img"><a href="https://www.feedoc.org/"><img src="/wp-content/themes/FB_SHFBOC/assets/images/logo-300x137.png" alt="Second Harvest Food Bank Orange County"></a></div>
+<h5 class="hdr">Second Harvest Food Bank Of Orange County</h5>
+<p>8014 Marine Way<br>
+Irvine, CA 92618<br>
+Phone: 949.653.2900<br>
+Fax: 949.653.0700</p>
+</div>
+<p><strong class="disclaimer">Federal Tax ID # 32-0362611</strong></p>
+<div class="inner">
+<div class="hidden-md hidden-lg">
+<p><strong class="disclaimer">Second Harvest Food Bank of Orange County, Inc. is a 501 (c)(3) private nonprofit organization.</strong></p>
+<p>© 2018 Second Harvest Food Bank of Orange County, Inc.</p>
+</div>
+<div class="feeding-am hidden-sm hidden-md hidden-lg">
+<p><a href="http://www.feedingamerica.org/"><img src="/wp-content/themes/FB_SHFBOC/assets/images/feedamerica-md.png" alt="Feeding America"></a></p>
+<p class="description">Second Harvest Food Bank of Orange County is a member of Feeding America</p>
+<p class="description">
+</p></div>
+</div>
+		</div><!-- /.contact-info -->
+				
+				
+		<div class="col col-md-4 sub1-info">
+			<div class="inner">
+<h5 class="hdr">Donate</h5>
+<p>Every $1 donated helps us provide 3 meals for hungry children, seniors and families.</p>
+<p><a class="btn btn-donate" title="Call to Action" href="https://www.feedoc.org/donate/">Donate</a></p>
+<p>&nbsp;</p>
+<div class="feeding-am hidden-xs">
+<p><a href="https://www.feedoc.org/harvesters/" target="_blank" rel="noopener"><img class="alignnone wp-image-19716" src="https://www.feedoc.org/wp-content/uploads/2020/01/Harvesters-28th-Event-Button-127x.jpg" alt="" width="172" height="126"></a></p>
+<p>&nbsp;</p>
+<p><img class="alignnone" src="/wp-content/themes/FB_SHFBOC/assets/images/feedamerica-md.png" alt="Feeding America"></p>
+<p class="description">Second Harvest Food Bank of Orange County is a member of Feeding America</p>
+</div>
+</div>
+		</div><!-- /.sub1-info -->
+				
+				
+		<div class="col col-md-3 sub2-info">
+			<div class="inner">
+<h5 class="hdr">Useful Links</h5>
+<ul>
+<li><a href="https://www.feedoc.org/get-help/">Get Help</a></li>
+<li><a href="https://www.feedoc.org/contact-us/">Contact Us</a></li>
+<li><a href="https://www.feedoc.org/get-involved/volunteer/">Volunteer</a></li>
+<li><a href="https://www.feedoc.org/blog/">Blog</a></li>
+<li><a href="https://www.feedoc.org/newsletter/">Newsletter</a></li>
+<li><a href="https://www.feedoc.org/news-and-media/">News and Media</a></li>
+<li><a href="https://www.feedoc.org/learn/about-us/financial-stewardship/">Financial Stewardship</a></li>
+<li><a href="https://www.feedoc.org/jobs/">Jobs</a></li>
+<li><a href="https://www.feedoc.org/learn/second_harvest_directions/">Maps</a></li>
+<li><a href="https://www.feedoc.org/privacy-policy/">Privacy Policy</a></li>
+</ul>
+<p>&nbsp;</p>
+<p><a href="https://www.charitynavigator.org/index.cfm?bay=search.summary&amp;orgid=16715" target="_blank" rel="noopener"><img class="alignleft wp-image-11781 size-full" src="https://www.feedoc.org/wp-content/uploads/2018/02/4Star-125x125-e1518573403541.jpg" alt="" width="125" height="125"></a></p>
+</div>
+<p><a href="https://www.guidestar.org/profile/32-0362611" target="_blank" rel="noopener noreferrer"><img class="alignleft" src="https://widgets.guidestar.org/gximage2?o=9180485&amp;l=v4"></a></p>
+		</div><!-- /.sub2-info -->
+			
+	</div><!-- /.row -->
+    <div class="row footer-icon-row">
+			<div class="inner hidden-xs hidden-sm">
+<div class="copyright">
+<p>Second Harvest Food Bank of Orange County, Inc. is a 501 (c)(3) private nonprofit organization.</p>
+<p>© 2019 Second Harvest Food Bank of Orange County, Inc.</p>
+</div>
+</div>
+<p style="margin: 0in 7.5pt 9.0pt 0in;">
+    </p></div>
+
+
+
+
+
+	    
+    
+    
+   				
+    <hr class="footer-nav-separator">
+    <div class="row footer-nav-row">
+<!--=== Feature: nav | Version: 1 ===-->
+   <aside class="nav nav-1 nav-nth-1">
+        <div class="nav footer-nav">
+    <nav class="footer-nav" id="" role="navigation">
+	        </nav>       </div> <!--/.nav footer-nav-->
+   </aside> <!--/.nav-1-->
+  <!--=== // Feature: nav | Version: 1 ===-->
+
+    </div> <!--/.footer-nav-row-->
+       </div> <!--/.container-->
+   </footer> <!--/.footer-1-->
+  <!--=== // Feature: nav | Version: 1 ===-->
+
+	
+	<!--== // FOOTER ==-->
+
+</div><!-- /.site-wrapper -->
+
+<script type="text/javascript" src="https://www.feedoc.org/wp-content/themes/rrcb_cobalt_master/assets/js/vendor/modernizr.min.js"></script>
+<script type="text/javascript" src="https://www.feedoc.org/wp-content/themes/rrcb_cobalt_master/assets/js/scripts.min.js?1a9ff31a5b2124aa34e6e8ad4af976f3"></script>
+<script type="text/javascript" src="https://www.feedoc.org/wp-includes/js/wp-embed.min.js?ver=5.3.2"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"658628749e","applicationID":"31948875","transactionName":"ZFABZUYCD0tXUEENX10aNkNdTE5RWFdQHB5DXRM=","queueTime":0,"applicationTime":877,"atts":"SBcCEw4YHEU=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2059508720981017");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2059508720981017&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">var $=jQuery;$(document).ready(function(){$("a[href*\x3d'.pdf']").click(function(){var a=$(this).attr("href").replace("https://www.feedoc.org/wp-content/uploads/","");ga("create","UA-2040080-1");ga("send","pageview",a)})});</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+  <div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe height="0" width="0" style="display: none; visibility: hidden;" src="//5116844.fls.doubleclick.net/activityi;src=5116844;type=homep0;cat=homep0;ord=8809203756649;gtm=2wg3i0;auiddc=205239619.1585451074;~oref=https%3A%2F%2Fwww.feedoc.org%2F?"></iframe><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 137px; height: 79px; display: none;"></iframe></body></html>

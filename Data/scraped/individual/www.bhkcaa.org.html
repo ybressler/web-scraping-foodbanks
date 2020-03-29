@@ -1,0 +1,243 @@
+<html lang="en"><head>
+	<!-- Basic Setup Data -->
+	<title>BHK Community Action Agency Homepage</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="BHKCAA, CAA, Community Action Center, Baraga, Houghton, Keweenaw">
+	<meta name="description" content="Official Website for Community Action Agency of Baraga Houghton Keweenaw County">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/navigationMenu.css">
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+	<!-- Slider settings -->
+   <script>
+	jQuery(document).ready(function ($) {
+		var jssor_1_options = {
+			$AutoPlay: true,
+			$Idle: 10000,
+			$SlideDuration: 1500,
+			$ArrowNavigatorOptions: {
+				$Class: $JssorArrowNavigator$
+			},
+			$BulletNavigatorOptions: {
+				$Class: $JssorBulletNavigator$
+			}
+		};
+
+		var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+		//- Responsive slider code --//
+
+		function ScaleSlider() {
+			var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+			if (refSize) {
+				refSize = Math.min(refSize, 1200);
+				jssor_1_slider.$ScaleWidth(refSize);
+			}
+			else {
+				window.setTimeout(ScaleSlider, 30);
+			}
+		}
+		ScaleSlider();
+		$(window).bind("load", ScaleSlider);
+		$(window).bind("resize", ScaleSlider);
+		$(window).bind("orientationchange", ScaleSlider);
+	});
+   </script>
+</head>
+<body>
+<div id="top"></div>
+<!-- Page Wrapper -->
+<div class="wrapper">
+	<!-- Content Wrapper -->
+	<div class="pageContent">
+		<!-- Header -->
+		<header id="header" class="header" style="box-shadow: rgb(0, 0, 0) 0px 0px 3px;">
+			<!-- Navigation Bar -->
+			<div id="navigationBar">
+								<p>
+					<br>
+				</p>
+				<div class="container">
+					<a class="toggleMenu" href="#" style="display: none;">Menu</a>
+					<ul class="nav">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="programs.html" class="parent">Programs</a>
+							<ul>
+								<li>
+									<a href="#" class="parent">Bus Service</a>
+									<ul>
+										<li><a href="riders_north.html">Riders North of the Bridge</a></li>
+										<li><a href="riders_south.html">Riders South of the Bridge</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="food_programs.html">Food Programs</a>
+								</li>
+								<li>
+									<a href="in_home_services.html">In-Home Services</a>
+								</li>
+								<li>
+									<a href="keweenaw_handicraft_shop.html">Keweenaw Handicraft Shop</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="calendar.html">Calendar</a>
+						</li>
+						<li>
+							<a href="about.html" class="parent">About</a>
+							<ul>
+								<li><a href="history.html">History</a></li>
+								<li><a href="board.html">Board of Directors</a></li>
+								<li><a href="staff.html">Staff</a></li>
+								<li><a href="annual_summary.html">FY Annual Summary</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+<script type="text/javascript">
+var ww = document.body.clientWidth;
+
+$(document).ready(function() {
+	$(".nav li a").each(function() {
+		if ($(this).next().length > 0) {
+			$(this).addClass("parent");
+		};
+	})
+
+	$(".toggleMenu").click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(".nav").toggle();
+	});
+	adjustMenu();
+})
+
+$(window).bind('resize orientationchange', function() {
+	ww = document.body.clientWidth;
+	adjustMenu();
+});
+
+var adjustMenu = function() {
+	if (ww < 768) {
+		$(".toggleMenu").css("display", "inline-block");
+		if (!$(".toggleMenu").hasClass("active")) {
+			$(".nav").hide();
+		} else {
+			$(".nav").show();
+		}
+		$(".nav li").unbind('mouseenter mouseleave');
+		$(".nav li a.parent").unbind('click').bind('click', function(e) {
+			// must be attached to anchor element to prevent bubbling
+			e.preventDefault();
+			$(this).parent("li").toggleClass("hover");
+		});
+	}
+	else if (ww >= 768) {
+		$(".toggleMenu").css("display", "none");
+		$(".nav").show();
+		$(".nav li").removeClass("hover");
+		$(".nav li a").unbind('click');
+		$(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+		 	// must be attached to li so that mouseleave is not triggered when hover over submenu
+		 	$(this).toggleClass('hover');
+		});
+	}
+}
+</script>
+
+			</div>
+		</header>
+		<div class="verticalSpacer"></div>
+
+		<!-- Image Slider -->
+		<div id="jssor_1" style="position: relative; margin: 0px auto; top: 0px; left: 0px; width: 1200px; height: 600px; overflow: hidden; visibility: visible;" jssor-slider="true">
+			<!-- Loading Screen -->
+			
+			
+			<!-- Arrow Navigator -->
+			
+			
+		<div style="position: absolute; top: 0px; left: 0px; width: 1200px; height: 600px; transform-origin: 0px 0px; transform: scale(1);"><div class="" style="position: relative; margin: 0px auto; top: 0px; left: 0px; width: 1200px; height: 600px; overflow: visible; visibility: visible; display: block;"><div data-u="loading" style="position: absolute; top: 0px; left: 0px; width: 1000px; height: 600px; display: none;">
+				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+				<div style="position:absolute;display:block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			</div><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 100px; width: 1000px; height: 600px; overflow: hidden; z-index: 0;"><div style="position: absolute; z-index: 0; pointer-events: none;"></div></div><div data-u="slides" style="cursor: default; position: absolute; top: 0px; left: 100px; width: 1000px; height: 600px; overflow: hidden; z-index: 0;"><div style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute; background-color: rgb(0, 0, 0); opacity: 0; display: none;"></div>
+				<div data-p="112.50" style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute; overflow: hidden; perspective: 112.5px;">
+					<img data-u="image" src="images/office.png" alt="BHKCAA Office" width="1000" height="600" border="0" style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute;">
+				<div data-u="loading" style="position: absolute; top: 0px; left: 0px; width: 1000px; height: 600px; z-index: 1000; display: none;">
+				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+				<div style="position:absolute;display:block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			</div></div>
+				<div data-p="112.50" style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute; overflow: hidden; perspective: 112.5px; transform: translate3d(1000px, 0px, 0px);">
+					<img data-u="image" src="images/FoodBank.png" alt="FoodBank" width="1000" height="600" border="0" style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute;">
+				<div data-u="loading" style="position: absolute; top: 0px; left: 0px; width: 1000px; height: 600px; z-index: 1000; display: none;">
+				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+				<div style="position:absolute;display:block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			</div></div>
+				<div data-p="112.50" style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute; overflow: hidden; perspective: 112.5px; transform: translate3d(-1000px, 0px, 0px);">
+					<img data-u="image" src="images/HandicraftShop.png" alt="Handicraft Shop" width="1000" height="600" border="0" style="top: 0px; left: 0px; width: 1000px; height: 600px; position: absolute;">
+				<div data-u="loading" style="position: absolute; top: 0px; left: 0px; width: 1000px; height: 600px; z-index: 1000; display: none;">
+				<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+				<div style="position:absolute;display:block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+			</div></div>
+				<!-- Bullet Navigator -->
+				<div data-u="navigator" class="jssorb01" style="bottom: 16px; right: 16px; width: 56px; height: 12px;">
+					
+				<div data-u="prototype" style="width: 12px; height: 12px; position: absolute; left: 0px; top: 0px;" class="av"></div><div data-u="prototype" style="width: 12px; height: 12px; position: absolute; left: 22px; top: 0px;"></div><div data-u="prototype" style="width: 12px; height: 12px; position: absolute; left: 44px; top: 0px;"></div></div>
+			</div><span data-u="arrowleft" class="jssora02l" data-autocenter="2" style="top: 272.5px;"></span><span data-u="arrowright" class="jssora02r" data-autocenter="2" style="top: 272.5px;"></span></div></div></div>
+		<br><br>
+		<div id="indexSpacer">
+			<br>
+		</div>
+
+		<!-- Footer -->
+		<div class="pre-footer"></div>
+
+		<div class="footer">
+			<a href="index.html"><img class="logo" src="images/logo.png" alt="logo.png"></a>
+<br><br>
+926 Dodge Street &nbsp;&nbsp;•&nbsp;&nbsp; Houghton, MI  49931 &nbsp;&nbsp;•&nbsp;&nbsp; (906) 482-5528
+<br><br>
+<img src="images/slogan.png" alt="slogan">
+<br><br>
+
+		</div>
+	</div>
+</div>
+
+<!-- Initialize fixed header on scroll -->
+<script type="text/javascript">
+var $window = $(window);
+$window.scroll(function() {
+	if ($window.scrollTop() == 0) {
+		document.getElementById("header").style.boxShadow = "";
+	}
+	else {
+		document.getElementById("header").style.boxShadow = "0 0 3px #000";
+	}
+});
+</script>
+
+
+</body></html>
