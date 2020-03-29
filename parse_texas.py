@@ -17,6 +17,9 @@ from urllib.parse import quote
 import requests
 from bs4 import BeautifulSoup
 
+# Load from gmaps
+from fun.gmaps.query import query_gmaps
+
 # import data tools
 import pandas as pd
 
@@ -217,8 +220,50 @@ print(f"Completed. Data has been saved to {save_path}")
 # 3.  L O A D    F R O M   G M A P S
 
 
+all_gmaps_data = []
 
 for idx, row in df.iterrows():
+    place = row["District Name"].replace("/","")
 
-    None
-print(idx)
+    # query gmaps
+    gmaps_data = query_gmaps(place, verbose=False).get("results")
+
+    for item in gmaps_data:
+
+        # get variables
+        address = item["formatted_address"]
+
+        # make flexible
+        latitude = item["geometry"].get("location",{"lat":None})["lat"]
+        longitude =  item["geometry"].get("location",{"lng":None})["lng"]
+
+        gmaps_name = item["name"]
+        gmaps_id = item["id"]
+
+        rec = {
+            "place":place,
+            "address":address,
+            "latitude":latitude,
+            "longitude":longitude,
+            "gmaps_name":gmaps_name,
+            "gmaps_id":gmaps_id
+        }
+
+        all_gmaps_data.append(rec)
+
+df_gmaps = pd.DataFrame.from_records(all_gmaps_data)
+
+# there are quiet a few places with multiple locations...
+df_gmaps.rename(columns = {"place":"District Name"},inplace=True)
+
+
+# save multiple
+df_loc_mult = df.merge(df_gmaps, how="right")
+save_path = Path("Data/cleaned/texas-locations-multi.csv")
+df_loc_mult.to_csv(save_path, index=False)
+
+
+# save single
+df_loc_single = df.merge(df_gmaps, how="left")
+save_path = Path("Data/cleaned/texas-locations-single.csv")
+df_loc_single.to_csv(save_path, index=False)
