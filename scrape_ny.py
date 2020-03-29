@@ -104,7 +104,7 @@ for x in all_items:
 
 # When all that is done, load to a df
 df = pd.DataFrame.from_records(records)
-
+df["location_broad"] = "New York City"
 # save to a csv
 df.to_csv(Path(f"Data/scraped/indexes/{url_to_file_name(url)}.csv"), index=False)
 
