@@ -1,3 +1,6 @@
+#always ignore secret
+secret
+
 # Virtual env
 venv
 .env
