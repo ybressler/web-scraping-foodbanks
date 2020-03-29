@@ -19,6 +19,7 @@ from selenium.webdriver.common.alert import Alert
 # import custom stuff
 from fun.web_scraping.navigate import slow_scroll
 from fun.web_scraping.soup import get_soup, get_address
+from fun.web_scraping.validate import validate_url
 
 # import data tools
 import pandas as pd
@@ -104,7 +105,7 @@ for item in all_items:
         if p_class == "name":
             org_name = p.text if p else None
         elif p_class == "url":
-            org_url = p.find("a").get("href")
+            org_url = validate_url(p.find("a").get("href"))
         else:
             # Not the neatest way to do it, but somple enough
             p = str(p).replace("<p>","").replace("</p>","").split("<br/>")
@@ -139,7 +140,7 @@ for item in all_items:
 
         # Not all of them have websites
         org_url = x.find("a")
-        org_url = org_url.get("href") if org_url else None
+        org_url = validate_url(org_url.get("href")) if org_url else None
 
         # parse through text
         text = str(x).replace("<li>","").replace("</li>","").split("<br/>")
