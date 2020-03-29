@@ -18,7 +18,7 @@ from selenium.webdriver.common.alert import Alert
 
 # import custom stuff
 from fun.web_scraping.navigate import slow_scroll
-from fun.web_scraping.soup import get_soup
+from fun.web_scraping.soup import get_soup, get_address
 
 # import data tools
 import pandas as pd
@@ -97,22 +97,71 @@ for item in all_items:
         continue
     org_link = a.get("href")
 
-    name = item.find("p",{"class":"name"})
-    org_name = name.text if name else name #weird but works!
-    org_url = item.find("p",{"class":"url"}).find("a").get("href")
+    all_p = item.find_all("p")
+    for p in all_p:
+        p_class = p.get("class",[None])[0]
 
-    # still need to get:
-    # – address
-    # – phone number
-    # – multiple locations (if)
+        if p_class == "name":
+            org_name = p.text if p else None
+        elif p_class == "url":
+            org_url = p.find("a").get("href")
+        else:
+            # Not the neatest way to do it, but somple enough
+            p = str(p).replace("<p>","").replace("</p>","").split("<br/>")
+
+            # contains a po box
+            if len(p)>3:
+                po_box = p.pop(1)
+            else:
+                po_box = None
+            # else, continue
+            address_street = p[0]
+            address_city = p[1]
+            phone_number = p[2].replace(".","-")
+
+            address_city_breakdown = get_address(address_city, look_for = ["city","state","zip"])
 
     rec = {
         "org_id" : org_id,
         "org_link" : org_link,
         "org_name" : org_name,
         "org_url" : org_url,
+        "address_street":address_street,
+        "phone_number":phone_number,
+        "po_box":po_box,
+        **address_city_breakdown # adds all values
     }
     records.append(rec)
+
+    # Multiple locations (if)
+    all_li = item.find_all("li")
+    for x in all_li:
+
+        # Not all of them have websites
+        org_url = x.find("a")
+        org_url = org_url.get("href") if org_url else None
+
+        # parse through text
+        text = str(x).replace("<li>","").replace("</li>","").split("<br/>")
+        org_name = text[0]
+        address_street = text[1]
+        address_city = text[2]
+        phone_number = text[3].replace(".","-")
+
+        address_city_breakdown = get_address(address_city, look_for = ["city","state","zip"])
+
+        rec = {
+            "org_id" : org_id, # use parent org id
+            "org_link" : org_link, # use parent org link
+            "org_name" : org_name,
+            "org_url" : org_url,
+            "address_street":address_street,
+            "phone_number":phone_number,
+            "po_box":po_box,
+            **address_city_breakdown # adds all values
+        }
+        records.append(rec)
+
 
 # When all that is done, load to a df
 df = pd.DataFrame.from_records(records)
