@@ -1,6 +1,6 @@
 import time
 
-def slow_scroll(driver, px = 50, s = 0.05):
+def slow_scroll(driver, px = 50, s = 0.05, max_timeout=15):
 
     """
     scroll slowly through a page
@@ -21,11 +21,17 @@ def slow_scroll(driver, px = 50, s = 0.05):
 
     # Start off at device height
     y = 1000
+    start_time = time.time()
 
     while True:
-         driver.execute_script(f"window.scrollTo(0, {y})")
-         y += px
-         time.sleep(s)
+        driver.execute_script(f"window.scrollTo(0, {y})")
+        y += px
+        time.sleep(s)
 
-         if y >= (page_bottom-px):
-             break
+        if y >= (page_bottom-px):
+            break
+
+        # if it takes more than max timeout
+        time_since = time.time() - start_time
+        if time_since>=max_timeout:
+            break

@@ -9,6 +9,7 @@ import random
 
 # Make paths compatible for both mac and PC
 from pathlib import Path
+from urllib.parse import quote
 
 # Web scraping
 import requests
@@ -19,7 +20,7 @@ from selenium.webdriver.common.alert import Alert
 # import custom stuff
 from fun.web_scraping.navigate import slow_scroll
 from fun.web_scraping.soup import get_soup, get_address
-from fun.web_scraping.validate import validate_url
+from fun.web_scraping.validate import validate_url, url_to_file_name
 
 # import data tools
 import pandas as pd
@@ -47,12 +48,10 @@ with open(Path("Data/foodbank_indexes.json"),"r") as f:
 
 # begin with just one url
 
-# save the soup (for testing)
-os.makedirs(Path("Data/testing/scraped"), exist_ok=True)
-soup_path = Path("Data/testing/scraped/first.html")
-
-# Use selenium to get the content (since requests doesn't deliver it...)
+os.makedirs(Path("Data/scraped/indexes"), exist_ok=True)
 url = url_dict["USA (all)"]
+soup_path = Path(f"Data/scraped/indexes/{url_to_file_name(url)}.html")
+
 
 # don't make too many requests...
 if not os.path.isfile(soup_path):
@@ -65,7 +64,7 @@ if not os.path.isfile(soup_path):
     driver.get(url);
 
     # Scroll to the bottom of the page (like a human!)
-    slow_scroll(driver, px=75)
+    slow_scroll(driver, px=30, max_timeout=20)
 
     # save
     with open(soup_path,"w") as f:
@@ -168,6 +167,6 @@ for item in all_items:
 df = pd.DataFrame.from_records(records)
 
 # save to a csv
-df.to_csv(Path("Data/testing/scraped/first.csv"), index=False)
+df.to_csv(Path(f"Data/scraped/indexes/{url_to_file_name(url)}.csv"), index=False)
 
 print("complete!")

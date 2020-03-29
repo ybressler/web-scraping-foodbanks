@@ -21,3 +21,4 @@ Chromedriver
 # Ignore previous template files
 parse_avvo.py
 scrape_avvo.py
+test.py
